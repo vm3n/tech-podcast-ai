@@ -1,0 +1,33 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+We had trouble processing this story about https://www.pcgamer.com/software/security/a-17-year-old-excel-vulnerability-is-currently-being-exploited-by-threat-actors-and-its-been-flagged-by-the-us-cyber-defence-agency/?utm_source=tldrinfosec. Moving on.
+
+Alright, let us move on to the next story.
+
+We had trouble processing this story about https://techcrunch.com/2026/04/20/mastodon-says-its-flagship-server-was-hit-by-a-ddos-attack/?utm_source=tldrinfosec. Moving on.
+
+Alright, let us move on to the next story.
+
+We had trouble processing this story about https://trustedsec.com/blog/benchmarking-self-hosted-llms-for-offensive-security?utm_source=tldrinfosec. Moving on.
+
+Alright, let us move on to the next story.
+
+We had trouble processing this story about https://apas.tel/blog/tpm-is-cool?utm_source=tldrinfosec. Moving on.
+
+Alright, let us move on to the next story.
+
+We had trouble processing this story about https://www.flyingpenguin.com/the-boy-that-cried-mythos-verification-is-collapsing-trust-in-anthropic/?utm_source=tldrinfosec. Moving on.
+
+Alright, let us move on to the next story.
+
+We had trouble processing this story about https://sift.com/fibr-fraud-industry-benchmarking-resource/?utm_source=tldr&utm_medium=referral&utm_campaign=wc-page-fibr-benchmark-report&utm_content=tldr-infosec-secondary-04-21-26. Moving on.
+
+Alright, let us move on to the next story.
+
+We had trouble processing this story about https://sift.com/fibr-fraud-industry-benchmarking-resource/?utm_source=tldr&utm_medium=referral&utm_campaign=wc-page-fibr-benchmark-report&utm_content=tldr-infosec-secondary-04-21-26/2/0100019db03334a2-8ddde7a6-64f1-47b1-920e-d4f076ff26c4-000000/62vQzStAQ2x9ctJCSml4ahxI1mBAuoqS-Sj12J4_2vo=452. Moving on.
+
+Alright, let us move on to the next story.
+
+We had trouble processing this story about https://labs.boostsecurity.io/articles/introducing-smokedmeat/?utm_source=tldrinfosec. Moving on.
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.
