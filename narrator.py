@@ -1,14 +1,13 @@
 """
 Stage 2 — Groq Narrator
-Takes fetched article text and generates a natural
-podcast script using Groq's llama-3.3-70b model.
-Includes quality check pass to catch robotic sentences.
+Generates natural podcast scripts using Groq.
+First 6 articles per category get full deep dive.
+Remaining articles get headline mention only.
 """
 
 import os
 from groq import Groq
 from dotenv import load_dotenv
-from fetcher import FetchedArticle
 
 load_dotenv()
 
@@ -16,6 +15,7 @@ client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 SYSTEM_PROMPT = """
 You are Herlin, a friendly and knowledgeable tech podcast host.
+Your name is Herlin. Always introduce yourself as Herlin. Never use any other name.
 You explain things like you are talking to a smart friend over
 coffee — not like you are writing a report.
 
@@ -27,11 +27,11 @@ Rules you must always follow:
 - Never use passive voice. Always say who did what.
 - Use phrases like "here is the thing", "think of it this way",
   "and here is why that is a big deal", "so what does this mean for you".
-- End every story with a practical takeaway for a software developer.
+- End every deep dive story with a practical takeaway for a software developer.
 - Write exactly as you would say it out loud.
-- Vary your sentence length. Short punchy ones after a long explanation
-  create natural rhythm.
-- Target length: 700 to 1000 words. This equals roughly 5 to 7 minutes of audio.
+- Vary your sentence length for natural rhythm.
+- IMPORTANT: Return ONLY the script text. No explanations of changes made.
+  No bullet points of what you fixed. Just the clean spoken script.
 """
 
 FULL_PROMPT = """
@@ -45,115 +45,71 @@ Full article:
 {text}
 
 Now write the podcast script. Start with a hook that makes
-the listener lean in immediately.
+the listener lean in immediately. Return ONLY the script, nothing else.
 """
 
 PARTIAL_PROMPT = """
-You only have partial content for this story — likely because
-of a paywall. Use these words plus your own knowledge of this
-topic to explain what is happening and why it matters.
-
-Important: Tell the listener upfront that you only have limited
-information on this one, but still give them as much useful
-context as you can from what you know about this topic.
+You only have partial content for this story due to a paywall.
+Use these words plus your own knowledge to explain what is happening
+and why it matters. Tell the listener upfront you have limited info.
 
 Article title: {title}
 
 Partial content:
 {text}
 
-Now write the podcast script.
+Write the podcast script. Return ONLY the script, nothing else.
 """
 
 HEADLINE_PROMPT = """
-You only have the headline for this story — no article text
-was available. Give a 30 second mention of this story.
-Tell the listener this one is worth watching and why,
-based on your knowledge of the topic.
+Write a single short 2-3 sentence mention of this story for a podcast.
+Just the headline — what happened and why it might matter.
+No deep dive. Keep it under 50 words.
+Return ONLY the 2-3 sentences, nothing else.
 
-Headline: {title}
-
-Write a short 30 second mention only.
+Story: {title}
 """
 
 
-def quality_check(script: str) -> str:
+def generate_script(article, is_headline: bool = False) -> str:
     """
-    Second Groq pass — reads the generated script
-    and fixes any sentences that sound robotic,
-    too formal, or written rather than spoken.
-    """
-
-    print("  Running quality check...")
-
-    checker_prompt = f"""
-Read this podcast script carefully.
-
-Find any sentences that:
-- Sound too formal or written rather than spoken
-- Use passive voice (e.g. "was announced by" instead of "announced")
-- Use jargon without explaining it
-- Are longer than 35 words
-- Use phrases like "In conclusion", "Furthermore",
-  "It is worth noting", "Notably", "It is important to"
-
-For each problem sentence, rewrite it in a natural spoken way.
-
-Return the FULL script with fixes applied.
-If nothing needs fixing, return the script exactly as is.
-
-Script:
-{script}
-"""
-
-    try:
-        response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
-            messages=[
-                {"role": "user", "content": checker_prompt}
-            ],
-            temperature=0.3,
-            max_tokens=2000
-        )
-
-        improved = response.choices[0].message.content.strip()
-        print("  Quality check complete")
-        return improved
-
-    except Exception as e:
-        print(f"  Quality check error: {e} — using original")
-        return script
-
-
-def generate_script(article: FetchedArticle) -> str:
-    """
-    Generates a natural spoken podcast script from a fetched article.
-    Uses different prompts based on confidence tier.
-    Runs quality check pass before returning.
+    Generates podcast script for one article.
+    is_headline=True generates a short 2-3 sentence mention.
+    is_headline=False generates a full deep dive script.
     """
 
-    print(f"\nGenerating script for: {article.title[:60]}...")
-    print(f"  Tier: {article.tier} ({article.word_count} words)")
-
-    if article.tier == "full":
-        user_prompt = FULL_PROMPT.format(
-            title=article.title,
-            text=article.text
-        )
-        temperature = 0.7
-
-    elif article.tier == "partial":
-        user_prompt = PARTIAL_PROMPT.format(
-            title=article.title,
-            text=article.text if article.text else "No text available."
-        )
-        temperature = 0.7
-
-    else:  # headline
+    if is_headline:
+        print(f"\n  Headline mention: {article.title[:60]}...")
         user_prompt = HEADLINE_PROMPT.format(
-            title=article.title
+            title=article.title if not article.title.startswith("http")
+            else article.url
         )
-        temperature = 0.6
+        temperature = 0.5
+        max_tokens = 100
+    else:
+        print(f"\nDeep dive: {article.title[:60]}...")
+        print(f"  Tier: {article.tier} ({article.word_count} words)")
+
+        if article.tier == "full":
+            user_prompt = FULL_PROMPT.format(
+                title=article.title,
+                text=article.text
+            )
+            temperature = 0.7
+        elif article.tier == "partial":
+            user_prompt = PARTIAL_PROMPT.format(
+                title=article.title,
+                text=article.text if article.text else "No text available."
+            )
+            temperature = 0.7
+        else:
+            user_prompt = HEADLINE_PROMPT.format(
+                title=article.title if not article.title.startswith("http")
+                else article.url
+            )
+            temperature = 0.5
+
+        max_tokens = 1500
 
     try:
         response = client.chat.completions.create(
@@ -163,32 +119,44 @@ def generate_script(article: FetchedArticle) -> str:
                 {"role": "user", "content": user_prompt}
             ],
             temperature=temperature,
-            max_tokens=1500
+            max_tokens=max_tokens
         )
 
         script = response.choices[0].message.content.strip()
-
-        # Run quality check pass
-        script = quality_check(script)
-
         word_count = len(script.split())
-        print(f"  Final script: {word_count} words")
+
+        if is_headline:
+            print(f"  Headline: {word_count} words")
+        else:
+            print(f"  Script: {word_count} words")
+
         return script
 
     except Exception as e:
         print(f"  Groq error: {e}")
-        return f"We had trouble processing this story about {article.title}. Moving on."
+        if is_headline:
+            return f"Quick mention — {article.title[:100]}. Worth keeping an eye on."
+        else:
+            return f"We had trouble processing this story. Moving on."
 
 
 def generate_episode_script(articles: list) -> str:
     """
-    Generates scripts for all articles and stitches them
-    into one full episode script with intro and outro.
+    Generates full episode script.
+    First 6 articles get deep dive treatment.
+    Remaining articles get headline mentions.
+    All stitched into one complete episode.
     """
 
     print("\n" + "="*50)
     print("GENERATING EPISODE SCRIPTS")
     print("="*50)
+
+    deep_dive_articles = articles[:6]
+    headline_articles = articles[6:]
+
+    print(f"  Deep dives : {len(deep_dive_articles)}")
+    print(f"  Headlines  : {len(headline_articles)}")
 
     scripts = []
 
@@ -200,20 +168,35 @@ def generate_episode_script(articles: list) -> str:
     )
     scripts.append(intro)
 
-    # Generate script for each article
-    for i, article in enumerate(articles, 1):
-        print(f"\nArticle {i} of {len(articles)}")
-        script = generate_script(article)
+    # Deep dive section
+    print(f"\n--- DEEP DIVES ---")
+    for i, article in enumerate(deep_dive_articles, 1):
+        print(f"\nArticle {i} of {len(deep_dive_articles)}")
+        script = generate_script(article, is_headline=False)
 
-        # Add a natural transition between stories
-        if i < len(articles):
+        if i < len(deep_dive_articles):
             script += "\n\nAlright, let us move on to the next story."
 
         scripts.append(script)
 
+    # Headlines section
+    if headline_articles:
+        scripts.append(
+            "\n\nNow let us quickly run through some other stories "
+            "that caught our eye today."
+        )
+
+        print(f"\n--- HEADLINES ---")
+        headline_scripts = []
+        for article in headline_articles:
+            hl = generate_script(article, is_headline=True)
+            headline_scripts.append(hl)
+
+        scripts.append(" ".join(headline_scripts))
+
     # Outro
     outro = (
-        "And that is your tech briefing for today. "
+        "\n\nAnd that is your tech briefing for today. "
         "A lot happening as always. "
         "Stay curious, keep building, and I will see you tomorrow."
     )
@@ -225,6 +208,8 @@ def generate_episode_script(articles: list) -> str:
     print(f"\n{'='*50}")
     print(f"EPISODE COMPLETE")
     print(f"  Total words : {total_words}")
+    print(f"  Deep dives  : {len(deep_dive_articles)}")
+    print(f"  Headlines   : {len(headline_articles)}")
     print(f"  Est. runtime: ~{total_words // 130} minutes")
     print(f"{'='*50}")
 
@@ -236,20 +221,12 @@ if __name__ == "__main__":
 
     test_urls = [
         "https://arstechnica.com",
+        "https://techcrunch.com",
     ]
 
-    print("Testing Groq narrator with quality check...")
-    print("="*50)
-
+    print("Testing narrator...")
+    from fetcher import fetch_multiple
     articles = fetch_multiple(test_urls)
-    episode_script = generate_episode_script(articles)
-
-    print("\nSCRIPT PREVIEW (first 500 chars):")
-    print("-"*50)
-    print(episode_script[:500])
-    print("-"*50)
-
-    with open("scripts/test_episode.txt", "w") as f:
-        f.write(episode_script)
-
-    print("\nFull script saved to scripts/test_episode.txt")
+    script = generate_episode_script(articles)
+    print("\nPreview:")
+    print(script[:500])

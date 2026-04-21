@@ -1,0 +1,570 @@
+/Users/vineethamallu/tech-podcast-ai/venv/lib/python3.11/site-packages/torch/nn/modules/rnn.py:1013: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/Users/vineethamallu/tech-podcast-ai/venv/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/Users/vineethamallu/tech-podcast-ai/venv/lib/python3.11/site-packages/pydub/utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+  warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/Users/vineethamallu/tech-podcast-ai/venv/lib/python3.11/site-packages/torch/nn/modules/rnn.py:1013: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/Users/vineethamallu/tech-podcast-ai/venv/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+
+==================================================
+TECH PODCAST PIPELINE
+Date: 2026-04-21
+==================================================
+  Database ready: podcast.db
+
+Cleaning up old episodes...
+  Cleaned up 0 old episode files
+
+Fetching newsletter links from Gmail...
+
+==================================================
+GMAIL INGESTION
+==================================================
+  Database ready: podcast.db
+
+Searching Gmail label:Podcasts...
+Found 8 tagged emails
+
+  Newsletter : Kimi K2.6 🚀, Codex Chronicle 🤖, Bezos’ $10B AI fun
+  Sender     : TLDR AI
+  Category   : ai
+  Links found: 1
+  New links  : 1
+
+  Newsletter : 17-Year Excel Bug Active 💼, Context.ai Leaks Verce
+  Sender     : TLDR InfoSec
+  Category   : infosec
+  Links found: 1
+  New links  : 1
+
+  Newsletter : AWS Expands Fast ☁️, Sovereign AI Rises 🏛️, VMware
+  Sender     : TLDR IT
+  Category   : it
+  Links found: 0
+  New links  : 0
+
+  Newsletter : Tim Cook Exit 🍎, WhatsApp Plus 💬, iPhone 18 Pro Co
+  Sender     : TLDR Design
+  Category   : design
+  Links found: 1
+  New links  : 1
+
+  Newsletter : How Shazam works 🔊, AI resistance 🚫, EU app hacked
+  Sender     : TLDR Dev
+  Category   : dev
+  Links found: 2
+  New links  : 2
+
+  Newsletter : How to increase LI reach 👆, ghost citations 👻, rew
+  Sender     : TLDR Marketing
+  Category   : marketing
+  Links found: 1
+  New links  : 1
+
+  Newsletter : Apple's new CEO 📱, Anthropic AWS $25B deal 💰, mega
+  Sender     : TLDR
+  Category   : tech
+  Links found: 1
+  New links  : 1
+
+  Newsletter : TLDR - Confirm your signup
+  Sender     : TLDR
+  Category   : tech
+  Links found: 0
+  New links  : 0
+
+==================================================
+INGESTION SUMMARY
+==================================================
+  ai              : 1 links
+  infosec         : 1 links
+  it              : 0 links
+  design          : 1 links
+  dev             : 2 links
+  marketing       : 1 links
+  tech            : 1 links
+==================================================
+
+Categories to process: ['ai', 'infosec', 'it', 'design', 'dev', 'marketing', 'tech']
+
+==================================================
+PROCESSING CATEGORY: AI
+==================================================
+Processing 1 articles
+
+Fetching articles...
+
+Fetching: https://refer.tldr.tech/f9caad41/2
+  Title : Not found
+  Words : 34
+  Tier  : HEADLINE ONLY
+
+==================================================
+FETCH SUMMARY
+==================================================
+  Full articles : 0
+  Partial       : 0
+  Headline only : 1
+  Total         : 1
+==================================================
+
+Running dedup...
+
+==================================================
+DEDUP CHECK
+==================================================
+  Input articles: 1
+  [URL dup] Skipping: https://refer.tldr.tech/f9caad41/2
+  After URL dedup: 0
+  After title dedup: 1
+  After semantic dedup: 1
+
+  Final unique articles: 1
+==================================================
+
+Generating ai script...
+
+==================================================
+GENERATING EPISODE SCRIPTS
+==================================================
+
+Article 1 of 1
+
+Generating script for: https://refer.tldr.tech/f9caad41/2...
+  Tier: headline (34 words)
+  Running quality check...
+  Quality check complete
+  Final script: 145 words
+
+==================================================
+EPISODE COMPLETE
+  Total words : 191
+  Est. runtime: ~1 minutes
+==================================================
+  Script saved: scripts/ai_2026-04-21.txt
+
+Generating ai audio...
+
+==================================================
+TTS AUDIO GENERATION
+==================================================
+  Date    : 2026-04-21
+  Words   : 191
+  Output  : episodes/ai/2026-04-21.mp3
+  Est time: ~1 minutes of audio
+  Generating audio: episodes/ai/2026-04-21.mp3
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+  TTS error: [Errno 2] No such file or directory: 'ffmpeg'
+  Audio generation failed
+Audio generation failed for ai
+
+==================================================
+PROCESSING CATEGORY: INFOSEC
+==================================================
+Processing 1 articles
+
+Fetching articles...
+
+Fetching: https://refer.tldr.tech/8e0c0d4c/8
+  requests fallback error: 403 Client Error: Forbidden for url: https://tldr.tech/infosec?rh_ref=8e0c0d4c&sl_campaign=MF1193ad868fb0
+  Title : Not found
+  Words : 0
+  Tier  : HEADLINE ONLY
+
+==================================================
+FETCH SUMMARY
+==================================================
+  Full articles : 0
+  Partial       : 0
+  Headline only : 1
+  Total         : 1
+==================================================
+
+Running dedup...
+
+==================================================
+DEDUP CHECK
+==================================================
+  Input articles: 1
+  [URL dup] Skipping: https://refer.tldr.tech/8e0c0d4c/8
+  After URL dedup: 0
+  After title dedup: 1
+  After semantic dedup: 1
+
+  Final unique articles: 1
+==================================================
+
+Generating infosec script...
+
+==================================================
+GENERATING EPISODE SCRIPTS
+==================================================
+
+Article 1 of 1
+
+Generating script for: https://refer.tldr.tech/8e0c0d4c/8...
+  Tier: headline (0 words)
+  Running quality check...
+  Quality check complete
+  Final script: 174 words
+
+==================================================
+EPISODE COMPLETE
+  Total words : 220
+  Est. runtime: ~1 minutes
+==================================================
+  Script saved: scripts/infosec_2026-04-21.txt
+
+Generating infosec audio...
+
+==================================================
+TTS AUDIO GENERATION
+==================================================
+  Date    : 2026-04-21
+  Words   : 220
+  Output  : episodes/infosec/2026-04-21.mp3
+  Est time: ~1 minutes of audio
+  Generating audio: episodes/infosec/2026-04-21.mp3
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+  TTS error: [Errno 2] No such file or directory: 'ffmpeg'
+  Audio generation failed
+Audio generation failed for infosec
+
+==================================================
+PROCESSING CATEGORY: IT
+==================================================
+Processing 0 articles
+
+Fetching articles...
+
+==================================================
+FETCH SUMMARY
+==================================================
+  Full articles : 0
+  Partial       : 0
+  Headline only : 0
+  Total         : 0
+==================================================
+No articles fetched for it
+
+==================================================
+PROCESSING CATEGORY: DESIGN
+==================================================
+Processing 1 articles
+
+Fetching articles...
+
+Fetching: https://refer.tldr.tech/41a0c78a/4
+  requests fallback error: 403 Client Error: Forbidden for url: https://tldr.tech/design?rh_ref=41a0c78a&sl_campaign=MFddc56229b528
+  Title : Not found
+  Words : 0
+  Tier  : HEADLINE ONLY
+
+==================================================
+FETCH SUMMARY
+==================================================
+  Full articles : 0
+  Partial       : 0
+  Headline only : 1
+  Total         : 1
+==================================================
+
+Running dedup...
+
+==================================================
+DEDUP CHECK
+==================================================
+  Input articles: 1
+  [URL dup] Skipping: https://refer.tldr.tech/41a0c78a/4
+  After URL dedup: 0
+  After title dedup: 1
+  After semantic dedup: 1
+
+  Final unique articles: 1
+==================================================
+
+Generating design script...
+
+==================================================
+GENERATING EPISODE SCRIPTS
+==================================================
+
+Article 1 of 1
+
+Generating script for: https://refer.tldr.tech/41a0c78a/4...
+  Tier: headline (0 words)
+  Running quality check...
+  Quality check complete
+  Final script: 143 words
+
+==================================================
+EPISODE COMPLETE
+  Total words : 189
+  Est. runtime: ~1 minutes
+==================================================
+/Users/vineethamallu/tech-podcast-ai/venv/lib/python3.11/site-packages/torch/nn/modules/rnn.py:1013: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/Users/vineethamallu/tech-podcast-ai/venv/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/Users/vineethamallu/tech-podcast-ai/venv/lib/python3.11/site-packages/torch/nn/modules/rnn.py:1013: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/Users/vineethamallu/tech-podcast-ai/venv/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/Users/vineethamallu/tech-podcast-ai/venv/lib/python3.11/site-packages/torch/nn/modules/rnn.py:1013: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/Users/vineethamallu/tech-podcast-ai/venv/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+The following paths are ignored by one of your .gitignore files:
+episodes
+hint: Use -f if you really want to add them.
+hint: Disable this message with "git config set advice.addIgnoredFile false"
+[main 0c3b67a] episodes 2026-04-21
+ Committer: Vineetha Mallu <vineethamallu@Vineethas-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 49 insertions(+)
+ create mode 100644 scripts/ai_2026-04-21.txt
+ create mode 100644 scripts/design_2026-04-21.txt
+ create mode 100644 scripts/infosec_2026-04-21.txt
+ create mode 100644 scripts/marketing_2026-04-21.txt
+ create mode 100644 scripts/tech_2026-04-21.txt
+To https://github.com/vm3n/tech-podcast-ai.git
+   1603184..0c3b67a  main -> main
+  Script saved: scripts/design_2026-04-21.txt
+
+Generating design audio...
+
+==================================================
+TTS AUDIO GENERATION
+==================================================
+  Date    : 2026-04-21
+  Words   : 189
+  Output  : episodes/design/2026-04-21.mp3
+  Est time: ~1 minutes of audio
+  Generating audio: episodes/design/2026-04-21.mp3
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+  TTS error: [Errno 2] No such file or directory: 'ffmpeg'
+  Audio generation failed
+Audio generation failed for design
+
+==================================================
+PROCESSING CATEGORY: DEV
+==================================================
+Processing 2 articles
+
+Fetching articles...
+
+Fetching: https://myapp.localhost
+  requests fallback error: HTTPSConnectionPool(host='myapp.localhost', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='myapp.localhost', port=443): Failed to establish a new connection: [Errno 61] Connection refused"))
+  Title : Not found
+  Words : 0
+  Tier  : HEADLINE ONLY
+
+Fetching: https://refer.tldr.tech/9c987858/3
+  requests fallback error: 403 Client Error: Forbidden for url: https://tldr.tech/webdev?rh_ref=9c987858&sl_campaign=MFcf6e74803ac5
+  Title : Not found
+  Words : 0
+  Tier  : HEADLINE ONLY
+
+==================================================
+FETCH SUMMARY
+==================================================
+  Full articles : 0
+  Partial       : 0
+  Headline only : 2
+  Total         : 2
+==================================================
+
+Running dedup...
+
+==================================================
+DEDUP CHECK
+==================================================
+  Input articles: 2
+  [URL dup] Skipping: https://myapp.localhost
+  [URL dup] Skipping: https://refer.tldr.tech/9c987858/3
+  After URL dedup: 0
+  After title dedup: 2
+
+  Running semantic dedup with Groq...
+  Groq removed 2 duplicate stories
+  After semantic dedup: 0
+
+  Final unique articles: 0
+==================================================
+All dev articles already covered
+
+==================================================
+PROCESSING CATEGORY: MARKETING
+==================================================
+Processing 1 articles
+
+Fetching articles...
+
+Fetching: https://refer.tldr.tech/6cc06dee/5
+  requests fallback error: 403 Client Error: Forbidden for url: https://tldr.tech/marketing?rh_ref=6cc06dee&sl_campaign=MFd9fba70d6665
+  Title : Not found
+  Words : 0
+  Tier  : HEADLINE ONLY
+
+==================================================
+FETCH SUMMARY
+==================================================
+  Full articles : 0
+  Partial       : 0
+  Headline only : 1
+  Total         : 1
+==================================================
+
+Running dedup...
+
+==================================================
+DEDUP CHECK
+==================================================
+  Input articles: 1
+  [URL dup] Skipping: https://refer.tldr.tech/6cc06dee/5
+  After URL dedup: 0
+  After title dedup: 1
+  After semantic dedup: 1
+
+  Final unique articles: 1
+==================================================
+
+Generating marketing script...
+
+==================================================
+GENERATING EPISODE SCRIPTS
+==================================================
+
+Article 1 of 1
+
+Generating script for: https://refer.tldr.tech/6cc06dee/5...
+  Tier: headline (0 words)
+  Running quality check...
+  Quality check complete
+  Final script: 243 words
+
+==================================================
+EPISODE COMPLETE
+  Total words : 289
+  Est. runtime: ~2 minutes
+==================================================
+  Script saved: scripts/marketing_2026-04-21.txt
+
+Generating marketing audio...
+
+==================================================
+TTS AUDIO GENERATION
+==================================================
+  Date    : 2026-04-21
+  Words   : 289
+  Output  : episodes/marketing/2026-04-21.mp3
+  Est time: ~2 minutes of audio
+  Generating audio: episodes/marketing/2026-04-21.mp3
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+  TTS error: [Errno 2] No such file or directory: 'ffmpeg'
+  Audio generation failed
+Audio generation failed for marketing
+
+==================================================
+PROCESSING CATEGORY: TECH
+==================================================
+Processing 1 articles
+
+Fetching articles...
+
+Fetching: https://refer.tldr.tech/7321762a/
+  requests fallback error: 403 Client Error: Forbidden for url: https://tldr.tech/signup?rh_ref=7321762a&sl_campaign=MF39827fc26915
+  Title : Not found
+  Words : 0
+  Tier  : HEADLINE ONLY
+
+==================================================
+FETCH SUMMARY
+==================================================
+  Full articles : 0
+  Partial       : 0
+  Headline only : 1
+  Total         : 1
+==================================================
+
+Running dedup...
+
+==================================================
+DEDUP CHECK
+==================================================
+  Input articles: 1
+  [URL dup] Skipping: https://refer.tldr.tech/7321762a/
+  After URL dedup: 0
+  After title dedup: 1
+  After semantic dedup: 1
+
+  Final unique articles: 1
+==================================================
+
+Generating tech script...
+
+==================================================
+GENERATING EPISODE SCRIPTS
+==================================================
+
+Article 1 of 1
+
+Generating script for: https://refer.tldr.tech/7321762a/...
+  Tier: headline (0 words)
+  Running quality check...
+  Quality check complete
+  Final script: 207 words
+
+==================================================
+EPISODE COMPLETE
+  Total words : 253
+  Est. runtime: ~1 minutes
+==================================================
+  Script saved: scripts/tech_2026-04-21.txt
+
+Generating tech audio...
+
+==================================================
+TTS AUDIO GENERATION
+==================================================
+  Date    : 2026-04-21
+  Words   : 253
+  Output  : episodes/tech/2026-04-21.mp3
+  Est time: ~1 minutes of audio
+  Generating audio: episodes/tech/2026-04-21.mp3
+WARNING: Defaulting repo_id to hexgrad/Kokoro-82M. Pass repo_id='hexgrad/Kokoro-82M' to suppress this warning.
+  TTS error: [Errno 2] No such file or directory: 'ffmpeg'
+  Audio generation failed
+Audio generation failed for tech
+
+Pushing to GitHub...
+Pushed successfully
+
+==================================================
+ALL CATEGORIES COMPLETE
+==================================================
+
+==================================================
+DATABASE STATS
+==================================================
+  Total URLs processed : 9
+  Total episodes       : 2
+
+  Recent episodes:
+    tech_2026-04-20 — 1 articles, 1143 words
+    ai_2026-04-20 — 1 articles, 804 words
+==================================================

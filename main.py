@@ -1,7 +1,8 @@
 """
 Main Pipeline — Tech Podcast Generator
 Generates one podcast episode per newsletter category.
-Each category gets its own RSS feed and episodes folder.
+First 6 articles get deep dive treatment.
+Remaining articles get headline mentions.
 """
 
 import os
@@ -32,7 +33,6 @@ def generate_rss(episode_path: str, date_str: str,
     try:
         from feedgen.feed import FeedGenerator
 
-        # Each category gets its own feed file
         rss_path = f"feed_{category}.xml"
 
         fg = FeedGenerator()
@@ -41,7 +41,7 @@ def generate_rss(episode_path: str, date_str: str,
             f"https://vm3n.github.io/tech-podcast-ai/"
             f"feed_{category}.xml"
         )
-        fg.title(f"Daily {category.upper()} Briefing")
+        fg.title(f"Daily {category.upper()} Briefing with Herlin")
         fg.author({"name": "Herlin"})
         fg.link(
             href="https://vm3n.github.io/tech-podcast-ai/",
@@ -56,7 +56,7 @@ def generate_rss(episode_path: str, date_str: str,
         fe = fg.add_entry()
         fe.id(
             f"https://vm3n.github.io/tech-podcast-ai/"
-            f"episodes/{category}/{date_str}"
+            f"episodes/{date_str}/{category}"
         )
         fe.title(
             f"{category.upper()} Briefing — {date_str}"
@@ -67,7 +67,7 @@ def generate_rss(episode_path: str, date_str: str,
         )
         fe.enclosure(
             f"https://vm3n.github.io/tech-podcast-ai/"
-            f"episodes/{category}/{date_str}.mp3",
+            f"episodes/{date_str}/{category}.mp3",
             0,
             "audio/mpeg"
         )
@@ -91,21 +91,27 @@ def process_category(category: str, urls: list,
                      date_str: str):
     """
     Runs the full pipeline for one category.
-    Generates one episode MP3 and updates its RSS feed.
+    First 6 articles get deep dive narration.
+    Remaining articles get headline mentions.
     """
 
     print(f"\n{'='*50}")
     print(f"PROCESSING CATEGORY: {category.upper()}")
     print(f"{'='*50}")
 
-    # Create category episode folder
-    Path(f"episodes/{category}").mkdir(
+    # Create date/category folder structure
+    Path(f"episodes/{date_str}").mkdir(
+        parents=True, exist_ok=True
+    )
+    Path(f"scripts/{date_str}").mkdir(
         parents=True, exist_ok=True
     )
 
-    # Limit to 8 articles per category
-    urls = urls[:8]
+    # Top 6 deep dives + up to 4 headlines = max 10
+    urls = urls[:10]
     print(f"Processing {len(urls)} articles")
+    print(f"  Deep dives : {min(6, len(urls))}")
+    print(f"  Headlines  : {max(0, len(urls) - 6)}")
 
     # Fetch full article content
     print(f"\nFetching articles...")
@@ -123,7 +129,7 @@ def process_category(category: str, urls: list,
         print(f"All {category} articles already covered")
         return
 
-    # Mark as processed
+    # Mark all unique articles as processed
     for article in unique_articles:
         mark_url_processed(
             url=article.url,
@@ -134,14 +140,12 @@ def process_category(category: str, urls: list,
         )
 
     # Generate podcast script
+    # First 6 = deep dive, rest = headlines
     print(f"\nGenerating {category} script...")
-    episode_script = generate_episode_script(
-        unique_articles
-    )
+    episode_script = generate_episode_script(unique_articles)
 
     # Save script
-    Path("scripts").mkdir(exist_ok=True)
-    script_path = f"scripts/{category}_{date_str}.txt"
+    script_path = f"scripts/{date_str}/{category}.txt"
     with open(script_path, "w") as f:
         f.write(episode_script)
     print(f"  Script saved: {script_path}")
@@ -210,10 +214,12 @@ def run_pipeline(test_mode: bool = False):
     print(f"Date: {date_str}")
     print("="*50)
 
+    # Setup database
     setup_database()
 
+    # Cleanup old episodes
     print("\nCleaning up old episodes...")
-    cleanup_old_episodes(days=14)
+    cleanup_old_episodes(days=3)
 
     # Get links per category
     if test_mode:
@@ -249,4 +255,31 @@ if __name__ == "__main__":
     test_mode = (
         len(sys.argv) > 1 and sys.argv[1] == "test"
     )
+    reset_mode = "--reset" in sys.argv
+
+    if reset_mode:
+        print("Resetting todays URLs from database...")
+        from database import get_connection
+        today = datetime.now().strftime("%Y-%m-%d")
+        conn = get_connection()
+        conn.execute(
+            "DELETE FROM processed_urls WHERE episode_date = ?",
+            (today,)
+        )
+        conn.execute(
+            "DELETE FROM processed_urls WHERE processed_at LIKE ?",
+            (f"{today}%",)
+        )
+        conn.execute(
+            "DELETE FROM article_titles WHERE episode_date = ?",
+            (today,)
+        )
+        conn.execute(
+            "DELETE FROM episodes WHERE date LIKE ?",
+            (f"%{today}",)
+        )
+        conn.commit()
+        conn.close()
+        print(f"Reset complete — cleared all URLs processed on {today}")
+
     run_pipeline(test_mode=test_mode)

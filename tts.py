@@ -71,7 +71,7 @@ def generate_episode(script: str, date_str: str = None, category: str = "tech") 
     # Make sure episodes folder exists
     Path("episodes").mkdir(exist_ok=True)
 
-    output_path = f"episodes/{category}/{date_str}.mp3"
+    output_path = f"episodes/{date_str}/{category}.mp3"
 
     print("\n" + "="*50)
     print("TTS AUDIO GENERATION")
