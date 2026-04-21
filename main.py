@@ -34,13 +34,13 @@ def generate_rss(episode_path: str, date_str: str,
         fg = FeedGenerator()
         fg.load_extension("podcast")
         fg.id(
-            "https://your-username.github.io/"
+            "https://vm3n.github.io/"
             "tech-podcast/feed.xml"
         )
         fg.title("My Daily Tech Briefing")
         fg.author({"name": "Nova", "email": "your@gmail.com"})
         fg.link(
-            href="https://your-username.github.io/tech-podcast/",
+            href="https://vm3n.github.io/tech-podcast/",
             rel="alternate"
         )
         fg.subtitle("Your personal AI-powered daily tech podcast")
@@ -49,7 +49,7 @@ def generate_rss(episode_path: str, date_str: str,
 
         fe = fg.add_entry()
         fe.id(
-            f"https://your-username.github.io/"
+            f"https://vm3n.github.io/"
             f"tech-podcast/{date_str}"
         )
         fe.title(f"Tech Briefing — {date_str}")
@@ -58,7 +58,7 @@ def generate_rss(episode_path: str, date_str: str,
             " | ".join(article_titles[:5])
         )
         fe.enclosure(
-            f"https://your-username.github.io/tech-podcast/"
+            f"https://vm3n.github.io/tech-podcast/"
             f"episodes/{date_str}.mp3",
             0,
             "audio/mpeg"
