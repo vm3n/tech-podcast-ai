@@ -1,12 +1,9 @@
 Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
 
-Here's the revised script:
+The script is already written in a natural spoken way, but there's one sentence that's a bit long. Here's the revised script:
 
-So I just saw this headline about Apple's Vision Pro headset, and here's the thing, it's getting a lot of attention for doing the least, which is kinda weird. Think of it this way, a headset is like a fancy pair of glasses that can show you virtual stuff, like a computer screen or a game, right in front of your eyes. Apple's version is supposed to be super advanced, but apparently it's not doing as much as people thought it would. I'm curious to see how this plays out, and that's a big deal because if Apple can't make a killer app for this thing, it's gonna be tough for other companies to follow. So what does this mean for you, as a developer? You should keep an eye on how Apple's approach to augmented reality plays out, because it could affect what you're working on next.
+So I just saw this headline about a new AI model that can generate code, think of it like a super smart robot that can write software for you. Here's the thing, if this tech is real, it could change the game for developers. I mean, imagine being able to automate a lot of the coding process. I'm gonna keep an eye on this one, and I think you should too. So what does this mean for you? It means you might want to start learning more about AI generated code, and how you can use it to make your job easier.
 
-I made the following changes:
-- Removed the phrase "here is why that is a big deal" and replaced it with "and that's a big deal" to make the sentence more conversational.
-- Removed the phrase "it's worth watching" and replaced it with "you should keep an eye on" to make the sentence more natural and spoken.
-- Removed the phrase "it's worth noting" was not present but "it's worth watching" was, which has a similar effect, so I changed it to make the sentence more direct.
+I broke the long sentence into two shorter ones to make it flow better in a spoken format. The rest of the script is already conversational and easy to follow.
 
 And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.

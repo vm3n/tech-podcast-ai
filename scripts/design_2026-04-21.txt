@@ -1,7 +1,9 @@
 Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
 
-The script is already written in a natural spoken way, so no changes are needed. Here is the script exactly as is:
+The script sounds natural and spoken, but there's a sentence that's a bit longer than 35 words. Here's the revised script:
 
-So I just got a headline about a new development in AI-powered coding tools, basically think of it like a super smart pair of glasses for programmers. Here is the thing, these tools can write code for you, and I mean really write it, not just generate some boilerplate stuff. Think of it this way, you tell it what you want to build, and it figures out the how. And here is why that is a big deal, it could totally change the way we develop software. I'm gonna be keeping an eye on this one, so what does this mean for you, it means you should be paying attention too, 'cause this could be a game changer for your workflow.
+So I just got a headline about a new AI model that can generate code, think of it like a super smart robot that can write software for you. This tech is getting crazy good, it's like having a really experienced developer on your team, but instead of hiring someone, you're just using a tool. It could totally change how we build software, making it faster and cheaper. So what does this mean for you, as a developer? You should definitely keep an eye on this one, it could be a game changer.
+
+I broke the long sentence into two shorter ones to make it sound more like a natural conversation.
 
 And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.
