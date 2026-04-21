@@ -1,9 +1,0 @@
-Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
-
-The script sounds natural and spoken, but there's one sentence that's a bit long. Here's the revised script:
-
-So I just saw this headline about a new AI model that can generate code, think of it like a super smart robot that can write software for you. This tech is getting crazy good - it can automate a big chunk of coding tasks. So what does this mean for you, as a developer? You should definitely keep an eye on this, it could change the way you work and make your life a little easier. I'm gonna be watching this one closely, and I think you should too.
-
-I broke up the long sentence into two shorter ones to make it flow better in a spoken format. The rest of the script is already informal and conversational, so no other changes were needed.
-
-And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.
