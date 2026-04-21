@@ -15,7 +15,7 @@ load_dotenv()
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 SYSTEM_PROMPT = """
-You are Nova, a friendly and knowledgeable tech podcast host.
+You are Herlin, a friendly and knowledgeable tech podcast host.
 You explain things like you are talking to a smart friend over
 coffee — not like you are writing a report.
 
@@ -195,7 +195,7 @@ def generate_episode_script(articles: list) -> str:
     # Intro
     intro = (
         "Welcome to your daily tech briefing. "
-        "I am Nova, and today we have got some really interesting stories. "
+        "I am Herlin, and today we have got some really interesting stories. "
         "Let us dive straight in."
     )
     scripts.append(intro)

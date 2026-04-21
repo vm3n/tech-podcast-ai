@@ -1,7 +1,8 @@
 """
 Stage 3 — Gmail Fetcher (updated)
-Reads emails tagged with 'Podcasts' label.
-Uses database for proper dedup.
+Reads emails tagged with Podcasts label.
+Automatically detects newsletter category from sender name.
+Returns dict of {category: [urls]} instead of flat list.
 """
 
 import os
@@ -36,6 +37,32 @@ def get_gmail_service():
     return build("gmail", "v1", credentials=creds)
 
 
+def detect_category(sender_name: str) -> str:
+    """
+    Detects podcast category from sender name.
+    Example: "TLDR AI" -> "ai"
+             "TLDR DevOps" -> "devops"
+             "TLDR" -> "tech"
+    Works for any newsletter automatically.
+    """
+    name = sender_name.lower().strip()
+
+    # Remove common prefixes
+    for prefix in ["tldr ", "the ", "newsletter "]:
+        if name.startswith(prefix):
+            name = name[len(prefix):]
+
+    # Clean up
+    name = name.strip()
+    name = re.sub(r'[^a-z0-9]', '-', name)
+
+    # Default category
+    if not name or name == "tldr":
+        return "tech"
+
+    return name
+
+
 def extract_links_from_email(body: str) -> list:
     urls = re.findall(r'https?://[^\s<>"{}|\\^`\[\]]+', body)
 
@@ -46,7 +73,8 @@ def extract_links_from_email(body: str) -> list:
         ".png", ".jpg", ".gif", ".ico", "utm_",
         "pstmrk", "track.", "aweber", "w3.org",
         "open?m=", "ea.pstmrk", "confirm",
-        "subscription", "email/unsubscribe"
+        "subscription", "email/unsubscribe",
+        "tldr.tech/unsubscribe"
     ]
 
     clean_urls = []
@@ -106,18 +134,25 @@ def get_email_body(service, msg_id: str) -> str:
         return ""
 
 
-def fetch_newsletter_links(hours_back: int = 24) -> list:
+def fetch_newsletter_links() -> dict:
+    """
+    Main function — fetches all article links from
+    newsletter emails tagged with Podcasts label.
+
+    Returns dict: {category: [urls]}
+    Example: {
+        "ai": ["url1", "url2"],
+        "devops": ["url3", "url4"],
+        "tech": ["url5", "url6"]
+    }
+    """
     print("\n" + "="*50)
     print("GMAIL INGESTION")
     print("="*50)
 
-    # Setup database first
     setup_database()
-
     service = get_gmail_service()
 
-    # Search ONLY emails with Podcasts label
-    # This is the tag system we set up in Gmail
     query = "label:Podcasts newer_than:1d"
     print(f"\nSearching Gmail label:Podcasts...")
 
@@ -128,14 +163,14 @@ def fetch_newsletter_links(hours_back: int = 24) -> list:
             maxResults=50
         ).execute()
         messages = results.get("messages", [])
-        print(f"Found {len(messages)} tagged newsletter emails")
+        print(f"Found {len(messages)} tagged emails")
 
     except Exception as e:
         print(f"Gmail API error: {e}")
-        return []
+        return {}
 
-    all_links = []
-    newsletter_count = 0
+    # Dict to hold links per category
+    category_links = {}
     today = datetime.now().strftime("%Y-%m-%d")
 
     for msg in messages:
@@ -153,13 +188,18 @@ def fetch_newsletter_links(hours_back: int = 24) -> list:
 
             for header in headers:
                 if header["name"] == "From":
-                    sender = header["value"].lower()
+                    sender = header["value"]
                 if header["name"] == "Subject":
                     subject = header["value"]
 
-            newsletter_count += 1
+            # Detect category automatically from sender name
+            # "TLDR AI <dan@tldrnewsletter.com>" -> "ai"
+            sender_name = sender.split("<")[0].strip()
+            category = detect_category(sender_name)
+
             print(f"\n  Newsletter : {subject[:50]}")
-            print(f"  From       : {sender[:50]}")
+            print(f"  Sender     : {sender_name}")
+            print(f"  Category   : {category}")
 
             body = get_email_body(service, msg["id"])
             if not body:
@@ -168,19 +208,22 @@ def fetch_newsletter_links(hours_back: int = 24) -> list:
             links = extract_links_from_email(body)
             print(f"  Links found: {len(links)}")
 
-            # Filter already processed URLs using database
+            # Filter already processed URLs
             new_links = []
             for link in links:
                 if not is_url_seen(link, days=7):
                     new_links.append(link)
-                    # Mark as processed with episode date
                     mark_url_processed(
                         url=link,
                         episode_date=today
                     )
 
             print(f"  New links  : {len(new_links)}")
-            all_links.extend(new_links)
+
+            # Add to category bucket
+            if category not in category_links:
+                category_links[category] = []
+            category_links[category].extend(new_links)
 
         except Exception as e:
             print(f"  Error processing email: {e}")
@@ -189,15 +232,17 @@ def fetch_newsletter_links(hours_back: int = 24) -> list:
     print(f"\n{'='*50}")
     print(f"INGESTION SUMMARY")
     print(f"{'='*50}")
-    print(f"  Newsletters found : {newsletter_count}")
-    print(f"  Total new links   : {len(all_links)}")
+    for cat, links in category_links.items():
+        print(f"  {cat:15} : {len(links)} links")
     print(f"{'='*50}")
 
-    return all_links
+    return category_links
 
 
 if __name__ == "__main__":
-    links = fetch_newsletter_links()
-    print("\nLinks collected:")
-    for i, link in enumerate(links[:10], 1):
-        print(f"  {i}. {link}")
+    categories = fetch_newsletter_links()
+    print("\nCategories found:")
+    for cat, links in categories.items():
+        print(f"\n  [{cat}]")
+        for i, link in enumerate(links[:3], 1):
+            print(f"    {i}. {link}")

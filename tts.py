@@ -59,7 +59,7 @@ def generate_audio_kokoro(text: str, output_path: str) -> bool:
         return False
 
 
-def generate_episode(script: str, date_str: str = None) -> str:
+def generate_episode(script: str, date_str: str = None, category: str = "tech") -> str:
     """
     Takes full episode script and generates one MP3 file.
     Returns path to the MP3 file.
@@ -71,7 +71,7 @@ def generate_episode(script: str, date_str: str = None) -> str:
     # Make sure episodes folder exists
     Path("episodes").mkdir(exist_ok=True)
 
-    output_path = f"episodes/{date_str}.mp3"
+    output_path = f"episodes/{category}/{date_str}.mp3"
 
     print("\n" + "="*50)
     print("TTS AUDIO GENERATION")
@@ -97,7 +97,7 @@ def generate_episode(script: str, date_str: str = None) -> str:
 if __name__ == "__main__":
     # Test with a short script first
     test_script = """
-    Welcome to your daily tech briefing. I am Nova.
+    Welcome to your daily tech briefing. I am Herlin.
 
     Here is the thing about artificial intelligence right now —
     it is moving faster than most people realize.
