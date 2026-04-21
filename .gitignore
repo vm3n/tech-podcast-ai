@@ -8,3 +8,5 @@ credentials.json
 podcast.db
 episodes/
 *.wav
+logs/
+extract_fix.py
