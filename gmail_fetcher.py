@@ -1,21 +1,50 @@
 """
-Stage 3 — Gmail Fetcher (updated)
-Reads emails tagged with Podcasts label.
-Automatically detects newsletter category from sender name.
-Returns dict of {category: [urls]} instead of flat list.
+Stage 3 — Gmail Fetcher (complete final version)
+- Decodes TLDR tracking URLs to get real article links
+- Filters ads, tracking, and junk links
+- Deduplicates by domain (max 2 per domain)
+- Auto detects category from sender name
+- Does NOT mark URLs as processed (main.py handles that)
 """
 
 import os
 import base64
 import re
+import urllib.parse
 from datetime import datetime
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
-from database import setup_database, is_url_seen, mark_url_processed
+from database import setup_database, is_url_seen
 
 SCOPES = ["https://www.googleapis.com/auth/gmail.readonly"]
+
+# Known ad/sponsor domains — skip entirely
+AD_DOMAINS = {
+    "qawolf.com", "boldsign.com", "stackadapt.com",
+    "go.stackadapt.com", "airia.com", "zenity.io",
+    "pages.awscloud.com", "advertise.tldr.tech",
+    "jobs.ashbyhq.com", "labs.zenity.io",
+}
+
+# Skip URLs containing these keywords
+SKIP_KEYWORDS = [
+    "unsubscribe", "optout", "opt-out",
+    "advertise", "advertisement", "sponsor",
+    ".png", ".jpg", ".gif", ".ico", ".svg",
+    "pstmrk", "aweber", "w3.org",
+    "open?m=", "confirm", "email/unsubscribe",
+    "refer.tldr.tech", "a.tldrnewsletter.com",
+    "links.tldrnewsletter.com", "images.tldr",
+    "safelinks.protection.outlook",
+    "tldr.tech/signup", "tldr.tech/ai",
+    "tldr.tech/infosec", "tldr.tech/design",
+    "tldr.tech/marketing", "tldr.tech/webdev",
+    "tldr.tech/devops", "tldr.tech/it",
+    "tldr.tech/dev", "tldr.tech/crypto",
+    "tldr.tech/founders", "tldr.tech/product",
+]
 
 
 def get_gmail_service():
@@ -40,58 +69,101 @@ def get_gmail_service():
 def detect_category(sender_name: str) -> str:
     """
     Detects podcast category from sender name.
-    Example: "TLDR AI" -> "ai"
-             "TLDR DevOps" -> "devops"
-             "TLDR" -> "tech"
+    TLDR AI -> ai
+    TLDR DevOps -> devops
+    TLDR -> tech
     Works for any newsletter automatically.
     """
     name = sender_name.lower().strip()
-
-    # Remove common prefixes
     for prefix in ["tldr ", "the ", "newsletter "]:
         if name.startswith(prefix):
             name = name[len(prefix):]
-
-    # Clean up
     name = name.strip()
     name = re.sub(r'[^a-z0-9]', '-', name)
-
-    # Default category
     if not name or name == "tldr":
         return "tech"
-
     return name
 
 
-def extract_links_from_email(body: str) -> list:
-    urls = re.findall(r'https?://[^\s<>"{}|\\^`\[\]]+', body)
+def decode_tldr_url(url: str) -> str:
+    """
+    Decodes TLDR tracking wrapper URLs.
+    https://tracking.tldrnewsletter.com/CL0/https:%2F%2Factualsite.com/...
+    becomes https://actualsite.com/...
+    """
+    if "tracking.tldrnewsletter.com/CL0/" in url:
+        parts = url.split("/CL0/")
+        if len(parts) > 1:
+            encoded = parts[1].split("/1/")[0]
+            return urllib.parse.unquote(encoded)
+    return url
 
-    skip_keywords = [
-        "unsubscribe", "optout", "opt-out", "tracking",
-        "click.convertkit", "link.mail", "mailchimp",
-        "sendgrid", "mandrillapp", "list-manage",
-        ".png", ".jpg", ".gif", ".ico", "utm_",
-        "pstmrk", "track.", "aweber", "w3.org",
-        "open?m=", "ea.pstmrk", "confirm",
-        "subscription", "email/unsubscribe",
-        "tldr.tech/unsubscribe"
-    ]
+
+def get_domain(url: str) -> str:
+    """Extracts clean domain from URL."""
+    try:
+        domain = urllib.parse.urlparse(url).netloc
+        return domain.replace("www.", "")
+    except Exception:
+        return ""
+
+
+def extract_links_from_email(body: str) -> list:
+    """
+    Extracts real article links from email body.
+    1. Decodes TLDR tracking URLs
+    2. Filters ads and junk
+    3. Deduplicates by domain (max 2 per domain)
+    4. Only keeps URLs with proper content paths
+    """
+    raw_urls = re.findall(
+        r'https?://[^\s<>"{}|\\^`\[\]]+', body
+    )
 
     clean_urls = []
-    seen = set()
-    for url in urls:
-        url = url.rstrip(".,;:)")
-        if any(kw in url.lower() for kw in skip_keywords):
+    seen_urls = set()
+    domain_count = {}
+
+    for url in raw_urls:
+        url = url.rstrip(".,;:)=")
+
+        # Decode TLDR tracking URL
+        decoded = decode_tldr_url(url)
+
+        # Skip keywords in decoded URL
+        if any(kw in decoded.lower() for kw in SKIP_KEYWORDS):
             continue
-        if url in seen:
+
+        # Skip duplicate URLs
+        if decoded in seen_urls:
             continue
-        seen.add(url)
-        clean_urls.append(url)
+
+        # Must have content path (not bare domain)
+        if decoded.count("/") < 3:
+            continue
+
+        # Get domain
+        domain = get_domain(decoded)
+        if not domain:
+            continue
+
+        # Skip ad domains
+        if domain in AD_DOMAINS:
+            continue
+
+        # Max 2 URLs per domain to avoid ad repetition
+        domain_count[domain] = domain_count.get(domain, 0) + 1
+        if domain_count[domain] > 2:
+            continue
+
+        seen_urls.add(decoded)
+        clean_urls.append(decoded)
 
     return clean_urls
 
 
 def get_email_body(service, msg_id: str) -> str:
+    """Gets full HTML or text body of an email."""
     try:
         message = service.users().messages().get(
             userId="me",
@@ -136,15 +208,9 @@ def get_email_body(service, msg_id: str) -> str:
 
 def fetch_newsletter_links() -> dict:
     """
-    Main function — fetches all article links from
-    newsletter emails tagged with Podcasts label.
-
+    Fetches all article links from emails tagged Podcasts.
     Returns dict: {category: [urls]}
-    Example: {
-        "ai": ["url1", "url2"],
-        "devops": ["url3", "url4"],
-        "tech": ["url5", "url6"]
-    }
+    Does NOT mark URLs as processed — main.py does that.
     """
     print("\n" + "="*50)
     print("GMAIL INGESTION")
@@ -164,12 +230,10 @@ def fetch_newsletter_links() -> dict:
         ).execute()
         messages = results.get("messages", [])
         print(f"Found {len(messages)} tagged emails")
-
     except Exception as e:
         print(f"Gmail API error: {e}")
         return {}
 
-    # Dict to hold links per category
     category_links = {}
     today = datetime.now().strftime("%Y-%m-%d")
 
@@ -192,8 +256,11 @@ def fetch_newsletter_links() -> dict:
                 if header["name"] == "Subject":
                     subject = header["value"]
 
-            # Detect category automatically from sender name
-            # "TLDR AI <dan@tldrnewsletter.com>" -> "ai"
+            # Skip confirmation emails
+            if "confirm" in subject.lower():
+                print(f"\n  Skipping: {subject[:50]}")
+                continue
+
             sender_name = sender.split("<")[0].strip()
             category = detect_category(sender_name)
 
@@ -208,29 +275,30 @@ def fetch_newsletter_links() -> dict:
             links = extract_links_from_email(body)
             print(f"  Links found: {len(links)}")
 
-            # Filter already processed URLs
+            # Show first 3 decoded links for verification
+            for i, link in enumerate(links[:3], 1):
+                print(f"    {i}. {link[:80]}")
+
+            # Only include links not seen in last 7 days
+            # Note: we do NOT mark them here
+            # main.py marks them after successful narration
             new_links = []
             for link in links:
                 if not is_url_seen(link, days=7):
                     new_links.append(link)
-                    mark_url_processed(
-                        url=link,
-                        episode_date=today
-                    )
 
             print(f"  New links  : {len(new_links)}")
 
-            # Add to category bucket
             if category not in category_links:
                 category_links[category] = []
             category_links[category].extend(new_links)
 
         except Exception as e:
-            print(f"  Error processing email: {e}")
+            print(f"  Error: {e}")
             continue
 
     print(f"\n{'='*50}")
-    print(f"INGESTION SUMMARY")
+    print("INGESTION SUMMARY")
     print(f"{'='*50}")
     for cat, links in category_links.items():
         print(f"  {cat:15} : {len(links)} links")
@@ -241,8 +309,8 @@ def fetch_newsletter_links() -> dict:
 
 if __name__ == "__main__":
     categories = fetch_newsletter_links()
-    print("\nCategories found:")
+    print("\nFinal article URLs per category:")
     for cat, links in categories.items():
-        print(f"\n  [{cat}]")
-        for i, link in enumerate(links[:3], 1):
+        print(f"\n  [{cat.upper()}]")
+        for i, link in enumerate(links[:5], 1):
             print(f"    {i}. {link}")
