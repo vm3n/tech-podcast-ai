@@ -5,6 +5,8 @@ Stitches all article audios into one episode MP3.
 """
 
 import os
+# Make sure Homebrew ffmpeg is found when running via launchd
+os.environ["PATH"] = "/opt/homebrew/bin:" + os.environ.get("PATH", "")
 import sys
 import soundfile as sf
 import numpy as np
