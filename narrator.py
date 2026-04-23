@@ -111,6 +111,14 @@ def generate_script(article, is_headline: bool = False) -> str:
 
         max_tokens = 1500
 
+    # Truncate very long articles to avoid 413 error
+    # Groq TPM limit is 12000 tokens per minute
+    # 8000 words is roughly 10000 tokens which is safe
+    if len(user_prompt.split()) > 8000:
+        words = user_prompt.split()
+        user_prompt = " ".join(words[:8000])
+        print(f"  Truncated to 8000 words to avoid token limit")
+
     try:
         response = client.chat.completions.create(
             model="llama-3.3-70b-versatile",

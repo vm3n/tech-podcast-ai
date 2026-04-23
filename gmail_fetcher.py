@@ -44,6 +44,7 @@ SKIP_KEYWORDS = [
     "tldr.tech/devops", "tldr.tech/it",
     "tldr.tech/dev", "tldr.tech/crypto",
     "tldr.tech/founders", "tldr.tech/product",
+    "rh_ref=", "sl_campaign=", "myapp.localhost",
 ]
 
 
