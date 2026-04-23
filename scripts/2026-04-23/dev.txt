@@ -1,0 +1,61 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+Hey, I'm Herlin, and welcome to our podcast. Imagine you're building a massive airplane while it's flying, and if you make one mistake, the whole thing comes crashing down. That's basically what the engineers at AWS do every day, and today I want to tell you a story about the invisible engineering behind Lambda's network. Here is the thing, most infrastructure improvements at AWS happen behind the scenes, without anyone noticing, and that's what makes it so impressive.
+
+So, let's start with the basics. A network topology is like the plumbing of a system, it determines how data moves between points, and in a cloud environment, it's all software-defined. Think of it this way, when you're running a single application on a single machine, the topology is simple, but when you're running millions of virtual machines on shared hardware, it gets really complex. Every device you add, every rule you create, has a cost in latency, CPU, and memory, and those costs multiply with density.
+
+Now, Lambda's network team had a problem, they had a network topology that worked well for non-VPC functions, but it imposed a real cost on functions connecting to a customer's VPC. This was known as the VPC cold start problem. A cold start happens when Lambda has to create a new micro VM to handle an invoke, and creating the execution environment includes allocating the micro VM, downloading the customer's code, and running the customer's initialization code. And when you add VPC to the mix, it gets even more complicated.
+
+The team had made some progress, they had migrated to Firecracker microVMs in 2019, which reduced cold start overhead from over ten seconds to under a second. But they still had a problem, setting up the Generic Network Virtualization Encapsulation tunnel, or Geneve tunnel, was consuming 300 milliseconds. And here is why that is a big deal, for some workloads, that was a manageable tradeoff, but for builders designing responsive applications, it was a real barrier.
+
+So, the team decided to use extended Berkeley Packet Filter, or eBPF, to solve the problem. They built a proof of concept, and it worked, Geneve tunnel latency dropped from 150 milliseconds to 200 microseconds. And here is the thing, they didn't just solve the tunnel problem, they also removed a fundamental blocker for packing more microVMs onto each worker, and reduced a source of CPU heat during bursts of cold starts.
+
+But that was just the beginning, the team had to reimagine their network topology to support Lambda SnapStart, which takes a snapshot of an already initialized execution environment and clones it to serve multiple concurrent invocations simultaneously. And that presented a new set of challenges, each clone needed its own isolated network namespace with separate tap, bridge, veth, and tunnel devices, ready before the VM started.
+
+The team had to solve one bottleneck at a time, they had to move network creation from on-demand to pre-creation, they had to replace stateful NAT with stateless packet mangling, and they had to simplify iptables rules. And each of these changes had a significant impact, they reduced CPU drain, they removed the conntrack table bottleneck, and they fixed the performance skew between slots.
+
+Now, you might be wondering, what does this mean for you, as a software developer. Well, here is the thing, the work that the Lambda networking team did, it might seem invisible, but it has a direct impact on the performance and reliability of your applications. And the techniques they used, such as eBPF and network pooling, these are techniques that you can use in your own applications to improve performance and reduce latency.
+
+So, what can you take away from this story, it's the importance of relentless and lifelong pursuit of excellence, it's the commitment to doing the right thing, even when nobody's watching. And it's the impact that invisible engineering can have on the systems we build and use every day. So, go build, and remember, the best builders and the best teams, they do the work not because someone is going to write about it, but because it's the right thing to do.
+
+Alright, let us move on to the next story.
+
+Hey, I'm Herlin, and welcome to our tech podcast. So, you're probably used to talking to AI agents like they're people, right, like you're having a conversation with them. But here's the thing, all those agents are about to go async, and that's a big deal. Think of it this way, instead of sitting at your computer, waiting for an agent to respond, it's gonna be working in the background, like a little robot, getting stuff done while you're doing other things. And here's why that's a big deal, it changes how we interact with AI, it makes it more like having a personal assistant, rather than just a chatbot.
+
+So, let's dive into this. For a long time, we've been using AI agents like ChatGPT, and they work by streaming responses back to us, token by token, over an HTTP connection. It's like a conversation, where you ask a question, and the agent responds, and you can keep going back and forth. But, when you make the switch to async agents, that transport breaks. Here is the thing, HTTP request-response just isn't designed to handle async communication. It's like trying to have a conversation with someone, but only being able to talk to them when you're both online at the same time.
+
+Now, companies like OpenClaw, Anthropic, and Cloudflare are working on this problem. OpenClaw showed us that an agent can live in your WhatsApp chat, and work on stuff in the background, and then push the results back to you when it's done. That's a game-changer. Anthropic's taken a similar approach, with features like Routines and Remote Control, which let you schedule tasks and run agents in the background. And Cloudflare's got their own Agents platform, built on their workers platform, which provides session and conversation storage for agents.
+
+But, here's the problem, all these solutions are only solving half the problem. They're focused on durable state, where the agent's state lives, and how it has access to that state on restart or when processing async tasks. But, they're not really solving the durable transport problem, which is how the bytes of the response get between the agent and the humans or other agents. It's like, they're building a house, but they're not building the roads to get to the house.
+
+So, what does this mean for you, as a developer? Well, if you're building AI agents, you need to think about durable transport and durable state. You need to think about how your agent is gonna communicate with humans and other agents, and how it's gonna store its state. It's not just about building a chatbot, it's about building a system that can work in the background, and communicate with humans and other agents in a durable way.
+
+And, here is the thing, there are solutions out there that can help you with this. For example, Ably, the company I work with, is building a durable transport for AI agents, built around the idea of a session. It's like, a session with an AI should be a thing that humans and agents can connect to, and disconnect from at any time, without worrying about the transport breaking. So, if you're building AI agents, you should definitely check it out.
+
+So, to sum it up, async agents are the future, and they require a different way of thinking about transport and state. It's not just about building a chatbot, it's about building a system that can work in the background, and communicate with humans and other agents in a durable way. And, as a developer, you should be thinking about durable transport and durable state, and how you can use solutions like Ably to build more robust AI agents.
+
+Alright, let us move on to the next story.
+
+We had trouble processing this story. Moving on.
+
+Alright, let us move on to the next story.
+
+We had trouble processing this story. Moving on.
+
+Alright, let us move on to the next story.
+
+We had trouble processing this story. Moving on.
+
+Alright, let us move on to the next story.
+
+We had trouble processing this story. Moving on.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Quick mention — https://www.aravindjayendran.com/writing/context-is-not-learning?utm_source=tldrdev. Worth keeping an eye on. Quick mention — https://blog.margelo.com/margelo-discord-react-native-performance?utm_source=tldrdev. Worth keeping an eye on. Quick mention — https://frontendmasters.com/blog/ai-generated-ui-is-inaccessible-by-default/?utm_source=tldrdev. Worth keeping an eye on. Quick mention — https://cursor.com/blog/app-stability?utm_source=tldrdev. Worth keeping an eye on.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.

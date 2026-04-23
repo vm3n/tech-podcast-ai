@@ -1,0 +1,115 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+Hey there, I'm Herlin, and have you ever wondered what happens when a super powerful AI model falls into the wrong hands? Think of it this way, imagine you have a really smart robot that can figure out how to break into a house, not just by picking the lock, but by finding all the weaknesses in the entire security system. That's basically what's going on with Anthropic's Mythos model, and it's a big deal. 
+
+So here is the thing, Anthropic is investigating a report that some unauthorized users got access to this Mythos model, which is like a super powerful hacking tool. They can use it to find weaknesses in IT systems, and that's really scary. The company confirmed this after Bloomberg reported that a small group of people got into the model through a third-party vendor environment. 
+
+Now, you might be thinking, how did they even get in? Well, it turns out that one of the users had access to the system because they worked for a contractor that Anthropic used. And then they used some methods that cybersecurity researchers use to get into the model. It's like they found a secret door that wasn't supposed to be open. 
+
+The good news is that this group of users isn't trying to cause any trouble, they're just playing around with the technology. But the problem is, this model is so powerful that it could be used to do some serious damage if it fell into the wrong hands. I mean, think of it like a really powerful bomb, you don't want it to get into the hands of someone who might use it to hurt people. 
+
+So what does this mean for you? Well, if you're a software developer, you should be paying attention to this story because it highlights the risks of creating really powerful AI models. It's like creating a really powerful tool, you have to make sure you're keeping it safe and secure. And here is why that is a big deal, if you're working on an AI project, you need to think about the potential risks and make sure you're taking steps to mitigate them. 
+
+The UK's AI minister, Kanishka Narayan, has already warned that businesses should be worried about this model's ability to spot flaws in IT systems. And the world's leading safety authority for AI technology, the AI Security Institute, has also warned that Mythos is a step up from previous models in terms of the cyber threat it poses. They even tested the model and found that it could carry out attacks that would normally take human professionals days to do. 
+
+So, what can you do as a developer? Well, first of all, you need to be aware of the potential risks of the AI models you're working on. Think of it like working with a powerful chemical, you need to take precautions to make sure you're not going to hurt anyone. And then you need to make sure you're taking steps to secure your models, like using strong passwords and keeping them up to date. It's like locking the door to your house, you don't want to make it easy for someone to get in. 
+
+And here is the thing, this story is not just about Anthropic or the Mythos model, it's about the whole AI industry. It's like a wake-up call, reminding us that we need to be careful and responsible when we're creating really powerful technology. So, what does this mean for you? It means you need to be thinking about the potential risks and taking steps to mitigate them. That's the key takeaway from this story.
+
+Alright, let us move on to the next story.
+
+Hey there, I'm Herlin, and welcome to our tech podcast. So, you're building an AI-powered SaaS product, and you think you're on top of the game, right? I mean, AI is the future, and it's making your product better, more efficient, and more attractive to customers. But here's the thing, my friend, AI can also quietly destroy your gross margin, and that's a big deal. Think of it this way, your SaaS business is like a car, and gross margin is the fuel that makes it run. If your gross margin is high, you've got a lot of fuel to play with, you can invest in R&D, sales, marketing, and all that jazz. But if your gross margin is low, you're running on fumes, and that's not a good place to be.
+
+Now, traditionally, SaaS businesses have enjoyed high gross margins, around 70-80%, because the cost of delivering software is relatively low. But AI changes that, it's like adding a new engine to your car, it's more powerful, but it's also more expensive to run. AI inference costs, model routing costs, vector database costs, all these things add up, and they can quickly eat into your gross margin. In fact, according to ICONIQ's 2026 State of AI report, AI product builders expect their gross margins to be around 52% in 2026, that's a big drop from the traditional SaaS model.
+
+So, what's going on here? Well, the problem is that many SaaS companies are treating AI costs like traditional SaaS COGS, and that's a mistake. AI costs are more like a usage-sensitive cost layer, think of it like a pay-as-you-go model, the more you use, the more you pay. And if you don't isolate these costs in your P&L, you won't be able to see the impact on your gross margin. It's like trying to drive a car without a fuel gauge, you won't know when you're running low until it's too late.
+
+Let me give you an example, say you've got a SaaS product that generates $100 in revenue, and your traditional COGS is $20, that gives you an 80% gross margin. But then you add AI features, and those features add $15 of direct variable cost, suddenly your COGS is $35, and your gross margin is down to 65%. That's a big drop, and it's not just a matter of tweaking your pricing, it's a fundamental change in your business model.
+
+So, what can you do about it? Well, first, you need to isolate AI COGS in your P&L, you need to be able to see the direct cost of delivering AI-powered features. Then, you need to align your pricing with your cost structure, think of it like a tiered pricing model, where heavy users pay more. And finally, you need to show a credible path to margin improvement, that means optimizing your AI costs, improving your pricing, and increasing your revenue.
+
+Now, I know this sounds like a lot to take in, but trust me, it's worth it. The companies that win with AI will be the ones that understand the economics, and can scale their business profitably. So, what can you do today? Well, start by pulling out your monthly SaaS P&L, and ask yourself a few questions. Do you have clear and distinct revenue streams? Can you isolate AI-related COGS from traditional SaaS COGS? Can you calculate margins by revenue stream? Is your pricing aligned with AI usage and cost distribution? And can you show a credible path to margin improvement over the next 12-24 months? If you can't answer these questions, then you've got some work to do.
+
+So, what does this mean for you, the SaaS developer? Well, it means you need to be thinking about the economics of AI, not just the technology. You need to be working closely with your finance team to understand the impact of AI on your gross margin, and to develop a strategy to optimize your costs and pricing. It's not just about building a better product, it's about building a sustainable business model. And that's the key to success in the AI-powered SaaS world.
+
+Alright, let us move on to the next story.
+
+Hey there, I'm Herlin, and welcome to our tech podcast. So I've got a story to share with you, but here's the thing, I've only got partial content due to a paywall. I want to be upfront with you, I'm gonna do my best to break it down, but we might not have all the details. 
+
+The article is about Microsoft's cloud roadmap, and it seems like the strategy is shifting. Think of it this way, it's not just about moving everything to the cloud anymore, it's about making smart decisions for each workload. Rising costs, changing licensing models, and performance demands are forcing IT leaders to be more intentional. 
+
+So what does this mean for you? Well, the question now is where do your workloads actually belong, not just if you should move them. The article mentions a 90-day workbook that's supposed to help you figure this out. Here's how it works: you start by understanding your environment, which means taking stock of your workloads, mapping dependencies, and getting a clear picture of your costs. 
+
+Then you evaluate and plan, looking at options across Azure, private cloud, and hybrid cloud. And finally, you design and align, building a future-state architecture and creating a plan to get there. The workbook is designed to help you make informed decisions about where to place your workloads, based on factors like cost, performance, compliance, and scalability. 
+
+Now, I know what you're thinking, can this really help me save money? Yes, by figuring out which workloads should stay in Azure and which should be optimized or moved, you can actually improve cost efficiency. And here is why that is a big deal: as a developer, you want to make sure you're getting the most out of your cloud investment. 
+
+So what can you take away from this? Even with limited info, it's clear that having a clear cloud strategy is key. Take the time to understand your environment, evaluate your options, and design a plan that works for you. It might take some effort, but it's worth it in the long run. And if you're looking for help, there are partners like US Signal that can guide you through the process. 
+
+As a developer, your takeaway is to be intentional about your cloud strategy, and don't be afraid to seek help when you need it. That's it for today, thanks for tuning in, and I'll catch you in the next one.
+
+Alright, let us move on to the next story.
+
+Hey there, I'm Herlin, and welcome to our show. Imagine you're a top executive, making multimillion-dollar decisions every day, but the information you're getting is slow, and you're not even sure if you can trust it. That's the reality for many leaders out there, and it's a huge problem. Here's the thing, what if I told you there's a new technology that can change the game, getting you the insights you need, fast, and with total transparency? Think of it this way, it's like having a super-smart assistant that helps your team dig deep into complex data, and then presents it to you in a way that's easy to understand, with all the context you need to make informed decisions.
+
+So, let's dive into this story. Silobreaker, a company that specializes in intelligence software, just announced a new capability called Mimir, which adds agentic AI to their platform. Now, you might be wondering, what's agentic AI? Well, think of it like a personal assistant, but instead of just booking flights or sending emails, it's designed to help intelligence teams do their job better. It's like having a robot that helps you research, analyze, and create reports, all while keeping track of where the information comes from, so you can trust it.
+
+Here is why this matters. Intelligence teams have a tough job, they need to stay on top of complex, evolving situations, and provide insights to decision-makers quickly. But, they also need to make sure their information is accurate, and that they're not missing anything important. Silobreaker Mimir helps them do just that, by working directly within their workflow, and providing them with the tools they need to scale their analysis, without losing control or context.
+
+Now, I know some of you might be thinking, okay, this all sounds great, but how does it actually work? Well, Silobreaker Mimir is designed to work with the analyst, not replace them. It's like having a co-pilot, that helps you navigate through complex data, and identify the key insights you need to know. And, because it's built with governance and transparency in mind, you can trust the information you're getting, and know exactly where it's coming from.
+
+And here is why that is a big deal. For executives, and decision-makers, this means they can get the insights they need, faster, and with more confidence. They can trust that the information they're getting is accurate, and that it's been thoroughly analyzed. And, for intelligence teams, it means they can focus on what they do best, providing high-quality analysis, and supporting the decision-making process.
+
+So what does this mean for you, as a software developer? Well, if you're working on projects that involve complex data analysis, or intelligence gathering, you should be paying attention to this technology. It's a game-changer, and it's going to change the way we approach analysis, and decision-making. Think of it this way, if you're building a system that needs to provide insights to users, you want to make sure you're using the best tools available, and that you're providing them with information they can trust. That's what Silobreaker Mimir is all about, and that's why it's so important.
+
+In terms of practical takeaways, if you're working on a project that involves complex data analysis, you should be looking into how you can use AI to augment your team's capabilities, not replace them. And, you should be thinking about how you can build governance, and transparency into your system, so that users can trust the information they're getting. That's the key to building a system that provides real value, and supports informed decision-making.
+
+Alright, let us move on to the next story.
+
+Hey there, I'm Herlin, and welcome to our tech podcast. Imagine you're a developer, and you're using AI to generate code, which is pretty cool, right? But here's the thing, that AI-generated code can also introduce new security risks that you might not even be aware of. Think of it this way, AI is like a super smart, super fast coworker, but it's not perfect, and it can make mistakes that can put your entire application at risk. So, what does this mean for you? Well, that's what we're going to dive into today.
+
+So, recently, I came across this really interesting story about Wiz, a company that's working on machine-speed defense for any cloud, any platform, and any AI. They just announced some new capabilities at Google Cloud Next, and I think it's really worth exploring. Here's the thing, security teams have been fighting the same battles for decades, but now AI has given those old ghosts a megaphone. By plugging AI into real-time data and autonomous agents, we've empowered these systems to pull levers in our most sensitive environments.
+
+Now, Wiz's goal is to help teams protect everything they build and run, from cloud providers like Amazon Web Services, Google Cloud, Microsoft Azure, and Oracle Cloud, to software-as-a-service environments like OpenAI. They introduced the Wiz AI Application Protection Platform, or AI-APP, to help security teams move from human speed to machine-speed defense. This platform secures the entire AI lifecycle and arms defenders with their own AI agents to autonomously investigate, prioritize, and remediate risks.
+
+But here's why this matters, the AI software lifecycle is evolving at an incredible speed, and security can't be fragmented or reactive. It needs to be comprehensive, continuous, and built to span every layer of your environment. Wiz is committed to continuously investing in capabilities that help organizations secure everything they build and run, no matter the platform, environment, or architecture.
+
+So, what does this mean for you? Well, if you're a developer, you need to think about security from the very beginning, not just as an afterthought. You need to make sure that your AI-generated code is secure, and that's where Wiz comes in. They're expanding their coverage across cloud and AI platforms, including cloud platforms like Databricks, AI studios like AWS Agentcore, and multi-cloud PaaS environments.
+
+They're also launching the Red Agent in Public Preview, which acts as an AI-powered "intelligent attacker" that continuously and proactively discovers and validates complex, logic-driven vulnerabilities. And here's why that's a big deal, it helps you stay one step ahead of attackers, especially in the face of new advanced AI models.
+
+Now, I know this is a lot to take in, but here's the thing, AI doesn't just accelerate your code, it accelerates your risk. To stay ahead, you need to move beyond developer speed to machine-speed risk mitigation. That's where Wiz Code comes in, with new capabilities like AI-BOM, Secure Guardrails, and Agentic Remediation. These capabilities help you identify and remediate risks earlier in the AI-assisted software development lifecycle.
+
+So, what's the takeaway? If you're a developer, you need to think about security from the very beginning, and you need to use tools like Wiz to help you secure your AI-generated code. Don't wait until it's too late, make sure you're building a resilient foundation for the next generation of AI-driven innovation. And here's why that's so important, compromised context can enable attackers to perform supply chain attacks via trusted SaaS integrations. You don't want to be the one who lets that happen.
+
+That's all for today, folks, I hope you learned something new and interesting. Remember, security is everyone's responsibility, and it's up to us to make sure we're building secure applications from the ground up. Thanks for tuning in, and we'll catch you in the next episode.
+
+Alright, let us move on to the next story.
+
+Hey there, I'm Herlin, and welcome to our tech podcast. Imagine you're working on a project, and you have to switch between different tools and apps all the time. You're in Slack, then you jump to Google Workspace, and after that, you need to check something in Salesforce. It's like a never-ending game of digital whack-a-mole, right? Well, what if I told you that two tech giants, Google Cloud and Salesforce, just announced a partnership that's going to change the way you work forever?
+
+So, here's the thing, this partnership is all about enabling AI agents to work across both platforms seamlessly. Think of it this way, AI agents are like super-smart robots that can help you automate tasks and make decisions. But, until now, they were limited to working within one platform or the other. Now, with this partnership, they can work across both Google Cloud and Salesforce, using something called deep context and end-to-end workflows.
+
+Here's how it works, imagine you're a salesperson, and you need to create a meeting brief. You can ask Slackbot to do it for you, and it will pull all the relevant information from Slack and Google Workspace, and create a polished Google Workspace document for you. It's like having a personal assistant, but instead of a human, it's an AI agent that can work across different platforms.
+
+And here's why that's a big deal, this partnership is not just about making it easier for you to work, it's about creating a whole new way of working. It's called the Agentic Enterprise, and it's all about using AI agents to automate complex tasks, and enable human-AI collaboration. So, what does this mean for you? Well, if you're a developer, it means you can build more powerful and integrated applications that can work across different platforms.
+
+The partnership also includes some cool features like Gemini Enterprise, which is a powerful search and assistant tool that can access connectors and related information from across your apps. And, there's also Agentforce Sales, which can engage leads, create meeting briefs, and surface deal risks and guidance, all without leaving Gemini Enterprise.
+
+Now, I know what you're thinking, this all sounds great, but how does it work? Well, the backbone of this partnership is something called the system of context, which is the underlying architecture that connects AI models with enterprise-scale data. Think of it like a bridge that connects different islands of data, and allows AI agents to work across them seamlessly.
+
+So, what's the takeaway from all this? Well, if you're a developer, you should be excited about the possibilities of building more integrated and powerful applications. And, if you're a business owner, you should be thinking about how you can use AI agents to automate complex tasks, and enable human-AI collaboration. The agentic enterprise is here, and it's going to change the way we work forever.
+
+One last thing, the partnership includes some cool features like zero-copy data, which means you don't have to worry about moving or copying your data. And, there's also IDMC expanded governance and multi-source connectivity, which allows you to unlock real-time insights, and enforce security guardrails more efficiently.
+
+So, that's it for today's episode, I hope you learned something new, and I'll catch you in the next one. Remember, the future of work is all about human-AI collaboration, and this partnership is just the beginning.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Hi, I'm Herlin, so Hugging Face just open-sourced their cybersecurity tools, think of it this way, they're sharing their security secrets to help others, and here is why that is a big deal, it could boost the entire industry's security. Hey, I'm Herlin, a researcher found a way to bypass Progress's web app firewall, that's a big deal. This bypass, tracked as CVE-2026-21876, could let hackers get past security.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.

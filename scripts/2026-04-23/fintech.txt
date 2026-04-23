@@ -1,0 +1,91 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+I'm Herlin, so a big fintech company just got hacked, and here is the thing, this could be a huge deal for your personal finance data.
+
+Alright, let us move on to the next story.
+
+Hey, I'm Herlin, so Marqeta just introduced one-card tech, think of it like a master key, and here is the thing, it could change how we make payments. It's a big deal, so what does this mean for you, we'll dive in later.
+
+Alright, let us move on to the next story.
+
+Hey there, I'm Herlin, and welcome to our tech podcast. So, you know how sometimes you hear about a company working on something super secretive, and you're like, what's going on? Well, I just found out that Block, the company behind Cash App and Square, has been quietly building something huge, and it's all about changing the way we interact with money. Here's the thing, they're not just talking about some new feature or update, they're actually building an entire system that uses AI to help you manage your finances, and it's called MoneyBot and ManagerBot.
+
+Think of it this way, imagine having a personal assistant that can help you with all your financial tasks, from sending money to saving for a vacation, or even managing your business's inventory and scheduling. That's what Block is trying to achieve with these new tools. And here's why it's a big deal, they're not just using any ordinary AI, they're using a type of AI called an agent, which is like a super smart robot that can learn and adapt to your needs.
+
+So, let's dive deeper into what an agent is. An agent is like a brain that's connected to a bunch of tools, like hands and eyes, that can perform specific tasks. In the case of MoneyBot and ManagerBot, these tools are things like accessing your transaction history, balances, and savings goals. The agent, which is like the brain, can use these tools to perform tasks like drafting payments, pulling data, and even suggesting how much to set aside for savings.
+
+Now, you might be wondering, how does this work? Well, it's actually pretty simple. You send a prompt, like "Send $500 to Reese for rent", and the agent uses the tools to perform the task. The agent doesn't just stop there, it can also learn from your behavior and adapt to your needs over time. And the best part, it's not just limited to personal finance, it can also be used for business management, like managing inventory and scheduling.
+
+The company behind this technology, Block, has been working on this for a while now. They actually built a tool called Goose, which is like a harness that connects the AI agent to the tools. Goose was initially used by Block's engineers to automate tasks, but now they're using it to build MoneyBot and ManagerBot.
+
+So, what does this mean for you? Well, if you're a Cash App user, you can expect to see MoneyBot rolling out soon, which will allow you to use natural language to perform financial tasks. And if you're a Square seller, you can expect to see ManagerBot, which will help you manage your business's operations. The potential is huge, and it's not just about making it easier to manage your finances, it's about creating a whole new way of interacting with money.
+
+Here's the thing, Block is not just stopping at MoneyBot and ManagerBot, they're actually working on a whole ecosystem of tools that will change the way we think about money. And the best part, it's all based on this idea of proactive AI, where the agent is not just waiting for you to ask it something, but it's actually anticipating your needs and taking action.
+
+So, what can you take away from this? As a software developer, you should be paying attention to this trend of using AI agents to build proactive systems. It's not just about building a tool that can perform a specific task, it's about building a system that can learn and adapt to the user's needs. And that's a whole new level of complexity and opportunity.
+
+Alright, let us move on to the next story.
+
+Hey there, I'm Herlin, and welcome to our podcast. So, you're using AI in your business, and you think you're getting a good deal, but here's the thing - you're probably wasting a ton of money without even realizing it. I mean, think of it this way, AI workloads are like super powerful machines that can eat up a lot of resources, and if you're not careful, you'll be paying for a lot of idle time. 
+
+So, what's going on here? Well, the problem is that traditional tools only show you the bill, they don't give you any insight into what's driving your AI spend. It's like trying to navigate a maze without a map. You need to understand what's going on under the hood, and that's where PointFive comes in. 
+
+PointFive is a platform that gives you full visibility into your AI spend, and it's like having a superpower. You can see every dollar, every token, every inference, and every deployment. You can even track costs per token, per inference, and per deployment, which is like having a microscope to analyze your AI spend. 
+
+Now, let's talk about the AI spending reality. Did you know that AI budgets are growing by over 30% year over year? That's crazy. And 84% of organizations struggle with cloud costs. But here's the thing, you can save up to 99% on underutilized AI resources, and up to 86% through model migrations. That's a lot of money. 
+
+So, how does PointFive work? Well, it's pretty simple. You connect your cloud accounts, and PointFive starts building a complete picture of your AI infrastructure. It's like having a map of your entire AI cost surface. Then, it surfaces optimization opportunities, like PTU rightsizing, model migrations, idle capacity, and prompt optimization. 
+
+And here's why that's a big deal. With PointFive, you can eliminate spend on unused AI resources, reduce cost-per-inference by 40-60%, and even run "what-if" scenarios to see how different models and deployments will impact your costs. It's like having a crystal ball to predict your AI spend. 
+
+Now, I know what you're thinking. This all sounds great, but how does it work in real life? Well, let me tell you, PointFive has already helped a lot of companies save a ton of money on their AI spend. And it's not just about saving money, it's about optimizing your AI workloads to get the best performance possible. 
+
+So, what does this mean for you? If you're a software developer, you need to care about AI cost optimization. It's not just a finance problem, it's an engineering problem. You need to understand how your AI workloads are impacting your costs, and you need to optimize them to get the best performance possible. 
+
+And here's the thing, PointFive is built for engineering teams. It's not just a tool for finance people. It's a tool that lives in the engineering workflow, so you can optimize your AI spend without leaving your IDE. You can even push optimization tasks to Jira, ServiceNow, or Slack, so you can act confidently. 
+
+So, if you want to start optimizing your AI workloads, and saving a ton of money, you need to check out PointFive. It's like having a superpower to optimize your AI spend. And, as a developer, you should care about AI cost optimization, because it's not just about saving money, it's about building better AI systems. 
+
+So, what are you waiting for? Go ahead, book a demo, and see your AI costs, and your savings, in 48 hours. Trust me, it's worth it. And, as always, thanks for tuning in to our podcast. I'm Herlin, and we'll catch you in the next one.
+
+Alright, let us move on to the next story.
+
+Hey there, I'm Herlin, and welcome to our podcast. Imagine having a personal finance team at your fingertips, 24/7, without having to hire a whole accounting department. Sounds too good to be true, right? But what if I told you that Xero, a global small business platform, just unveiled an AI-native operating system that's about to change the game for accountants and small businesses. This thing is called Xero OS, and it's designed to power the next era of autonomous finance.
+
+So, here's the thing, Xero has been around for over two decades, and they've been the system of record for millions of small businesses across their financial operations. Think of it like a big library where all your financial data is stored. But now, with Xero OS, they're taking it to the next level by creating a system of action. It's like a robot that can help you with all the routine tasks, like reconciling transactions and analyzing bills, so you can focus on the big picture.
+
+And here's why that's a big deal. Xero OS is all about autonomous workflows, which means it can handle tasks on its own, but it's also grounded in what they call Accountable Intelligence. So, the AI does the heavy lifting, but humans are still in charge and accountable for the final outcomes. It's like having a co-pilot who can help you navigate through complex financial decisions, but you're still the one in control.
+
+Now, let's talk about JAX, Xero's AI assistant. This thing is like a super-smart finance team member who can analyze incoming bills, set up payments, and automatically reconcile transactions. It's like having a personal finance assistant who's always on and always ready to help. And the best part is, it's not just for big businesses. JAX is designed to bring CFO-level access to businesses of all sizes.
+
+So, what does this mean for you, as a small business owner or accountant? Well, it means you can focus on the strategic decisions that drive growth, rather than getting bogged down in routine tasks. It's like having more time to think about the big picture, rather than just trying to keep up with the day-to-day.
+
+And here's the thing, Xero OS is built on what they call "decisioned data", which is like a series of high-stakes decisions that build on each other. It's like a recipe for financial success, where every ingredient is carefully measured and mixed together to get the right outcome. And the AI is trained on this data, so it can make accurate and safe decisions.
+
+So, what's the takeaway from all this? As a software developer, you should be thinking about how you can use AI and machine learning to automate routine tasks and free up more time for strategic decision-making. It's like building a robot that can help you with the heavy lifting, so you can focus on the creative and high-level thinking. And that's a game-changer, not just for finance, but for any industry.
+
+Alright, let us move on to the next story.
+
+Hey there, I'm Herlin, and welcome to our podcast. So, you're probably using your credit or debit card to buy stuff online or in stores, right? Well, here's the thing, every time you swipe or tap that card, the merchant, like the store you're buying from, has to pay a fee to the card network, like Visa or Mastercard. And that fee is called an interchange fee. Think of it like a toll that the merchant has to pay to let you use your card. Now, you might be wondering, how much is this toll, and who gets to decide how much it costs? That's where things get interesting.
+
+For decades, merchants have been fighting against these interchange fees, saying they're too high and unfair. And this fight has been going on in the courts. There's this huge lawsuit that started back in 2005, and it's been dragging on for years. The merchants are saying that Visa and Mastercard are basically a duopoly, and they're using their power to charge these high fees. The card networks, on the other hand, are saying that these fees are necessary to keep their systems running.
+
+Now, recently, there's been a proposed settlement in this case. The settlement would reduce the interchange fees by a bit, and it would also give merchants the right to decline some higher-cost cards. But here's the thing, not all merchants are happy with this settlement. Some of them, like Walmart, are saying that it doesn't go far enough. They're saying that it doesn't really address the underlying issue of the high fees, and that it's just a Band-Aid solution.
+
+So, what's going on here? Why are the merchants so upset? Well, think of it this way. Imagine you're a store owner, and you're selling stuff to customers. You want to make a profit, right? But every time someone uses a credit card, you have to pay this interchange fee. It's like a tax on every sale you make. And if that tax is too high, it can eat into your profits. That's why the merchants are so upset. They feel like they're being charged too much, and they want the card networks to lower these fees.
+
+Now, the court is going to have to decide whether this settlement is fair or not. And that's where things get really interesting. The judge has to consider whether the settlement is reasonable, and whether it's fair to all the parties involved. It's like trying to solve a puzzle. The judge has to weigh all the different factors, and figure out what's the best solution.
+
+So, what does this mean for you, as a developer? Well, here's the thing. If you're building any kind of e-commerce platform, or if you're working with merchants in any way, you need to understand how these interchange fees work. You need to know how they're calculated, and how they affect the merchants. Because if you can help the merchants reduce these fees, or if you can help them navigate the system, you can add a lot of value to their business. And that's a big deal.
+
+And here's why that is a big deal. If you can help the merchants save money on these fees, you can help them increase their profits. And that means they can invest more in their business, and grow faster. It's like a ripple effect. By understanding the interchange fees, and by helping the merchants navigate the system, you can have a big impact on their business. So, it's worth paying attention to this case, and seeing how it all plays out. Because in the end, it's not just about the merchants, or the card networks. It's about the whole ecosystem, and how we can make it work better for everyone.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+I'm Herlin, and Payward, the parent of crypto exchange Kraken, just acquired Bitnomial, a crypto derivatives exchange. This matters because it expands Kraken's offerings. So what does this mean for you, as a developer in the crypto space? Hey I'm Herlin, Oracle just laid off a bunch of employees using an algorithm, so what does this mean for you, it's raising questions about fairness in AI-driven firings.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.

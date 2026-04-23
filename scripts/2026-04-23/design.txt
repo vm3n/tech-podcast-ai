@@ -1,0 +1,107 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+Hey there, I'm Herlin, so I'm gonna give you the lowdown on some new features in Google Photos, but here's the thing, I've only got partial info due to a paywall. So, bear with me, I'll do my best to break it down for you. 
+
+Google's just announced some new touch-up tools in their photo editor, which is pretty cool. Think of it this way, you know when you take a photo and there's just something that's not quite right, like a blemish or your eyes look a bit dark? That's where these tools come in. They're meant to help you make subtle tweaks to your photos, so they look more like how you felt in that moment.
+
+Here's what I know so far, you can select a face in your photo, and then choose from a bunch of different tools, like heal, smooth, or even just brighten up the eyes or whiten the teeth. It's kinda like having a mini photo editing studio right in your pocket. And the best part, it's supposed to be super simple to use, just pick the tool, adjust the intensity, and you're good to go.
+
+Now, the new tools are rolling out to Android devices with at least 4 GB of RAM and Android 9.0 or higher, so if you've got a pretty recent phone, you should be able to check it out. So what does this mean for you, as a developer? Well, if you're working on any kind of photo editing app, you should probably take a look at what Google's doing here, and think about how you can incorporate similar features into your own app. Maybe it's not exactly the same, but the idea is to make photo editing easy and accessible, without needing a ton of expertise. That's the key takeaway, make it simple, make it powerful, and people will use it.
+
+Alright, let us move on to the next story.
+
+Hey there, I'm Herlin, so what's the biggest tech story of the week, you ask, well, it's all about Apple, and I've got the scoop, Apple's got a new CEO, John Ternus, and he's making some huge promises, I mean, we're talking world-changing stuff, so let's dive in. 
+
+So, Ternus just had a meeting with all Apple employees, and he told them, we're about to change the world, again, think of it this way, this is like the coach of your favorite team, coming in and saying, we're gonna win the championship, it's a big deal, and here is why that is a big deal, Apple's been around for a while, they've made some amazing products, but they've also had some, let's say, not so amazing ones, so when the new CEO comes in and says, we're gonna change the world, that's a pretty bold claim.
+
+Now, I know what you're thinking, what does this mean, well, Ternus is talking about AI, artificial intelligence, think of it like a super smart computer, that can learn and do things on its own, it's like having a personal assistant, that can help you with everything, and Ternus is saying, this technology is gonna unlock all sorts of new possibilities, for Apple's products and services, so what does this mean for you, well, if you're an Apple fan, this could mean some really cool new products and features, like, maybe an Apple Doorbell camera, or a next gen Apple TV, and here is the thing, these are just rumors, but it's exciting to think about what could be.
+
+Ternus also talked about how AI is gonna create almost unlimited potential, now, that sounds like a lot of hype, but, think of it this way, AI is like a tool, that can help us do things, we never thought were possible, like, self-driving cars, or personalized medicine, it's a big deal, and Apple's trying to be at the forefront of this technology, so, as a developer, this means, you should be thinking about how you can use AI, in your own products and services, it's a game changer.
+
+Now, I know some of you might be thinking, this all sounds too good to be true, and, you're right, we've heard big promises from Apple before, but, here is the thing, Ternus is putting his money where his mouth is, he's already started overhauling Apple's internal operations, with new AI systems, so, it looks like, he's serious about making some big changes.
+
+So, what's the takeaway, from all this, well, if you're a developer, you should be paying attention to what Apple's doing, with AI, it's a big opportunity, to create some really cool, and innovative products, and, if you're just a tech fan, well, it's exciting to think about, what's coming next, from Apple, so, stay tuned, it's gonna be a wild ride.
+
+Alright, let us move on to the next story.
+
+Hey there, I'm Herlin, and welcome to our tech podcast. So, imagine you're a marketer, and you've got a ton of customer data, but it's all over the place, and you're trying to make sense of it to create a personalized experience for your customers. That's a tough job, right? Well, Adobe just announced something that could change the game. They're deploying AI agents across their customer experience tools, and this could be a total game-changer.
+
+So, here's the thing, Adobe's new platform, called CX Enterprise, is designed to coordinate all these AI agents across marketing, content, and customer engagement workflows. Think of it this way, it's like having a team of super-smart assistants that can help you manage the full customer lifecycle, from acquisition to retention. And the best part is, it's all under one roof, so you've got control over data, brand standards, and compliance.
+
+Now, let's talk about the background context. Adobe's been working on this for a while, and it builds on their Experience Platform, which already supports over a trillion customer experiences annually. That's a lot of data, and it's the foundation for these AI agents to operate. So, what Adobe's done is, they've created a Brand Intelligence System and an Engagement Intelligence System, which work together to ensure that AI-generated outputs are consistent with brand guidelines and improve personalization at scale.
+
+Here's how it works. The Brand Intelligence System captures and applies brand-specific context to content and interactions, so it's like having a brand expert who makes sure everything looks and feels right. And the Engagement Intelligence System optimizes decisions based on customer lifetime value, so it's like having a data scientist who helps you make the best decisions for your customers.
+
+Now, Adobe's also introduced something called CX Enterprise Coworker, which acts as a coordinating layer for multiple agents. It's like a project manager who translates business objectives into actions, like assembling audience segments, generating creative assets, and monitoring campaign performance. And the key thing here is, human oversight, governance, and auditability are built-in, so you've got control over what's happening.
+
+So, what does this mean for you? Well, if you're a marketer, this could be a huge deal. You can use these AI agents to automate tasks, like campaign planning, content production, and workflow management. And with the updates to GenStudio, Adobe's content platform, you can use AI agents to learn from feedback and approval cycles, so your AI systems can adapt to evolving requirements over time.
+
+And here's the thing, Adobe's not doing this alone. They're partnering with some big players, like Amazon Web Services, Google Cloud, and Microsoft, to enable customers to deploy agent-driven workflows across a range of enterprise tools. So, you're not locked into one system, you can use the tools you already have.
+
+So, what's the takeaway? If you're a software developer, you should be paying attention to this. Adobe's move into AI-powered customer experience is a sign of where the industry is headed. And if you're building applications that interact with customers, you should be thinking about how you can use AI agents to improve personalization and automation. It's not just about having a bunch of data, it's about using that data to create a better experience for your customers. That's the future of customer experience, and Adobe's just shown us what's possible.
+
+Alright, let us move on to the next story.
+
+Hey there, I'm Herlin, and welcome to our tech podcast. Imagine being a product manager, and instead of just telling your team what to build, you can actually show them, and even build it yourself. Sounds crazy, right? But that's exactly what's happening in the world of product management, and it's changing the game. 
+
+Here is the thing, the lines between product management and software engineering are getting blurred, and it's all about a spectrum that Dan Olsen, a product management consultant, talks about. So, on one end, you have what's called vibe coding, where you're just kinda throwing out ideas and seeing what sticks. And on the other end, you have product building, where you're actually creating something real.
+
+Think of it this way, vibe coding is like throwing a party and inviting all your friends, but you don't really have a plan, you're just hoping it's gonna be fun. Product building is like planning a wedding, you need to have a clear idea of what you want, and you need to execute it. And the difference between the two is huge.
+
+So, why bother going beyond just vibe coding? Well, when you start using coding agents and get comfortable with some engineering basics, you get way more control over what you're building. It's like being the chef in the kitchen, you can decide what ingredients to use, and how to put them together. And that's a big deal, because it means you can produce something real that your engineering team can actually build on.
+
+Now, I know what you're thinking, this all sounds great, but how do I get started? Well, the author of the article I'm talking about has been on this journey themselves, and they've learned some valuable lessons. They've learned that planning is key, just like in product management, you need to think about the why and what of your product idea before you start building. They've also learned about the importance of understanding the tech stack, and how to make architectural decisions.
+
+Functions and objects, these are two concepts that can be confusing at first, but they're actually pretty simple. A function is like a recipe, it takes some ingredients, and it produces a dish. An object is like a kitchen, it's where you store all your ingredients and tools, and it helps you organize your cooking process.
+
+Error-driven development, this is a concept that I think is really powerful. It's like when you're cooking, and you make a mistake, you don't just throw away the whole dish, you try to figure out what went wrong, and you learn from it. That's what error-driven development is all about, it's about using errors as instructions, and learning from them.
+
+So, what does this mean for you, as a product manager? It means that you have the power to become a better builder, and to create something real. It means that you can work more closely with your engineering team, and that you can create something that's truly amazing. And here is why that is a big deal, because when you can build something real, you can test it, you can iterate on it, and you can make it better.
+
+The main learning point here is that the shift from vibe coding to product building isn't about learning to code, it's about learning enough to be a better builder. It's about understanding the basics of engineering, and using that knowledge to create something real. And that's a skill that any product manager can learn, regardless of their background.
+
+So, what's the takeaway from all this? It's that product managers need to start thinking about building, not just vibe coding. They need to start learning about engineering basics, and using coding agents to create something real. And that's a challenge, but it's also an opportunity, because when you can build something real, you can create something truly amazing.
+
+Alright, let us move on to the next story.
+
+Hey, I'm Herlin, so I'm diving into this story about shipping agents to production, but here's the thing, I've only got partial content due to a paywall. So, I'll do my best to break it down for you with what I've got. 
+
+Think of an agent like a super smart robot that can help you with tasks, and you build it using code. The problem is, building the agent might only take a weekend, but getting it to run smoothly in production can take months. That's where 21st comes in, they're offering a platform that makes it easy to deploy and manage these agents.
+
+Here is the thing, their platform gives you everything you need to run agents in production, like sandboxed runtimes, credential management, and observability. So, what does this mean for you? It means you can focus on building the agent, not the infrastructure to support it. They're using something called gVisor, which is like a special container that keeps each agent session separate and secure, like a virtual hotel room for your agent.
+
+They're also handling credential management, which is like securely storing the keys to your house, so only the right people can get in. And they've got a simple way to deploy your agent, just run a command, npx @21st-sdk/cli deploy, and you're done. 
+
+Now, I know some of you might be thinking, how does this work? Well, it's pretty simple, you define your agent using TypeScript, deploy it to their platform, and then integrate it with your app. They've even got templates to get you started, like a pre-built Lego kit.
+
+So, what does this mean for you, as a developer? It means you can get started with building and deploying agents quickly, without having to worry about all the underlying infrastructure. They've got a free plan to get you started, and then you can scale up as you need to. 
+
+And here is why that is a big deal, it's like having a team of experts handling all the hard stuff, so you can focus on building the cool stuff. They're even offering custom plans for teams that need more control, like being able to deploy on your own infrastructure.
+
+So, the practical takeaway here is, if you're building agents, or thinking about it, check out 21st, they might just save you a bunch of time and headaches.
+
+Alright, let us move on to the next story.
+
+Hey there, I'm Herlin, and welcome to our tech podcast. So, imagine you're a content creator, and you've got an amazing image, but you want to turn it into a video, like, right now. Think of it this way, you're scrolling through your social media feed, and you see these super cool videos that just grab your attention, and you wonder, how did they do that? Well, here's the thing, there's this new tool called AIReel that lets you upload any image and turn it into a realistic video in seconds. Yeah, seconds. No editing needed, everything is handled automatically. 
+
+So, let's dive into how this works. AIReel uses artificial intelligence to add natural motion, depth, and cinematic effects to your images, making them look like professional videos. It's like having a team of video editors working for you, but instead, it's just AI doing all the heavy lifting. And here is why that is a big deal - it saves you so much time. You don't have to spend hours editing your videos, you can just focus on creating more content.
+
+Now, I know what you're thinking, this sounds too good to be true. But trust me, it's not. AIReel is actually really powerful. You can control the beginning and end of your video with precision, set a starting frame and an ending frame, and let AI generate a smooth transition between them. It's like having a video editing expert working for you, but you don't have to pay them a dime.
+
+And here's another cool thing about AIReel - you can start with an image you already like and build on it instead of starting over. You can change the look, refine details, or push it in a new direction while keeping everything consistent. It's like having a video editing superpower. 
+
+So, what does this mean for you? Well, if you're a content creator, this means you can create more videos, faster, and with less effort. You can focus on coming up with new ideas, and let AIReel handle the rest. And if you're a business owner, this means you can create professional-looking videos without hiring a team of video editors. You can just use AIReel, and get the job done.
+
+Now, I've been playing around with AIReel, and I've got to say, it's really impressive. The workflow is smooth, the output quality is solid, and it cuts my editing time dramatically. And I'm not the only one who thinks so - lots of other users are raving about AIReel too. They say it's become part of their weekly content routine, and that it's helped them speed up their content creation process.
+
+So, what's the takeaway here? If you're looking for a way to create more videos, faster, and with less effort, you should definitely check out AIReel. It's a game-changer for content creators and business owners alike. And here is why - it's fast, it's easy to use, and it produces high-quality videos. So, go ahead, give AIReel a try, and see what you can create.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Hey, I'm Herlin, so what's going on with session timeouts, they're creating an accessibility barrier, and here is the thing, it's affecting authentication design. This might matter for users who need more time. Hey I'm Herlin, so Templo just launched a new branding project. Think of it this way, they're shaking up the design game. So what does this mean for you, it's a fresh take on branding.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.
