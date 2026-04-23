@@ -1,0 +1,99 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+Hey there, I'm Herlin, so what's the biggest tech event of the year, you ask? Well, let me tell you, it's Google Cloud Next, and it's just around the corner. Think of it this way, imagine a place where the world's top innovators, leaders, and thinkers all come together to share ideas and show off the latest advancements in AI and cloud tech. That's what Google Cloud Next is all about. 
+
+So, here is the thing, this event is not just for tech geeks, it's for anyone who wants to stay ahead of the curve and learn about the latest trends in the industry. You'll get to dive into your favorite topics, like AI and cloud computing, and learn from the experts themselves. And, let's be real, who doesn't want to learn about the latest developments in AI, it's like the magic that makes our smartphones and computers work, right?
+
+Now, I know what you're thinking, what can I expect from Google Cloud Next? Well, for starters, there are going to be some amazing keynote speakers, and I'm not just talking about your run-of-the-mill presentations, I'm talking about interactive demos, guided workshops, and even some pretty cool lightning talks. Think of lightning talks like a TED talk, but instead of just listening to someone speak, you get to see real-world examples of how the latest tech is being used to solve problems.
+
+And, here is why that is a big deal, these lightning talks are not just theoretical, they're practical, so you'll actually get to learn something you can use in your own work. For example, you might learn about a new way to use machine learning to improve your app's performance, or how to use cloud computing to scale your business. So, what does this mean for you? It means you'll get to take home some real-world knowledge that you can apply to your own projects.
+
+Now, let's talk about the fun stuff, like the Next at Night lineup, which features some pretty big names, like Benson Boone and Weezer. I mean, who doesn't love a good rock concert, right? And, the best part is, if you're already registered for Google Cloud Next, you get to go to the concert for free, and you can even bring a guest. 
+
+So, if you're a developer, or just someone who's interested in tech, Google Cloud Next is the place to be. You'll get to connect with other innovators, learn about the latest advancements in AI and cloud tech, and even have some fun. And, here is the thing, the earlier you register, the more you'll save, so don't wait, get your ticket now. 
+
+So, what's the takeaway from all this? Well, if you want to stay ahead of the curve and learn about the latest trends in tech, you need to be at Google Cloud Next. It's not just an event, it's an experience, and one that you won't want to miss. Trust me, I'm Herlin, and I know a thing or two about tech, so don't wait, get your ticket now and join the fun.
+
+Alright, let us move on to the next story.
+
+Hey there, I'm Herlin, and welcome to our podcast. So, you know how sometimes you interact with a virtual assistant, and it just feels like it's not really understanding what you're trying to do? Like, you ask it to book a flight, and it just can't seem to get it right? Well, here is the thing, that's all about to change. Google just announced some major updates to its AI infrastructure, and it's going to revolutionize the way we interact with artificial intelligence.
+
+Think of it this way, we're moving from an era where AI just answers questions to an era where AI actually takes action. It's called the agentic era, and it's all about AI systems that can break down complex tasks into smaller ones, and then work together to get them done. So, what does this mean for you? It means that virtual assistants are going to get a whole lot smarter, and they're going to be able to help you with way more complex tasks.
+
+Now, to make this happen, Google had to completely rethink its AI infrastructure. They had to create a system that could handle the massive amounts of data and computing power required for these new AI systems. And that's exactly what they've done. They've introduced a new line of AI-optimized hardware, including something called the TPU 8t and TPU 8i. These are basically super-powerful computer chips that are designed specifically for AI workloads.
+
+Here's how it works. The TPU 8t is like a training powerhouse. It's designed to handle the massive amounts of data required to train these new AI systems. Think of it like a giant library, where the AI system can go to learn and get better. And the TPU 8i is like a reasoning system. It's designed to handle the complex decision-making required for these new AI systems. It's like a super-smart assistant that can help the AI system figure out what to do next.
+
+And here is why that is a big deal. These new chips are way faster and more efficient than anything that's come before. They can handle massive amounts of data, and they can do it at a fraction of the cost. So, what does this mean for developers? It means that you're going to have access to way more powerful tools, and you're going to be able to build way more complex AI systems.
+
+Now, Google isn't just stopping at hardware. They're also introducing a whole new line of software tools, including something called TorchTPU. This is a way for developers to run PyTorch models directly on Google's TPU chips. It's like a special translator that helps the AI system understand what the developer is trying to do. And it's going to make it way easier for developers to build and deploy AI models.
+
+So, what's the takeaway from all this? It's that the future of AI is all about action, not just answers. And with Google's new AI infrastructure, developers are going to have the tools they need to build way more complex and powerful AI systems. So, if you're a developer, you should be paying attention to this. It's going to change the way you work, and it's going to open up a whole new world of possibilities. And if you're just a regular user, you should be excited too. These new AI systems are going to make your life way easier, and they're going to help you get more done in less time.
+
+Alright, let us move on to the next story.
+
+Hey there, I'm Herlin, and welcome to our podcast. So, have you ever wondered how AI models like Gemini are trained to be so smart? I mean, we're talking about models that can reason through problems, execute multi-step workflows, and learn from their own actions. It's like having a super intelligent robot that can outperform humans in many tasks. But what makes these models tick? Well, it all starts with the hardware, and that's what I want to talk about today. Google just announced their eighth generation of Tensor Processor Units, or TPUs, and it's a game changer.
+
+Think of TPUs like special chips designed specifically for AI workloads. They're like the engines that power these super intelligent models. And the new TPU 8t and TPU 8i are designed to take on the most demanding AI workloads. Here is the thing, these chips are not just about processing power, they're about efficiency and scalability. Imagine having a chip that can handle massive amounts of data, process it quickly, and do it all while using less power. That's what we're talking about here.
+
+So, let's take a step back and understand why this matters. In the past, AI models were pretty basic. They could do one thing, like recognize images or translate text. But now, we're talking about models that can reason, learn, and interact with humans. It's like we're entering a new era of AI, what Google calls the "agentic era". And in this era, models need to be able to work together, share information, and learn from each other. It's like a swarm of intelligent agents working together to solve complex problems.
+
+Now, Google's TPU 8t and TPU 8i are designed to power this new era of AI. The TPU 8t is like a training powerhouse. It's designed to handle massive, compute-intensive workloads, like training large language models. Think of it like a supercomputer that can process vast amounts of data, learn from it, and get better over time. And the TPU 8i is like a reasoning engine. It's designed to handle the intricate, collaborative work of many specialized agents, working together to deliver solutions and insights.
+
+Here is why this is a big deal. With these new TPUs, developers can build more complex models, train them faster, and deploy them at scale. It's like having a platform that can handle the most demanding AI workloads, and do it all while using less power. And that's important, because as we all know, power consumption is a major issue in data centers. So, what does this mean for you? Well, if you're a developer working on AI projects, this means you'll have access to more powerful tools, more efficient processing, and more scalability. You'll be able to build models that can learn, reason, and interact with humans in ways that were previously impossible.
+
+So, what's the takeaway from all this? Well, it's simple. The new TPU 8t and TPU 8i are a major breakthrough in AI hardware. They're designed to power the next generation of AI models, and they're going to change the way we build and deploy AI applications. As a developer, you should be excited about this, because it means you'll have access to more powerful tools, more efficient processing, and more scalability. And who knows, maybe one day we'll have AI models that can outperform humans in many tasks. The future is exciting, and it's all happening now. Thanks for tuning in, and we'll catch you in the next episode.
+
+Alright, let us move on to the next story.
+
+Hey there, I'm Herlin, and welcome to our tech podcast. So, imagine you're working on a project, and you've got emails, chats, files, and meetings all over the place. You're trying to make sense of it all, but it's like trying to find a needle in a haystack. Well, Google just announced something that could change the game for you. They're calling it Workspace Intelligence, and it's like a super smart assistant that can understand what you're trying to do and pull everything together for you in real time.
+
+Here's the thing, Google didn't just wake up one day and decide to create this. They've been working on it for months, and it's part of a bigger plan to turn Google Workspace into a control layer for everyday business operations. Think of it this way, instead of just being a place where you store documents and messages, Google wants Workspace to be the brain of your operation, making it easier for you to get things done.
+
+So, what is Workspace Intelligence exactly? It's a semantic layer that maps all your emails, chats, files, collaborators, and active projects into a shared context. This means that Google's AI agents, like Gemini, can understand what you're working on and provide you with relevant information and suggestions. It's like having a personal assistant that's always on top of things.
+
+Google also announced a bunch of other updates to their suite of tools, including Sheets, Docs, Slides, and Gmail. For example, Sheets is getting natural-language spreadsheet building, which is like being able to tell a story and having the spreadsheet create itself. Docs can now generate infographics grounded in business data, which is like having a graphic designer built into your word processor.
+
+Now, you might be wondering, how does this all work together? Well, Google's idea is to create a system that can understand what you're trying to do and act on it across all their tools. So, if you're working on a project, Gemini can suggest relevant files, meetings, and collaborators. It's like having a command center for your work.
+
+Here's why that's a big deal. Most of us are used to switching between different apps and tools to get things done. But with Workspace Intelligence, Google is trying to create a seamless experience that makes it easier for you to focus on your work. And, with all the security features they're building in, you can trust that your data is safe.
+
+So, what does this mean for you? If you're a software developer, you should be paying attention to how Google is using AI to create a more integrated and automated work experience. This is the future of work, and it's going to change the way we all collaborate and get things done. The practical takeaway is to start thinking about how you can use AI and machine learning to create more seamless and automated experiences for your users. It's time to start exploring the possibilities of what you can do with AI, and how you can use it to make your users' lives easier.
+
+Alright, let us move on to the next story.
+
+Hey there, I'm Herlin, so I want to dive into this story about Jerry Tworek, a former OpenAI researcher who just launched his own AI lab called Core Automation. Here's the thing, I've only got limited info on this, it's behind a paywall, but I'll do my best to break it down for you. 
+
+So, Jerry Tworek, he's a big deal in the AI world, used to work at OpenAI, but he left in January 2026. He thinks the kind of research he wants to do, the really fundamental stuff, just isn't possible at OpenAI anymore. He says deep learning research is basically done, and now it's time for something new. 
+
+Think of it this way, when you're trying to solve a puzzle, you can either keep using the same old pieces, or you can try to find new ones that fit together in a whole different way. That's kind of what Tworek is doing with Core Automation. He's not just trying to build bigger AI models, he's trying to create new learning algorithms, new architectures, that can scale better and do more with less. 
+
+He's pulling together a team of experts, people who know about frontier models, optimization, and systems engineering. The goal is to create AI agents that can do the work of entire organizations, with just a small team of humans. It's like having a really smart, really efficient assistant that can take care of a lot of the heavy lifting. 
+
+And here's why that's a big deal, it means that instead of needing a huge team of researchers to work on a project, you could have just a few people, with really capable AI agents doing the rest. It's like having a whole lab full of robots, working together to solve problems. 
+
+Now, Tworek's not the only one doing this, there are other labs, like Thinking Machines Lab and Safe Superintelligence, that are also trying to push the boundaries of AI research. They're all part of this movement, this idea that we need new approaches to make real progress in AI. 
+
+So what does this mean for you, as a software developer? Well, it means that the AI landscape is changing, and it's changing fast. It means that the old ways of doing things, the big models, the pre-training, that's not the only game in town anymore. There are new players, new approaches, and new possibilities. And if you're interested in AI, if you're interested in being part of this movement, then you should be paying attention to what's happening with Core Automation, and the other Neo Labs.
+
+Alright, let us move on to the next story.
+
+Hi, I'm Herlin, and welcome to our tech podcast. Imagine you're searching for something online, and the results are not only accurate but also tailored to your specific needs. Sounds too good to be true, right? Well, a team at Perplexity has been working on making this a reality, and their approach is pretty fascinating. They're using something called search-augmented language models, which are basically AI models that can search the web and provide answers based on that search. But here's the thing - these models need to be trained in a way that balances accuracy, efficiency, and user preference. And that's where things get really interesting.
+
+So, think of it this way - when you're training an AI model, you're trying to teach it to do something specific, like answer questions or provide information. But with search-augmented language models, you need to teach them to search the web, find the right information, and then provide an answer based on that information. It's like teaching a kid to do research for a school project, but instead of using a library, they're using the entire web.
+
+The team at Perplexity started with a two-stage approach. First, they used something called supervised fine-tuning, which is like giving the model a bunch of examples of how to do something, and then having it practice until it gets it right. In this case, they were teaching the model to search the web and provide accurate answers. But then, they took it a step further by using reinforcement learning, which is like giving the model a reward for doing something well. So, if the model provided an accurate answer, it got a reward, and if it didn't, it didn't get a reward.
+
+Now, here's where it gets really cool. The team at Perplexity didn't just stop at rewarding the model for accuracy. They also wanted to reward it for efficiency, so they added something called an efficiency penalty. Think of it like a speed limit - if the model is taking too long to provide an answer, it gets penalized. And they also wanted to reward the model for providing answers that were not only accurate but also easy to understand and relevant to the user's needs.
+
+So, how did they do all this? Well, they created a dataset of questions and answers that the model could use to learn from. But they didn't just stop at simple questions and answers. They also added something called rubric-based data, which is like a set of rules that the model has to follow when providing an answer. For example, the model might be required to provide an answer that is written in a certain style or format.
+
+And here's the thing - all of this is not just theoretical. The team at Perplexity actually tested their approach and found that it worked really well. They compared their model to other models, like GPT-5.4, and found that it was not only more accurate but also more efficient. In fact, they found that their model could provide answers that were just as accurate as other models, but with fewer tool calls, which is like a measure of how much the model is searching the web.
+
+So, what does this mean for you? Well, if you're a software developer, this means that you can use search-augmented language models to build applications that provide more accurate and relevant results to users. And if you're just a user, this means that you can expect to see more accurate and relevant results when you search the web. Either way, it's a win-win.
+
+And here's the practical takeaway - if you're building applications that use search-augmented language models, you need to think about how you're training those models. Are you using a two-stage approach like the team at Perplexity? Are you rewarding the model for accuracy and efficiency? And are you using rubric-based data to teach the model to follow certain rules when providing answers? These are all important questions to consider, and if you can answer them in the affirmative, you'll be well on your way to building applications that provide more accurate and relevant results to users.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.
