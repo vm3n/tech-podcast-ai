@@ -108,7 +108,7 @@ def process_category(category: str, urls: list,
     )
 
     # Top 6 deep dives + up to 4 headlines = max 10
-    urls = urls[:10]
+    urls = urls[:15]
     print(f"Processing {len(urls)} articles")
     print(f"  Deep dives : {min(6, len(urls))}")
     print(f"  Headlines  : {max(0, len(urls) - 6)}")

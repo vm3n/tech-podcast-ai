@@ -44,6 +44,10 @@ SKIP_KEYWORDS = [
     "tldr.tech/devops", "tldr.tech/it",
     "tldr.tech/dev", "tldr.tech/crypto",
     "tldr.tech/founders", "tldr.tech/product",
+    "tldr.tech/data", "tldr.tech/webdev",
+    "link.omane.media",
+    "tldr.tech/data", "tldr.tech/webdev",
+    "link.omane.media",
     "rh_ref=", "sl_campaign=", "myapp.localhost",
 ]
 
