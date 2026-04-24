@@ -3,7 +3,7 @@ Stage 3 — Gmail Fetcher (complete final version)
 - Decodes TLDR tracking URLs to get real article links
 - Filters ads, tracking, and junk links
 - Deduplicates by domain (max 2 per domain)
-- Auto detects category from sender name
+- Only processes 5 categories: ai, dev, tech, data, it
 - Does NOT mark URLs as processed (main.py handles that)
 """
 
@@ -20,12 +20,17 @@ from database import setup_database, is_url_seen
 
 SCOPES = ["https://www.googleapis.com/auth/gmail.readonly"]
 
+# Only process these 5 categories
+ALLOWED_CATEGORIES = {'ai', 'dev', 'tech', 'data', 'it'}
+
 # Known ad/sponsor domains — skip entirely
 AD_DOMAINS = {
     "qawolf.com", "boldsign.com", "stackadapt.com",
     "go.stackadapt.com", "airia.com", "zenity.io",
     "pages.awscloud.com", "advertise.tldr.tech",
     "jobs.ashbyhq.com", "labs.zenity.io",
+    "googlecloudevents.com", "cal.com",
+    "skills.google", "pointfive.co",
 }
 
 # Skip URLs containing these keywords
@@ -44,10 +49,7 @@ SKIP_KEYWORDS = [
     "tldr.tech/devops", "tldr.tech/it",
     "tldr.tech/dev", "tldr.tech/crypto",
     "tldr.tech/founders", "tldr.tech/product",
-    "tldr.tech/data", "tldr.tech/webdev",
-    "link.omane.media",
-    "tldr.tech/data", "tldr.tech/webdev",
-    "link.omane.media",
+    "tldr.tech/data", "link.omane.media",
     "rh_ref=", "sl_campaign=", "myapp.localhost",
 ]
 
@@ -75,9 +77,8 @@ def detect_category(sender_name: str) -> str:
     """
     Detects podcast category from sender name.
     TLDR AI -> ai
-    TLDR DevOps -> devops
+    TLDR Dev -> dev
     TLDR -> tech
-    Works for any newsletter automatically.
     """
     name = sender_name.lower().strip()
     for prefix in ["tldr ", "the ", "newsletter "]:
@@ -214,6 +215,7 @@ def get_email_body(service, msg_id: str) -> str:
 def fetch_newsletter_links() -> dict:
     """
     Fetches all article links from emails tagged Podcasts.
+    Only processes ALLOWED_CATEGORIES: ai, dev, tech, data, it
     Returns dict: {category: [urls]}
     Does NOT mark URLs as processed — main.py does that.
     """
@@ -226,6 +228,7 @@ def fetch_newsletter_links() -> dict:
 
     query = "label:Podcasts newer_than:1d"
     print(f"\nSearching Gmail label:Podcasts...")
+    print(f"Processing categories: {ALLOWED_CATEGORIES}")
 
     try:
         results = service.users().messages().list(
@@ -263,11 +266,16 @@ def fetch_newsletter_links() -> dict:
 
             # Skip confirmation emails
             if "confirm" in subject.lower():
-                print(f"\n  Skipping: {subject[:50]}")
+                print(f"\n  Skipping confirmation: {subject[:50]}")
                 continue
 
             sender_name = sender.split("<")[0].strip()
             category = detect_category(sender_name)
+
+            # Only process allowed categories
+            if category not in ALLOWED_CATEGORIES:
+                print(f"\n  Skipping {category} — not in allowed categories")
+                continue
 
             print(f"\n  Newsletter : {subject[:50]}")
             print(f"  Sender     : {sender_name}")
@@ -280,13 +288,9 @@ def fetch_newsletter_links() -> dict:
             links = extract_links_from_email(body)
             print(f"  Links found: {len(links)}")
 
-            # Show first 3 decoded links for verification
             for i, link in enumerate(links[:3], 1):
                 print(f"    {i}. {link[:80]}")
 
-            # Only include links not seen in last 7 days
-            # Note: we do NOT mark them here
-            # main.py marks them after successful narration
             new_links = []
             for link in links:
                 if not is_url_seen(link, days=7):
