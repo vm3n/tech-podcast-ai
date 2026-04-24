@@ -1,0 +1,109 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+Imagine you're a small business owner, and one day you wake up to find out your entire network has been hacked. Your customer data is gone, and you're facing a huge fine for not protecting it. This isn't a rare scenario, it's a reality for many businesses. Here's the thing, most security solutions are built for the big guys, the ones with huge budgets and teams of experts. But what about the rest of us? Think of it this way, cybersecurity is like having a good lock on your door. You want to make sure it's strong enough to keep the bad guys out. 
+
+Huntress is a company that's trying to change the game. They're offering enterprise-grade cybersecurity to all businesses, not just the 1%. Their security platform is built, owned, and operated entirely by their team. So what does this mean for you? It means you get predictable pricing, and more importantly, continuous protection for your business. They're not just monitoring your endpoints, they're handling everything from detection to remediation. 
+
+Let's break it down, their Managed EDR solution is like having a team of experts watching your back 24/7. They detect threats, respond to them, and eliminate them. It's like having a firewall, but instead of just blocking attacks, they're actively hunting down the bad guys. And here is why that is a big deal, their response time is industry-leading, we're talking minutes, not hours or days. 
+
+But that's not all, they're also protecting identities. Think of it this way, your identity is like a key to your business. If someone gets a hold of it, they can do a lot of damage. Huntress Managed ITDR is designed to detect and respond to identity-based threats. They're talking account takeovers, business email compromise, unauthorized logins, and more. They're like a bouncer at a club, making sure only the right people get in. 
+
+And then there's their Managed SIEM solution. SIEM stands for Security Information and Event Management. It's like a dashboard that shows you what's happening in your network. But here's the thing, traditional SIEMs can be complex and expensive. Huntress is simplifying it, making it easy to use, and affordable. They're giving you the information you need, without the noise. 
+
+Now, I know what you're thinking, all this sounds great, but what about the people factor? Humans are often the weakest link in security. Huntress has got that covered too. They're offering training content built on real-world threat intelligence. It's like a security awareness program, but instead of being boring, it's engaging, and expert-backed. They're using Emmy Award-winning animators to create content that actually reduces human risk. 
+
+And finally, they're also helping businesses harden their security posture. It's like making sure your door is locked, and your windows are closed. They're continuously auditing and enforcing configurations, policies, and permissions. They're taking away the easy attack paths, so hackers can't just walk in. 
+
+So what does this mean for you, as a developer? It means you should be thinking about security from the start. You should be building security into your applications, and not just bolting it on at the end. It means you should be looking for solutions like Huntress, that can help you protect your business, and your customers. And here is the thing, security is not just about technology, it's about people, and processes. You need to be thinking about all three, if you want to stay safe.
+
+Alright, let us move on to the next story.
+
+Imagine your most personal medical secrets being sold to the highest bidder on a giant online marketplace. Sounds like a scene from a sci-fi movie, right? But this just happened in real life, with the medical data of half a million people being listed for sale on Alibaba, one of the world's largest e-commerce sites. Here's the thing, this data wasn't just any ordinary information - it was highly sensitive medical data from volunteers who trusted a UK-based charity called UK Biobank to keep it safe.
+
+So, what is UK Biobank, exactly? Think of it like a giant library of medical information, where researchers can come and study data to help find cures for diseases like dementia, cancer, and Parkinson's. The charity has been collecting this data since 2012, and it's become one of the most comprehensive biomedical datasets in the world. But here's the catch - when you're dealing with sensitive information like this, security is paramount.
+
+Now, the data that was listed for sale on Alibaba was anonymized, which means it didn't include names, addresses, or other personally identifiable information. But it did include things like age, gender, and lifestyle habits, which could potentially be used to identify individuals if it fell into the wrong hands. And that's the problem - even though the data was anonymized, it's still possible for someone with the right skills and resources to figure out who the data belongs to.
+
+The UK government found out about the data being listed for sale on April 20, and they immediately sprang into action. The UK technology minister, Ian Murray, announced that three Chinese research institutions had been banned from accessing UK Biobank's platform, because they were suspected of downloading the data and listing it for sale. But here's the thing - the Chinese government actually helped the UK government take down the listings, which is pretty surprising given the current tensions between the two countries.
+
+So what does this mean for you, as a software developer? Well, think of it this way - when you're working with sensitive data, security is not just an afterthought, it's a top priority. You need to make sure that the data you're collecting and storing is protected from unauthorized access, and that you have the right measures in place to prevent data breaches. In the case of UK Biobank, they're now introducing new security measures, like limiting the size of files that can be exported from their platform, and monitoring all files for suspicious behavior.
+
+And here is why that is a big deal - because when you're dealing with sensitive medical data, the stakes are incredibly high. If this data falls into the wrong hands, it could be used for all sorts of nefarious purposes, from identity theft to blackmail. So, as a developer, you need to be aware of the potential risks and take steps to mitigate them. That means using secure protocols for data transfer, encrypting sensitive information, and implementing robust access controls to prevent unauthorized access.
+
+So what's the takeaway from all this? It's simple - when you're working with sensitive data, security is not just a nicety, it's a necessity. You need to prioritize it, and make sure that you have the right measures in place to protect the data you're collecting and storing. Because in the end, it's not just about protecting the data - it's about protecting the people who trusted you with that data in the first place.
+
+Alright, let us move on to the next story.
+
+So I've got a story to share with you, but I've got to be upfront, I'm working with limited info here due to a paywall. That being said, it looks like Microsoft just dropped an emergency update for ASP.NET Core, and it's a big deal. Here's what I can tell you - there's a high-severity vulnerability that affects versions 10.0.0 through 10.0.6 of the Microsoft.AspNetCore.DataProtection NuGet package. Think of it like a special set of tools that helps keep your data safe when it's being sent between a client and a server.
+
+So what's the problem? Well, it turns out there's a flaw in how these tools verify cryptographic signatures. It's like having a bouncer at a club who's not doing a good job checking IDs. An attacker can basically create fake credentials that look legit, and that's a major issue. They can use these fake credentials to gain SYSTEM privileges on devices running Linux or macOS apps, which is basically like having the keys to the whole house.
+
+Microsoft says that even after you patch the vulnerability, you're still not entirely safe. If an attacker created fake credentials while you were running a vulnerable version of the package, those credentials can still be used to access your system, even after you've updated. It's like the attacker has already gotten into the house and hidden a spare key - just patching the lock isn't enough, you need to find and get rid of that spare key too.
+
+Here is the thing - this vulnerability is tracked as CVE-2026-40372, and it affects ASP.NET Core, which is a web development framework that lets you write .Net apps that run on multiple operating systems, including Windows, macOS, Linux, and Docker. It's a pretty popular tool, and this vulnerability is a big deal.
+
+So what does this mean for you? If you're a developer using ASP.NET Core, you need to update to the latest version, and then you need to take some extra steps to make sure you're secure. You need to rotate your DataProtection key ring, which is like changing all the locks in the house, to make sure any fake credentials that might have been created are no longer valid. It's a bit of a hassle, but trust me, it's worth it to keep your apps and your users safe.
+
+Alright, let us move on to the next story.
+
+Imagine a world where hackers aren't even involved in a cyber attack. Instead, an artificial intelligence system is calling the shots, moving at lightning speed, and exploiting vulnerabilities in the cloud that no human could find. Sounds like science fiction, but it's not. This is the reality we're facing today. 
+
+Think of it this way: large language models, or LLMs, have been getting a lot of attention lately, and for good reason. They can process vast amounts of information, learn from it, and even make decisions on their own. But what if I told you that these models can now be used to launch autonomous attacks on cloud environments? That's right, no human involvement needed. 
+
+Here's the thing: this isn't just theoretical. Back in November 2025, a company called Anthropic published a report that showed how AI was used in a state-sponsored espionage campaign. And I'm not talking about AI just assisting human operators - I'm talking about AI being the operator, performing 80-90% of the campaign autonomously. That's a game-changer.
+
+So, what does this mean for cloud security? Well, to find out, a team of researchers built a multi-agent system, which they called Zealot. It's like a team of specialists, each with their own tools and expertise, working together to launch an attack on a cloud environment. And here's why that's a big deal: Zealot can operate autonomously, making decisions and taking actions without any human guidance.
+
+Now, you might be wondering how this works. Think of it like a real-world example: imagine you're at a coffee shop, and you want to order a coffee. You can either go up to the counter and order it yourself, or you can have someone else do it for you. In this case, the Zealot system is like a team of baristas, each with their own specialty. There's the infrastructure agent, who's like the barista who takes your order. Then there's the application security agent, who's like the barista who makes your coffee. And finally, there's the cloud security agent, who's like the barista who hands you your coffee and makes sure everything is okay.
+
+These agents work together, sharing information and context, to launch an attack on a cloud environment. And the scary thing is, it works. The researchers were able to use Zealot to exploit vulnerabilities in a cloud environment, and even exfiltrate sensitive data. So what does this mean for you, as a software developer? It means you need to be aware of the potential risks of autonomous AI attacks, and take steps to protect your cloud environment. That includes proactively auditing permissions, restricting metadata access, and monitoring for lateral movement.
+
+The window between initial access and data loss is shrinking, and tools like Zealot are making it easier for attackers to move quickly and exploit vulnerabilities. So, it's time to match automation with automation. Manual detection and response just can't keep pace with AI-driven attacks. You need to be using AI for defense purposes, automating real-time threat hunting and misconfiguration remediation at a scale that manual operations just can't match.
+
+In the end, this is a wake-up call for all of us. We need to be aware of the potential risks of autonomous AI attacks, and take steps to protect ourselves. As a software developer, you have a critical role to play in this. So, what are you going to do about it?
+
+Alright, let us move on to the next story.
+
+Imagine you're working on a project, and you run a simple command like npm install, not thinking twice about it. But what if that one command just opened the door to a malicious package that's now running thousands of lines of code on your machine, potentially stealing your credentials or worse. This is a reality that's happening every day, with popular open source packages being compromised and used to spread malware. 
+
+So what's going on here. Well, when you install a package, you're essentially executing code from someone you don't know, without reviewing it. Think of it this way, you're letting a stranger into your house, hoping they won't cause any harm. And with the rise of AI coding agents, this problem is getting even worse, because these agents are installing packages all the time, without any human oversight. 
+
+Now, you might be wondering, how do these malicious packages even make it into the ecosystem. It's actually pretty simple. Someone creates a package with a similar name to a popular one, or they compromise a legitimate package, and then they upload it to a package repository like npm or PyPI. And just like that, thousands of developers are potentially exposed to malware. 
+
+Here's the thing, this is not a new problem. We've seen cases like litellm, a popular AI proxy library that was compromised to exfiltrate credentials, or telnyx, a legitimate telecom SDK that was hijacked on PyPI. And these are just a few examples. 
+
+So, what can you do to protect yourself. This is where PMG comes in. PMG is a tool that intercepts every package install and checks it for malware before the code executes. It's like having a bouncer at the door, who checks the ID of every stranger before letting them in. 
+
+Think of PMG as a proxy that wraps around your package manager, like npm or pip. When you run a command like npm install, PMG kicks in and analyzes the package against a real-time threat intelligence feed. If the package is malicious, PMG blocks it before it can cause any harm. And here's why that's a big deal, because it means you don't have to change your workflow at all. You can just keep using your package manager as usual, and PMG will work silently in the background, protecting you from malicious packages. 
+
+But that's not all. PMG also uses sandboxing to contain installation scripts, so even if a malicious package evades detection, it won't be able to modify your system. And PMG keeps a log of every package installation event, so you have a verifiable trail of what was installed, when, and from where. 
+
+So what does this mean for you. If you're a developer, you should definitely check out PMG. It's easy to install, and it works with all the popular package managers, including npm, pip, and poetry. And the best part is, it's free and open source, so you can use it without worrying about any costs. 
+
+Here's a practical takeaway. Next time you run npm install, remember that you're potentially exposing yourself to malware. But with PMG, you can rest assured that you're protected. So, go ahead and install PMG today, and start protecting yourself from malicious packages. It's a simple step that could save you from a lot of trouble down the line.
+
+Alright, let us move on to the next story.
+
+Imagine you're walking down the street, thinking you're alone, but someone's been tracking your every move. They know where you've been, where you are, and where you're going. Sounds like a scene from a spy movie, right? But this is real life. Security researchers just uncovered two massive spying campaigns that exploited weaknesses in the global telecoms infrastructure to track people's locations. Think of it this way, the entire phone network is like a big web, and these surveillance vendors found a way to tap into it, using it against us.
+
+So, here's what happened. The researchers at Citizen Lab discovered that these vendors, who are like ghost companies, pretended to be legitimate cellular providers. They piggybacked on the networks of real phone companies to look up the location data of their targets. It's like they were hiding behind the infrastructure of these telecom providers, making it hard to detect them.
+
+Now, you might be wondering, how did they do it? Well, it all comes down to two technologies: SS7 and Diameter. SS7 is like an old highway system that lets different phone networks talk to each other. It's been around for years, but it has some major security flaws. It doesn't require authentication or encryption, which means anyone can jump on and start tracking people's locations. Diameter is the newer, supposedly more secure system, designed for 4G and 5G networks. But, the thing is, phone companies don't always implement the security features properly, so it's still possible to exploit it.
+
+The researchers found that these surveillance vendors were using three specific telecom providers to get access to the global phone network. They were like the entry points for these spying campaigns. One of them is an Israeli operator called 019Mobile, another is a British provider called Tango Networks, and the third is Airtel Jersey, which is now owned by a company called Sure. The CEO of Sure, Alistair Beak, said they don't lease access to their signaling services to organizations that want to track people's locations, but the researchers found evidence that suggests otherwise.
+
+So, who's behind these spying campaigns? The researchers think it's likely government customers who are using these surveillance vendors to track high-profile targets. They found clues that point to an Israeli-based commercial geo-intelligence provider, but they didn't name names. What's interesting is that these campaigns were able to track people's locations across different countries and networks. It's like they had a master key to the entire phone network.
+
+One of the researchers, Gary Miller, said they've seen thousands of these attacks over the years, and it's a fairly common exploit that's hard to detect. But, here's the thing, these attacks are geographically targeted, which means the people behind them know which countries and networks are most vulnerable.
+
+So, what does this mean for you? Well, it's a wake-up call. Our phone networks are not as secure as we think they are. These surveillance vendors are like hackers, but instead of stealing our data, they're tracking our locations. As a software developer, you should take away that security is not just about protecting data, it's also about protecting people's privacy and location. When you're building apps or working with phone companies, you need to think about the potential risks and make sure you're implementing the right security measures to prevent these kinds of exploits. It's a big responsibility, but it's one we need to take seriously.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Anthropic's Mythos rollout skipped America's cybersecurity agency, which is weird because they're the ones who need to know about new AI. This could be a big deal for security. It raises some eyebrows. Claude Desktop just got caught changing software permissions on users' computers without asking. This is a big deal because it raises trust issues. It might matter to you if you use their software. Cosmetic brand Rituals got hacked, with client data stolen. This matters because it shows even small companies are targets. Think of it this way, no one is safe from these attacks.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.

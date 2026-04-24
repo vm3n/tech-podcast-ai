@@ -1,0 +1,107 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+Imagine a super powerful AI that can find thousands of secret doors in the world's most secure buildings, and that's basically what's happening right now with Anthropic's new AI model called Mythos. Think of it this way, Mythos is like a master locksmith who can discover hidden keys to unlock even the most protected systems, and that's got a lot of people worried. Here is the thing, this AI is designed to help with cybersecurity, but it's also sparking fears about the potential threats to traditional software security.
+
+So what's going on here, Australia is actually working with Anthropic to understand these potential cybersecurity vulnerabilities, and they're taking it very seriously. The government spokesperson said they're working with software providers like Anthropic to make sure they're aware of emerging vulnerabilities, which is a big deal. The central banks of Australia and New Zealand are also monitoring the release of Mythos, and they're in touch with major regulators around the world.
+
+Now, let's take a step back, Anthropic launched Mythos under a restricted access program called Project Glasswing, which includes big tech firms like Amazon, Microsoft, and Apple. They're giving access to over 40 organizations that build or maintain critical software infrastructure, which is like giving them a special tool to help them build more secure software. But here is why that is a big deal, experts are saying that Mythos' advanced coding and autonomous capabilities could sharply increase the pace of sophisticated cyberattacks, especially in sectors like banking.
+
+Think of it this way, banking systems are like old, complex buildings with many interconnected rooms, and Mythos could potentially find all the hidden doors and secret passages in those buildings. Simon Birmingham, the CEO of the Australian Banking Association, said that banks are engaging with regulators to ensure the financial system remains safe, which is like they're trying to make sure all the doors and windows are locked.
+
+So what does this mean for you, as a software developer, you should be paying attention to this story because it highlights the importance of cybersecurity and the potential risks of advanced AI models like Mythos. The practical takeaway here is that you should be proactive in identifying and addressing potential vulnerabilities in your own software, and consider using tools like Mythos to help you build more secure systems.
+
+Alright, let us move on to the next story.
+
+Imagine you're trying to have a conversation with a friend, but every time you say something, you have to define every single word you use, or they just won't understand what you're talking about. That's kind of what's happening with artificial intelligence right now. AI agents are trying to make decisions based on data, but the data is all over the place, and it's hard for them to understand what it means. So, what if you could create a system that helps AI agents understand the context of the data, and makes it easier for them to make decisions? That's exactly what Google is trying to do with its new Agentic Data Cloud.
+
+Here is the thing, Google is not just talking about storing data in the cloud, it's talking about creating a whole new architecture that helps AI agents understand the meaning of the data. Think of it this way, when you're talking to a friend, you don't just throw out a bunch of words, you use context to help them understand what you're saying. That's what Google is trying to do with its Agentic Data Cloud, create a system that provides context for AI agents.
+
+So, Google's Agentic Data Cloud is built on top of its existing data platform, which includes services like BigQuery, Dataplex, and Vertex AI. These services are all being brought together to create a shared intelligence layer, which is kind of like a big brain that helps AI agents understand the data. And at the heart of this system is something called the Knowledge Catalog, which is like a big map that shows how all the different pieces of data are related to each other.
+
+Now, this Knowledge Catalog is a big deal, because it's not just a static map, it's a dynamic system that's always learning and updating itself. It's like a big library that's always getting new books, and the books are all cross-referenced, so you can easily find the information you need. And Google's not just stopping at its own data, it's also allowing companies to bring in their own data from other services, like Salesforce or SAP.
+
+But here is why this is a big deal, Google's not the only one doing this. Microsoft and Amazon are also working on similar systems, because they know that the company that can provide the best context for AI agents is going to be the one that wins in the end. So, what does this mean for you, as a software developer? It means that you need to start thinking about how you can use these new systems to provide context for your AI agents. You need to start thinking about how you can use metadata, and semantic layers, and knowledge graphs to help your AI agents understand the data.
+
+And here is why that's important, AI agents are not just going to be used for simple tasks, they're going to be used for complex decision-making, and they need to be able to understand the context of the data to make those decisions. So, if you're not providing that context, your AI agents are not going to be able to make good decisions, and that's going to be a problem. So, what can you do about it? You can start by learning more about Google's Agentic Data Cloud, and how it works. You can start by learning more about metadata, and semantic layers, and knowledge graphs. And you can start by thinking about how you can use these new systems to provide context for your AI agents.
+
+So what does this mean for you, it means you should start exploring how to use these new technologies to improve your AI systems. You should start thinking about how to provide more context to your AI agents, and how to use metadata and semantic layers to help them understand the data. And you should start thinking about how to use these new systems to make your AI agents more accurate, and more reliable. That's the key to making AI work, and that's what Google's Agentic Data Cloud is all about.
+
+Alright, let us move on to the next story.
+
+Imagine you're asking a super smart assistant to tell you how your company's revenue grew last quarter, and it confidently gives you a wrong answer. This isn't a hypothetical scenario, it's what's been happening to a lot of companies that have been trying to use AI to make sense of their data. So, what's going on here? It turns out that most AI-for-data agents failed in 2025 because they lacked context. Think of it this way, when you ask a human analyst to look at some data, they don't just look at the numbers, they also use all the context they have about the company, like what the different columns in the spreadsheet mean, or how the company defines revenue. 
+
+But when you ask an AI agent to do the same thing, it doesn't have all that context, so it can easily get things wrong. Here is the thing, the industry spent a lot of 2025 trying to improve the AI models, thinking that was the problem, but it turns out the problem is actually about context. OpenAI published a detailed description of the internal data agent they built for their own employees, and it showed that the key to making it work was to build six deliberate layers of context. 
+
+So, what does this mean for companies that want to use AI to make sense of their data? Well, it means they need to start thinking about context as a first-class architectural layer, not just an afterthought. And here is why that is a big deal, companies that get this right will be able to use AI to make better decisions, faster, while companies that don't will keep struggling with wrong answers. 
+
+Now, you might be wondering, what does this context layer look like? The answer is, it looks like a Data Product. A Data Product is like a managed unit of data that is treated like a product, not just a byproduct of some operational system. It has an owner, a contract, and all the context that an AI agent needs to make sense of it. 
+
+Think of it this way, a Data Product is like a package of data that includes everything an AI agent needs to understand it, like the schema, the semantics, the lineage, and the quality. This is different from just a raw table of data, which is like a bunch of numbers without any context. 
+
+So, what does this mean for software developers? It means that when you're building data systems, you need to start thinking about Data Products as the fundamental unit of data, not just raw tables or datasets. You need to think about how you can create Data Products that include all the context that an AI agent needs to make sense of the data. 
+
+And here is the key takeaway, if you're building an AI system that uses data, you need to make sure that the data is presented as a Data Product, with all the context that the AI agent needs to make sense of it. This will save you a lot of headaches down the line, and make sure that your AI system is giving you accurate answers.
+
+Alright, let us move on to the next story.
+
+Imagine you're on the cusp of revolutionizing your business with AI, but suddenly everything comes to a grinding halt. You're not alone, this is happening to companies all over the world. Here's the thing, it's not because people are resistant to innovation, it's because the way we've been doing things just doesn't work for AI. Think of it this way, traditional security controls are like trying to put a square peg into a round hole, they just don't fit.
+
+So what's going on? Well, when a business unit finds an AI tool that could boost productivity or revenue, they get excited and want to move forward. But then security raises concerns, the legal team starts asking questions, and compliance gets cold feet. The project slows down and eventually stalls. This friction is not just about being cautious, it's about the fact that most enterprise governance models were not designed for AI.
+
+Large language models and generative AI systems introduce new risks like data leakage, model manipulation, and regulatory ambiguity. It's like trying to navigate a new city without a map, you're not sure what's around the corner. CIOs are caught between two imperatives, they need to accelerate AI adoption to drive business value, but they also need to protect the enterprise from the risks AI poses. It's a tough spot to be in.
+
+Security and risk leaders are asking legitimate questions, like how do we protect sensitive data when interacting with AI models? How do we mitigate emerging threats like prompt injection or model poisoning? These are not easy questions to answer, especially when traditional security controls were built for deterministic systems, not probabilistic AI systems. It's like trying to use a recipe for baking a cake to build a car, it just doesn't work.
+
+The challenge is that applying legacy review processes to AI technologies often results in elongated assessments and inconsistent decisions. Meanwhile, the business continues, employees experiment with publicly available tools, and teams pilot AI capabilities without formal approval. It's like the Wild West, and it's not a good thing. Organizations that resolve governance bottlenecks faster start to see real gains in productivity and speed to market.
+
+So what's the solution? Forward-looking CIOs are moving governance upstream, embedding security and compliance into AI strategy and design from the outset. They're establishing cross-functional AI governance councils that bring together IT, security, legal, privacy, data leaders, and key business stakeholders. The goal is to define shared guardrails, data usage policies, and risk tolerances early on.
+
+Think of it this way, it's like building a highway system for AI. You need to create secure, standardized pathways for AI development and deployment, sometimes called "paved roads." These are pre-approved architectures, controls, and workflows that allow teams to move quickly within defined boundaries. It's like having a GPS system for AI, you know exactly where you're going and how to get there.
+
+The most effective organizations are also adopting purpose-built AI detection and response capabilities to gain visibility into model usage, identify misuse, and respond to emerging AI-driven threats in real time. It's like having a team of experts monitoring the AI system 24/7, so you can sleep better at night.
+
+So what does this mean for you? If you're a software developer, you need to understand that AI governance is not just about security, it's about creating a framework that allows you to innovate quickly and safely. You need to be part of the conversation with your CIO and other stakeholders to define those guardrails and policies. By doing so, you'll be able to build AI systems that are not only secure but also scalable and aligned with business priorities. The key takeaway is that AI governance is not a one-time thing, it's a continuous process that requires collaboration and oversight. By getting it right, you'll be able to unlock the full potential of AI and drive real business value.
+
+Alright, let us move on to the next story.
+
+Imagine you're running a huge company, and you have all this data just sitting there, not really doing much for you. But what if you could use that data to make your company actually think and act for itself, like a smart agent working on your behalf. That's what's happening with the partnership between Google Cloud and SAP, they're creating what they call the Agentic Enterprise. 
+
+So here is the thing, this is not just about storing data in the cloud, it's about using that data to power artificial intelligence that can make decisions and take actions without needing humans to intervene. Think of it this way, you have all these different systems and processes in your company, and they're all generating data, but it's hard to make sense of it all. That's where the Unified Data Foundation comes in, it's like a central hub that brings all that data together, so you can use it to drive your business forward.
+
+Google Cloud and SAP are working together to embed Gemini AI directly into the core business processes of huge enterprises. This means that companies can use AI to automate complex tasks, and make decisions based on real-time data. And here is why that is a big deal, it's not just about automating routine tasks, it's about creating a whole new level of intelligence in the company.
+
+The background context here is that SAP and Google Cloud have been partners for a while, but this is a deepening of that partnership. SAP is looking to stay relevant in the market, and Google Cloud is looking to expand its reach into the enterprise space. So they're working together to create these next-generation agentic solutions, which include things like dynamic content development, and collaborative multi-agent execution.
+
+Now, you might be wondering what this means for you, as a software developer. Well, the key takeaway here is that this technology is not just for huge enterprises, it's something that can be applied to any company that wants to use data to drive its business forward. So what does this mean for you, it means that you should be thinking about how to use data and AI to automate tasks, and make decisions in your own company. You should be looking at how to bring all your data together, and use it to power intelligent agents that can work on your behalf. 
+
+The zero-copy data sharing capabilities that Google Cloud and SAP are introducing, are a game changer. It's like having a copy machine that can just duplicate all your data, without actually having to move it. This simplifies architectures, and ensures that you have high-fidelity data access, and real-time reliability. 
+
+So, if you're a developer, you should be paying attention to this, because it's going to change the way you think about data, and AI, and how they can be used to drive business value. The practical takeaway here is to start thinking about how you can use data and AI to automate tasks, and make decisions in your own company. Look at how you can bring all your data together, and use it to power intelligent agents that can work on your behalf.
+
+Alright, let us move on to the next story.
+
+Imagine being able to speed up scientific discovery by a factor of ten, or even a hundred. What if you could use artificial intelligence to automate the most tedious parts of research and development, and free up your team to focus on the really important stuff? Sounds like science fiction, right? But it's not. This is exactly what's happening with Microsoft Discovery, a new platform that's using agentic AI to revolutionize the way we do R&D.
+
+So what is agentic AI, exactly? Think of it like a super-smart assistant that can reason, plan, and act on its own. It's like having a team of expert researchers and engineers working for you, but instead of being human, they're artificial intelligence agents. These agents can sift through vast amounts of data, identify patterns, and make predictions, all without needing human intervention.
+
+Microsoft Discovery is a platform that brings together these agentic AI agents with advanced reasoning capabilities, a graph-based knowledge foundation, and high-performance computing. It's like a turbocharged engine for R&D, allowing teams to iterate faster, and move from hypothesis to candidate development to outcome with greater confidence.
+
+But here's the thing - this isn't just about speeding up existing processes. It's about fundamentally changing the way we do R&D. With Microsoft Discovery, researchers and engineers can work together with AI agents to explore new ideas, test hypotheses, and validate results. It's a collaborative process that combines human expertise with artificial intelligence, and it has the potential to lead to breakthroughs that we can't even imagine yet.
+
+Let's take a look at some of the companies that are already using Microsoft Discovery. There's Syensqo, a global leader in advanced materials and specialty chemicals, which is using the platform to accelerate data-driven science and AI-enabled discovery. Then there's GigaTIME, which is using Microsoft Discovery to analyze tumor microenvironments and develop new cancer treatments. And PhysicsX, which is partnering with Microsoft to bring agentic engineering into production, allowing engineers to explore significantly larger design spaces and evaluate thousands of manufacturable candidates in days.
+
+These companies are just the tip of the iceberg. Microsoft Discovery is part of a growing ecosystem of partners and tools that are working together to expand what's possible for R&D. And with the platform now available in preview, more organizations will be able to get started and see the benefits for themselves.
+
+So what does this mean for you, as a software developer? It means that you have the opportunity to be part of a revolution in R&D, to work on projects that have the potential to change the world. It means that you'll be able to use your skills to build and deploy AI agents that can reason, plan, and act, and to work with researchers and engineers to develop new breakthroughs. And it means that you'll be able to take advantage of the latest advancements in agentic AI, and apply them to real-world problems.
+
+The key takeaway here is that Microsoft Discovery is not just a tool, it's a new way of working. It's a way of combining human expertise with artificial intelligence to achieve something greater than the sum of its parts. And as a software developer, you have the chance to be at the forefront of this revolution, to help shape the future of R&D and to make a real impact on the world.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Google's introducing Passkeys for passwordless login. This means no more passwords, just your device or biometrics. It's a big deal for website security. CISA's warning about China-linked compromised devices is making waves. They're targeting networks through hacked devices. This could be a big deal for cybersecurity.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.
