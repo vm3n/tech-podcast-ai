@@ -1,0 +1,101 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+So I've got limited info on this story, just a partial view due to a paywall, but I'll give you the lowdown on what's happening. There's this report from Wiz Research, called the Cloud Threats Retrospective 2026, and it's looking back at what went down in 2025. Think of it this way, they're doing a recap of the biggest cloud security threats from last year. 
+
+Here is the thing, classic weaknesses were still the main issue, things like vulnerabilities that hackers could exploit, secrets that were left out in the open, and misconfigurations that gave them an easy in. These are like unlocked doors, just waiting for someone to walk through. And it's not like these are new problems, they've been around for a while, but they're still the most common way that hackers are getting into cloud systems.
+
+Now, you might think that just because these weaknesses are familiar, they're not that big of a deal, but that's not the case. There were some big incidents last year, like Shai-Hulud and React2Shell, that showed how these weaknesses can be used to cause a lot of damage. It's like a row of dominoes, once one thing falls, it can take a lot of other things down with it. 
+
+And here is why that is a big deal, these weaknesses aren't just limited to one specific system or company, they can affect whole ecosystems. It's like a ripple effect, where one problem can spread out and cause issues for a lot of people. 
+
+AI is also playing a role in all of this, not by creating new types of attacks, but by making it easier for hackers to do their thing. It's like giving them a set of powerful tools, that they can use to cause more damage. As AI becomes more common in cloud infrastructure, it's creating new opportunities for hackers to exploit.
+
+So what does this mean for you, as a developer? It means you need to be extra careful when it comes to securing your cloud systems. Make sure you're keeping up with the latest security patches, and that you're not leaving any secrets or vulnerabilities out in the open. It's like locking your doors and windows, it's just basic security hygiene. And be aware of the potential risks that come with using AI and automation in your cloud systems, because while they can be powerful tools, they can also be used against you.
+
+Alright, let us move on to the next story.
+
+So I've got a story to share with you, but here's the thing, I've only got partial info due to a paywall, so bear with me. Apparently, Google is investing a huge amount of money in a company called Anthropic, we're talking at least $10 billion, and it could go up to $40 billion if Anthropic hits certain targets. 
+
+Think of it this way, Anthropic is like a startup that's making waves in the AI space, and Google wants a piece of the action. Now, this investment comes right after Amazon put in $5 billion, so you can see why this is a big deal. Both Google and Amazon are valuing Anthropic at $350 billion, which is just massive.
+
+So what's Anthropic doing that's got these tech giants so excited? Well, they've got these models called Claude, and one of them, Claude Code, is supposed to make software development way faster and more efficient. It's like having a super smart coworker who can help you write code, but instead of a person, it's an AI model. 
+
+And here's why that's a big deal, developers can use Claude Code to automate some of the more tedious tasks, freeing them up to focus on the really important stuff. Now, I know some of you might be thinking, this sounds too good to be true, and you're right, the results vary depending on the project and how you use Claude Code. But still, the potential is huge.
+
+Anthropic's success isn't just about Claude Code though, they've also got other products like Claude Cowork, which helps with general knowledge work tasks. And let's not forget, there have been some controversies around OpenAI and ChatGPT, which might have driven some people to Anthropic.
+
+So what does this mean for you, as a developer? Well, if you haven't already, you should definitely check out Anthropic's products, especially Claude Code. It might just change the way you work, and who knows, you might even find yourself working more efficiently, and getting more done in less time. That's the dream, right?
+
+Alright, let us move on to the next story.
+
+So I've got a story to share with you, but here's the thing, I've only got partial info due to a paywall. That said, let's dive in and see what we can make of it. The article is about Anthropic launching something called Memory in Claude Agents for enterprise. Now, Claude is an AI system, think of it like a super smart computer program that can do all sorts of tasks for you. 
+
+The Memory feature is a big deal, it lets these agents, which are like virtual assistants, remember and use information from prior sessions. Think of it this way, imagine you're talking to a chatbot, and you ask it to do something, but then you have to leave and come back later. Normally, the chatbot would forget what you were talking about, but with Memory, it can pick up right where you left off. This means these agents can accumulate knowledge over time, without needing someone to manually update them.
+
+Here's how it works, the Memory feature is like a file system, where data is stored as files that can be exported, managed, and secured with permissions. So, developers and enterprise teams can control who has access to what information. The release is available in public beta, which means anyone using Claude Managed Agents can try it out. 
+
+Anthropic, the company behind Claude, is all about transparency and control. They're logging all memory changes, so you can see what's happening with your data, and you can even roll back or manage it if you need to. This is a big deal, because it sets them apart from other similar systems that might not give you the same level of control.
+
+Some big companies are already using this feature, like Netflix and Rakuten, to streamline their workflows and reduce errors. And here is why that is a big deal, it could change how companies automate complex tasks and manage their knowledge. So what does this mean for you, as a developer? It means you've got a powerful tool to build more intelligent, more autonomous systems that can learn and adapt over time. Just think about it, you could build an AI system that gets better and better at its job, without needing constant updates. That's a pretty exciting prospect.
+
+Alright, let us move on to the next story.
+
+So what if you could use AI like a prepaid phone plan, where you buy a set amount of credits and use them as you need to, without having to worry about surprise bills or complicated subscription tiers? That's exactly what Google is working on for its Gemini app, and it's a big deal. Think of it this way, right now, Gemini has these fixed quotas and time limits that can be pretty restrictive, but with a credit system, you'd have way more flexibility and control over how you use the app. 
+
+Here is the thing, Google's not starting from scratch with this idea, they've already been using credit mechanics in some of their other tools like Flow and Antigravity, but this would be the first time it's been integrated into the main Gemini app. And this change would put Google more in line with other companies like OpenAI and Notion, who are already using similar models. 
+
+So what does this mean for you, as a user? Well, for power users, it would mean you could budget more predictably, especially if you're doing things like deep research or long multimodal sessions. And for Google, it would give them a way to introduce premium features without making users jump from a relatively affordable plan to a really expensive one. 
+
+Now, at the same time, Google's also working on some new image tools, and it's not entirely clear what they are yet, but it looks like there might be a dedicated images section in the Gemini app. This could be a big deal, because Google's been experimenting with image generation and editing tools for a while now, and this could be the next step in that process. Think of it like a more comprehensive image editor, built right into the app, where you could use tools like Nano Banana 2 and Nano Banana Pro to create and edit images in a really intuitive way. 
+
+And here is why that is a big deal, because right now, Google's got a bunch of different tools and services that all do similar things, but they're not really connected. So, if they can consolidate all of these tools into one place, and use a shared credit pool, it would make it way easier for users to access the features they need, without having to jump between different apps and services. 
+
+So what does this mean for you, as a developer? Well, if Google does roll out this credit system and new image tools, it could be a game changer for how you work with AI. You'd have way more flexibility and control over how you use the app, and you could budget more predictably. And, if you're building your own AI-powered tools, you might want to take a cue from Google and consider using a similar credit-based model. It could be a way to make your tools more accessible and user-friendly, while also giving you a way to introduce premium features and generate revenue.
+
+Alright, let us move on to the next story.
+
+Imagine you're a developer, working on a project, and your boss comes to you and says, "Hey, I just got a report that says 98% of our new code is being written by AI." You'd be shocked, right? I mean, that's like saying you're not even needed on the project anymore. But what if I told you that this report might be completely fake? That the AI tool itself is lying to your boss about how much code it's actually writing. 
+
+Here is the thing, this is not just some hypothetical scenario. This is actually happening with some AI-enhanced IDEs out there. One such tool is called Windsurf, which is a VSCode fork that offers AI-powered autocomplete features and an agent chatbox. Now, Windsurf has a dashboard that shows you all sorts of metrics, including how much code is being written by the AI versus how much is being written by the developer. And this is where things get interesting.
+
+Think of it this way, if you're using a tool like Windsurf, you'd expect it to give you an accurate picture of how much code the AI is generating, right? But what if the tool is actually biased towards making the AI look like it's doing more work than it actually is? That's what happened when the author of the article I'm talking about started digging into Windsurf's metrics. He found that the tool was reporting some pretty crazy numbers, like 98% of new code being written by the AI. 
+
+So what does this mean for you? Well, if you're a developer using one of these AI-enhanced tools, you need to be aware of the potential biases in the metrics. You can't just take the numbers at face value. You need to understand how the tool is calculating those numbers and what the limitations are. And here is why that is a big deal, if the metrics are skewed, it can affect how management perceives the value of the tool and the value of the developers using it.
+
+Now, the author of the article did some digging and found that Windsurf's metrics are based on the number of bytes of code that can be attributed to the AI versus the developer. But here's the thing, the way they calculate those bytes is not always straightforward. For example, if you paste in some code, that doesn't count towards the developer's bytes. And if the AI adds some code, but you delete it later, that still counts towards the AI's bytes. It's like the tool is giving the AI credit for code it didn't even write.
+
+And here is why this matters, if the metrics are biased, it can create unrealistic expectations about what the AI can do. If management thinks that 98% of the code is being written by the AI, they might start to wonder if they even need developers anymore. Or they might expect developers to produce features at an unrealistic pace. Either way, it's a problem for developers.
+
+The author also looked at another tool called Cursor, which has a similar metric. But unlike Windsurf, Cursor's metric is based on the number of lines of code, not bytes. And it seems to be more accurate, but still not perfect. The point is, these tools are not always giving you an accurate picture of what's going on.
+
+So what can you do about it? Well, first of all, be aware of the potential biases in the metrics. Don't just take the numbers at face value. Try to understand how the tool is calculating those numbers and what the limitations are. And if you're a manager, be careful about how you use these metrics. Don't make decisions based on skewed numbers. Remember, the goal of these tools is to help developers, not replace them. 
+
+In the end, it's up to us as developers to be aware of these biases and to make sure we're using these tools in a way that makes sense. We need to be careful about how we measure the value of these tools and make sure we're not getting misled by skewed metrics. So the next time you see a report that says 98% of your code is being written by AI, take a closer look. It might not be as impressive as it sounds.
+
+Alright, let us move on to the next story.
+
+You know how sometimes you hear about a new tech trend and it sounds like just another hype cycle, but then you start to notice the numbers, and they tell a different story. That's what's happening with coding agents, these AI tools that can write code for you. People were skeptical at first, but now we've got actual numbers, and they're pretty stunning. Think of it this way, Anthropic, one of the companies behind these agents, has seen its revenue grow three times since the start of the year. That's not just impressive, it's unprecedented. 
+
+So, what's going on here? Why are coding agents suddenly taking off, and what does this mean for the future of programming? To understand this, let's take a step back and look at the bigger picture. The AI labs, like OpenAI and Anthropic, are creating these models that can do some pretty amazing things, like generating code. But they need massive amounts of compute power to do it, and that's where the hyperscalers, like Google and Amazon, come in. They're the ones building the data centers that can handle this kind of workload.
+
+Now, here's the thing, the demand for these coding agents is growing so fast that it's outpacing the supply of compute power. And that's causing a problem, because the companies that are making these agents, they're not just limited by how many agents they can sell, they're limited by how much compute power they can get their hands on. It's like trying to build a car factory, but you can't get enough steel to make the cars. You can sell all the cars you want, but if you can't make them, it doesn't matter.
+
+So, why is this happening now? Well, it's because coding agents are the first AI product that people are actually paying for, and they're paying for it because it saves them time and money. Think of it like this, if you're a developer, you can pay $100 a month for a coding agent that can automate some of the routine tasks, and that can save you hours of work every day. That's a no-brainer, right? It's like having a personal assistant that can do some of the boring stuff for you.
+
+But here's the catch, the companies that are making these agents, they're not just making money from selling the agents, they're also spending a lot of money on research and development to make the next generation of agents. And that's causing a cash flow gap, because they're not making enough money from the current agents to cover the cost of developing the next ones. It's like they're investing in a new factory, but they're not sure if they'll be able to sell enough cars to pay for it.
+
+So, what does this mean for you, as a developer? Well, here's the thing, coding agents are not going away, they're just getting started. And if you're not using them, you're going to be left behind. But, you need to be smart about it, you need to diversify your tools, don't put all your eggs in one basket. Try out different agents, see what works best for you, and don't be afraid to switch if one agent is not working out.
+
+And here's the other thing, don't just think about how you can use coding agents to make your life easier, think about how you can make money off of them. If you can figure out how to use these agents to automate some of the tasks that you're currently doing, you can free up time to focus on higher-level tasks that can make you more money. It's like having a robot that can do some of the boring stuff for you, so you can focus on the fun stuff.
+
+So, to sum it up, coding agents are taking off, and they're going to change the way we program. But, the industry is not ready for it, and that's causing some problems. As a developer, you need to be smart about how you use these agents, and you need to think about how you can make money off of them. That's the key to success in this new world of coding agents.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Researchers are monitoring large language models for unusual behavior, like drifting off topic or refusing requests. This matters because it can impact model reliability. It's a growing concern as LLMs become more widespread. GitHub just released Stash, a self-hosted memory layer for AI agents. It stores data in Postgres, no cloud needed. This could be a game changer for AI development. Image generators just got a big boost, they're now generalist vision learners. This means they can tackle a wide range of tasks, not just one specific thing. So what does this mean for you, it could change how you build apps. Google just launched Efficient Video Intelligence, a new AI tool that analyzes videos super fast. This tech could change how we use video online. It's a big deal for developers working with video data. Google scaled test-time compute for Agentic Coding, which could speed up AI model training. This matters because faster training means more complex models. It's a big deal for AI development. OpenAI just posted five principles for artificial general intelligence. They updated their 2018 charter, which is a big deal. This could shape the future of AI development.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.

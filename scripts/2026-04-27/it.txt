@@ -1,0 +1,101 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+Imagine having an AI assistant that's not only super smart, but also works entirely within your company's network, so your sensitive data never has to leave the building. Sounds like a game changer, right? Think of it this way, most AI chatbots are like strangers you meet online, you don't really know where they're storing your info or who has access to it. But what if you could have an AI that's like a trusted colleague, who only knows what you want them to know, and only talks to the people you want them to talk to.
+
+Here's the thing, a company called Onyx AI has created a self-hosted AI chat and enterprise search platform that does just that. They're talking about a system that can run entirely inside your network boundary, so your data never has to leave your premises. And this is a big deal, because it means you can use AI to help your team find answers and automate tasks, without having to worry about your sensitive data being exposed.
+
+So, how does it work? Well, Onyx can connect to all sorts of data sources, like SharePoint, Confluence, Jira, and even Google Drive. And when it does, it mirrors the same permission controls that you have in place for those systems, so users can only see the data they're authorized to access. Think of it like a mirror image of your company's access controls, but for AI. This means that if someone tries to ask the AI a question about a document they don't have permission to see, the AI will just say no, I don't have access to that info.
+
+Now, you might be wondering, how does Onyx handle changes to those permissions? Like, what if someone's role in the company changes, and they need to access different documents? Well, Onyx has got that covered too. It can sync permissions in real-time, so if someone's access changes in SharePoint or Google Drive, Onyx will reflect that change within minutes. No stale permissions, no manual re-indexing.
+
+And here's why that's a big deal, it means you can trust Onyx to handle sensitive data, without having to worry about it falling into the wrong hands. So what does this mean for you, as a software developer? It means you can use Onyx to build AI-powered tools that are tailored to your company's specific needs, without having to worry about security and compliance. You can focus on building the features your users need, while Onyx handles the heavy lifting of security and access controls. And that's a pretty powerful combination.
+
+Alright, let us move on to the next story.
+
+Imagine a world where artificial intelligence doesn't just answer your questions or generate content, but actually takes actions on your behalf. Sounds like science fiction, right? Well, it's not. In fact, Google's CEO, Thomas Kurian, just announced that the company is shifting its focus from retrieval-augmented generation-based chatbots to a world where agents, and teams of agents, act on behalf of humans and take action. So, what does this mean for the future of software? And how is Google planning to make this happen? 
+
+Here is the thing, for decades, the tech industry has been building silos - analytic data silos and operational application silos. But agents that can transform a business don't unlock much value if they're stuck in these silos. You end up with automation, but you don't change how the business works. Think of it this way, if you have a bunch of different departments, each with their own applications and data stores, it's hard for an agent to navigate that and take action that actually changes the business.
+
+Google's solution to this problem is what they call a "system of intelligence" and a "system of action". The system of intelligence is like a harmonization layer that makes action safe and repeatable. It's what feeds the system of agency, which is what enables agents to take action on behalf of humans. So, what does this system of intelligence look like? Well, it's got a few different components. There's a mapping layer, which is like a relationship map of the enterprise. Then there's a rules layer, which defines what actions are allowed and what the rules are. And finally, there's an institutional memory layer, which captures how an agent got to an outcome.
+
+Now, you might be wondering, how does this all work? Well, think of it like a big loop. Agents do work, get scored, get reinforced, and then you accelerate value. It's like a big feedback loop. And the key to making this work is what Google calls the "agent platform". The agent platform is like the control plane for agents. It's what enables them to take action and make decisions. And it's not just about the technology, it's also about the business model. Google is trying to create a new business model that's based on outcomes, not just shipping software.
+
+So, what does this mean for software developers? Well, here is the thing, the shift from software-as-a-service to "service-as-software" is a big deal. It means that any company can scale with less labor by embedding intelligence into workflows and delivering outcomes through software. And it's not just about the tech, it's about the business model. Companies that lean into AI are going to have a competitive advantage. So, what should you be doing? You should be thinking about how to build agents that can operate across silos, not just automate isolated tasks. You should be thinking about how to create a system of intelligence that can feed a system of agency. And you should be thinking about how to create a business model that's based on outcomes, not just shipping software.
+
+And here is why that is a big deal, if you can create a system of intelligence that can feed a system of agency, you can create a digital twin of the enterprise. A digital twin is like a real-time digital representation of the enterprise that captures people, places, things, and activities. It's the prerequisite for layering a system of intelligence on top and expecting agents to do more than automate small tasks. So, what does this mean for you? It means you should be thinking about how to create a digital twin of your enterprise. You should be thinking about how to build a system of intelligence that can feed a system of agency. And you should be thinking about how to create a business model that's based on outcomes, not just shipping software.
+
+In the next 30 to 60 days, you should run a structured "agent platform bake-off" with Google, AWS, and Microsoft Azure in the mix. Force it into a synthetic production workflow that crosses multiple systems. Pick one high-value, end-to-end process, tie it to your actual data and policies, and score it on things like security, auditability, semantic consistency across systems, time-to-value, and the operational requirements to keep it running. Your goal should be to answer the question, can Google's integrated stack become the governed layer your agents run through, or does it remain a strong set of parts that still requires too much custom glue? If it clears that hurdle, you should go deeper with Google. If it doesn't, treat it as tactical capability. Regardless, for now, keep your control-plane strategy vendor-neutral until the business value clarity dramatically outweighs lock-in risk.
+
+Alright, let us move on to the next story.
+
+so I've got a story to tell you, but here's the thing, I've only got partial info due to a paywall. apparently, Maine's governor, Janet Mills, just vetoed a bill that would've put a temporary stop to new data center permits. think of it this way, data centers are like huge warehouses that store and process all our online data, they need a lot of power and resources, so they can have a big impact on the environment and local communities.
+
+now, this bill, L.D. 307, would've been a first in the country, a statewide moratorium on new data centers, at least until November 1, 2027. it also wanted to create a council to study and make recommendations on data center construction. but Mills vetoed it, and here's why that's interesting, she said she would've signed the bill if it had an exemption for a specific data center project in the Town of Jay. that project has local support, so Mills wanted to make an exception for it.
+
+other states, like New York, are also considering similar moratoriums, because public opposition to data centers is growing. people are worried about the impact on the environment and electricity rates. Melanie Sachs, the democrat who sponsored the bill, is not happy about the veto, she says it's got significant consequences for ratepayers, the electric grid, and the environment.
+
+so what does this mean for you, as a software developer? well, here's the thing, data centers are a critical part of our online infrastructure, but they do have a big impact on the environment. as developers, we should be thinking about how our apps and services are hosted, and how we can reduce our carbon footprint. it's not just about writing code, it's about considering the broader implications of our work. and that's something to keep in mind, especially as more states start to consider regulations on data centers.
+
+Alright, let us move on to the next story.
+
+Imagine being able to deploy a working AI agent by the end of the week, and having a 30 to 50 percent gap in productivity compared to your competitors. That's the reality for B2B founders, CROs, and CMOs in 2026. The ones who can deploy AI agents are leaving the ones who can't in the dust. So, what's the secret to making this happen? 
+
+Think of it this way, AI agents are like super-smart robots that can help you with tasks like sales, marketing, and customer support. They can work 24/7, never get tired, and make decisions based on data. But, with so many AI platforms out there, it's hard to know which one to choose. It's like trying to find a needle in a haystack.
+
+Here is the thing, the SaaStr AI Annual 2026 conference is all about helping you figure out how to deploy AI agents that actually work. They've got sessions on everything from building your own AI VP of marketing to running AI win-back campaigns that hit 72 percent open rates. And, they've got real operators who've already done it in production, sharing their experiences and playbooks.
+
+So, what does this mean for you? It means you can learn how to deploy AI agents that can help you cut your inbound customer acquisition costs by 30 to 50 percent. You can learn how to build your own AI-powered tools without needing to hire an engineer. And, you can learn how to spot AI-washing in vendor pitches, so you don't get ripped off.
+
+One of the coolest things about the conference is the vibe coding track. Vibe coding is like building with Legos, but instead of blocks, you're using code to create tools and apps. It's a game-changer for non-technical founders who want to build their own AI-powered tools. And, with the conference's vibe coding workshops, you can learn how to do it in just a few hours.
+
+Now, I know what you're thinking. This all sounds great, but how do I actually make it happen? That's the best part. The conference is all about giving you practical takeaways that you can use to deploy AI agents in your own business. You'll leave with a working point of view on every major AI platform, a deployment plan that you wrote yourself, and direct relationships with the operators who are already doing it.
+
+So, if you want to get ahead in AI for B2B, you need to be at the SaaStr AI Annual 2026 conference. It's like a masterclass in AI deployment, and it's only happening for 2.5 days. Don't miss out. Register now and get 20 percent off your ticket. 
+
+And here is why that is a big deal - by attending this conference, you'll be able to learn from the best in the industry, and gain the skills and knowledge you need to deploy AI agents that actually work. You'll be able to cut through the noise, and get real results. So what does this mean for you as a software developer? It means you'll be able to build AI-powered tools that can help businesses grow and succeed. You'll be able to work with founders and operators to deploy AI agents that can help them cut costs, increase productivity, and drive revenue. And, you'll be able to stay ahead of the curve, and be at the forefront of the AI revolution in B2B.
+
+Alright, let us move on to the next story.
+
+You know how everyone's talking about AI revolutionizing businesses, but what if I told you most companies have no idea what they're doing with it? Like, they're throwing money at AI projects, but they can't even tell you who's in charge or what they're trying to achieve. It's like building a house without a blueprint - it's gonna be a mess. 
+
+Think of it this way, AI is like a super powerful tool that can help your company grow, but if you don't know how to use it, it's just gonna sit there collecting dust. And that's exactly what's happening in a lot of organizations. They're buying into the hype, but they don't have a clear strategy. 
+
+Here is the thing, a recent survey found that 31% of CIOs said their top challenge with AI is a lack of clarity on their company's AI strategy. That's almost one in three. And it's not just the strategy, 24% of them are also unsure who's responsible for meeting AI goals. It's like, who's driving this ship? 
+
+So what does this mean for you? Well, if you're a developer working on AI projects, you need to know that your company's lack of strategy is not your problem to solve. But you can help by asking the right questions, like what's the goal of this project, and how are we gonna measure success. 
+
+Rishi Kaushal, a CIO at Entrust, says that companies are still in the early stages of defining a cohesive AI strategy. They're not talking to each other, and that's a major stumbling block. He thinks that CIOs and other IT leaders need to get everyone on the same page, from HR to the top executive team. 
+
+It's like building a team, you need everyone to be working towards the same goal. And that goal needs to be clear. Kaushal says that AI is changing so fast, it's hard to keep up. Every month, there's something new, and that makes it tough to write a strategy that's gonna work. 
+
+But here's the thing, you can't just throw your hands up and say, oh well, AI is too hard. You need to define who's responsible for meeting those AI goals, and you need to have clear ownership. That's what Shubhradeep Guha, a chief delivery officer at Publicis Sapient, says. He thinks that the business strategy should come from the CEO and executive team, but the CIO plays a central role in making it happen. 
+
+And here is why that is a big deal, if you don't have clear ownership, you're gonna end up with a bunch of disconnected projects that don't add up to much. Guha says that AI strategy dies quickly when it's treated as a tech project instead of a business priority. 
+
+Aman Mahapatra, a CIO at Tribeca Softech, agrees. He says that most companies don't have an AI strategy, they just have a list of AI projects. And that's not the same thing. He thinks that CEOs should own the corporate AI strategy, because AI touches everything, from operations to risk to culture. 
+
+So what can you do? Well, if you're a CIO, Mahapatra says you should say no to most AI proposals. Fund fewer initiatives with more resources, and make sure they're tied to the earnings plan. That way, you can measure success and hold people accountable. 
+
+And that's the key, accountability. You need to know who's responsible for what, and you need to have clear goals. Otherwise, you're just gonna be wasting your time and money. So, the next time you're working on an AI project, ask yourself, what's the goal, and who's in charge? That's the only way you're gonna get real results.
+
+Alright, let us move on to the next story.
+
+So I'm looking at this article, The App Modernization Playbook from Microsoft Azure, but here's the thing, I only have partial content due to a paywall. I'm gonna do my best to break it down for you, but keep in mind, I'm working with limited info.
+
+Think of it this way, when you're dealing with a ton of applications, it's like having a big box of LEGOs, you know, with all these different pieces that need to fit together. The hardest part isn't building a new castle, it's figuring out which LEGOs to use, and how to make them all work together. That's basically what's happening here, companies have all these apps, and they need to decide which ones to update, and how to do it without wasting time and money.
+
+So what does this mean for you, as a developer? Well, Microsoft is trying to help with this playbook, which is supposed to give you a clear plan to modernize your apps. They want you to take a step back, look at all your apps, and figure out which ones are really important, which ones are complicated, and which ones have the most potential for growth.
+
+Here is the thing, they're suggesting you match each app to the right architecture and Azure services, without overdoing it. It's like finding the right tool for the job, you don't need a sledgehammer to hang a picture. And they're also talking about using intelligent agents to automate the process, which is like having a robot that can help you find the right LEGOs, and build the castle for you.
+
+So what does this mean for you? Well, if you're working with a bunch of old apps, this playbook might be really helpful in figuring out how to update them, and make them more efficient. And here is why that is a big deal, it can save you time and money in the long run, and make your apps more secure and scalable. So, if you're interested in learning more, you might want to check out the full playbook, and see if it's something that can help you with your own app modernization projects.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Cohere is merging with Aleph Alpha, a big move in the AI space. This combo could shake up natural language processing. Think bigger, better chatbots ahead. AI startups are shaking up vertical SaaS, putting CIOs in a tough spot. They're caught between innovation and legacy systems. This disruption could change how businesses operate.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.

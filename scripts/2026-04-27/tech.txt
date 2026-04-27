@@ -1,0 +1,109 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+So I'm gonna dive into this story about Wispr Flow, but here's the thing, I don't have the full picture because of a paywall. I'm gonna do my best with what I've got, and try to fill in the gaps with my own knowledge. 
+
+Wispr Flow is all about voice-to-text, using AI to turn your speech into clear, polished writing. Think of it this way, you're talking to a friend, and your words are instantly turned into a well-written text, like an email or a message. It's like having a super smart assistant who's always listening and typing away for you.
+
+The idea is that this tool can help you create, code, message, and write way faster than you could by typing. They're saying it's four times faster, which is pretty impressive. To put that into perspective, the average person types around 45 words per minute, but with Wispr Flow, you could potentially get up to 220 words per minute. That's like going from a casual walk to a sprint.
+
+Now, here's what's really interesting - Wispr Flow has some smart features like AI auto-edits, which means it can take your spoken words and turn them into perfectly formatted text, without all the filler words and typos. It's like having a personal editor who's always on the job. And it gets even better, because it can learn your unique words and add them to your personal dictionary, so it gets more accurate over time.
+
+They're also talking about a snippet library, which lets you create voice shortcuts for things you say over and over, like scheduling links or FAQs. It's like having a set of pre-recorded responses that you can trigger with just a few words. And the tone adjustment feature is pretty cool too - it can adjust the tone of your writing based on the app you're using, so you sound like you, not a robot.
+
+One more thing that caught my attention is that Wispr Flow supports over 100 languages, and it can detect and transcribe in your language, letting you move between them seamlessly. That's like having a universal translator at your fingertips.
+
+So what does this mean for you, as a developer? Well, if you're working on a project that involves a lot of writing or coding, Wispr Flow could be a game-changer. It could save you a ton of time and effort, and let you focus on the creative stuff. And the fact that it works on any app or device, with your personal dictionary and settings synced everywhere, makes it a pretty attractive tool. 
+
+The practical takeaway here is to check out Wispr Flow and see if it can streamline your workflow. Even if you're not a big fan of voice-to-text, it's worth exploring, especially since they're offering a 14-day free trial. Who knows, you might just find that it's the perfect tool to help you work more efficiently and get more done in less time.
+
+Alright, let us move on to the next story.
+
+So I've got a story to share with you, but here's the thing, I've only got partial info due to a paywall. The article title is Link Not Found, which is pretty ironic, right? Anyway, it seems to be about a platform called Dub, and from what I can gather, Dub is more than just a link shortener. Think of it this way, when you share a link on social media or via email, you want it to be easy to click and remember, that's where link shorteners come in.
+
+Now, Dub takes it a step further by offering a suite of powerful features for modern marketing teams. One of the features that caught my attention is the ability to create branded short links with your own custom domain. So, imagine you're a company, and you want to share a link to a new product, instead of using a generic short link, you can use your own domain, which can improve click-through rates by 30%. That's a big deal, and here is why that is a big deal - it makes your links look more professional and trustworthy.
+
+Dub also offers branded QR codes, which is pretty cool. QR codes and short links are like two sides of the same coin, they work together seamlessly. And with Dub, you can customize these QR codes with your own logo, which is a nice touch. Now, when it comes to analytics, Dub provides some pretty powerful insights, including geolocation, device, browser, and referrer information. This is like having a dashboard that shows you how people are interacting with your links, which can be super useful for marketing teams.
+
+There are also some advanced link features, like custom link previews, device targeting, and geo targeting, which can help you supercharge your links. And, if you're working with a team, you can collaborate on your links, which is a big plus. For bigger companies, Dub even offers SAML SSO with Okta, Google, and Azure AD for higher security.
+
+So what does this mean for you, as a software developer? Well, if you're building a marketing platform or working with a marketing team, you should definitely check out Dub and see what it has to offer. The ability to create custom domains, branded QR codes, and advanced analytics can be a game-changer for your marketing efforts. And, who knows, you might even learn a thing or two about how to build a powerful link management platform.
+
+Alright, let us move on to the next story.
+
+So I'm gonna be upfront with you, I don't have the full story here, I'm working with limited info due to a paywall. But I'll do my best to break down what's going on and why it matters. 
+
+Here's the thing, Next.js applications can be tough to debug, especially when they're live in production. You know, it's like trying to find a leak in a pipe, but the pipe is really long and complicated. Hydration errors, server component failures, performance bottlenecks - these issues don't always give you clear answers. 
+
+Think of it this way, when something goes wrong, you want to know who did what, what happened, and why. It's like trying to solve a mystery. And that's where logging comes in. Logging is like keeping a diary of what's happening in your application. You want your logs to be detailed, so you can see the whole story, not just that something failed.
+
+Now, the article mentions writing high-context logs, querying and alerting on logs, and distributed tracing. Distributed tracing is like tracking a package as it moves through a delivery system. You can see where it's been, where it is now, and where it's going. This helps you understand how different parts of your application are talking to each other.
+
+So what does this mean for you? If you're a developer working with Next.js, it's a good idea to set up logging and tracing in your application. This will help you catch issues before they become big problems. You can use tools like Sentry to help you observe and debug your application. And here is why that is a big deal - with good logging and tracing, you can fix issues faster, and give your users a better experience. 
+
+So, if you're new to Sentry for Next.js, it's worth checking out their hands-on session on observing and debugging Next.js apps. It's like getting a map to help you navigate the debugging process. And that's the key takeaway here - take the time to set up good logging and tracing in your Next.js application, it will save you time and headaches in the long run.
+
+Alright, let us move on to the next story.
+
+Imagine you're an engineering manager, and you've got an assistant that can handle all the tedious tasks for you, like triaging pull requests, grooming your backlog, and even helping with team dynamics. Sounds too good to be true, right? But what if I told you that's exactly what Agentic Engineering Management, or AEM, is promising. It's a new way of thinking about how AI can be used in software development, and it's not just about code completion or simple automation. It's about creating autonomous agents that can work alongside you, and even make decisions on their own.
+
+Think of it this way, an agent is like a robot that runs in a loop, trying to achieve a specific goal. It's like a while loop of AI prompts, if you will, until the original user requirement is satisfied. And in the context of engineering management, this means that agents can be used to automate repetitive tasks, free up time for more strategic work, and even help with team dynamics.
+
+So, let's dive into the three main pillars of engineering management: execution, team dynamics, and personal development. Execution is all about the processes and technical work that goes into delivering outcomes aligned with business goals. And here's where AEM can really shine. Agents can be used to automate tasks like pull request triage, backlog grooming, and even autonomous documentation maintenance. The potential benefits are huge, freeing up time from tedious tasks, and speeding up work by providing the right context to the right people at the right time.
+
+But, there are also risks to consider. For example, if we're not careful, we might lose the human judgment that's so important in making decisions. And what about production bugs and incidents? How do we mitigate those risks? One way is to provide a deeper organizational context to the agents, so they can make more informed decisions. And we can also use observability metrics and gradual rollout or feature flag tooling to monitor and react to the results of the agents' actions.
+
+Now, let's talk about team dynamics. This is an area where agents can really help with async facilitation, first-line triage for incoming signals, and even acting as a virtual team interface. The potential benefits are huge, freeing up time from tedious tasks, providing better context for decisions, and even helping with self-service ways of working within the organization. But, there are also risks to consider, like miscommunications that can lead to alienation, and acting without a sufficiently high-level long-term vision and context.
+
+And then there's personal development, which is the highest risk area because of the potential to break the trust between the engineering manager and team members. If AI is used in this area, it needs to be done in a way that's transparent, and supportive of the individual, not controlling or monitoring. A good analogy is code linters, which catch issues and help fix them privately, without the manager or peers seeing the messy intermediate state. Agents can be used to support the development of the individual, with limited visibility for the manager, and this can actually decrease the fear of not asking for help to avoid looking bad.
+
+So, what does this mean for engineering managers? It means that they need to be prepared for a shift in their role, from doing to supervising, and using more agents to automate tasks. But, this doesn't mean having less work, it means having more strategic work, and focusing on judgment, relationships, and organizational influence. The purely operational EM role is at risk of becoming obsolete, and those who center their role on clarity of purpose, prioritization, and strategy will become more valuable.
+
+So, what can you do today to be prepared for this shift? First, build an experimentation mindset, and celebrate failures as opportunities for learning and improvement. If you're in a low-trust organization, start by addressing that, and invest in tooling and education. Watch out for your team's and your own mental health, and find what motivates you in this new era. And most importantly, start thinking about how you can use agents to augment your work, and free up time for more strategic and high-impact work. As a software developer, the key takeaway is to start exploring how AEM can be used in your organization, and to think about how you can work alongside agents to deliver better outcomes.
+
+Alright, let us move on to the next story.
+
+You know how everyone's been saying that AI is going to replace junior engineers, right, that they're the first ones who are going to get automated out of a job. But what if I told you that one of the biggest tech companies out there, Shopify, is actually doing the opposite - they're investing heavily in junior engineers, and they're not just hiring a few, they're hiring over a thousand interns this year. So what's going on here, why is Shopify going against the conventional wisdom.
+
+Think of it this way, when smartphones took over, companies like Shopify had to adapt, they had to start hiring people who grew up with mobile, people who understood the mobile-first mental model. And now, with AI taking over, Shopify is doing the same thing, they're hiring people who are AI-native, people who have grown up with AI and understand how to use it to build new things.
+
+Here is the thing, Shopify's not just hiring these interns to do routine work, they're actually using this internship program as a way to find the next generation of leaders, people who can help them build the future of their company. And they're not just looking for people who can code, they're looking for people who can think creatively, who can ask questions like "why are we doing it this way" and come up with new solutions.
+
+So what does this mean for the future of technical hiring, well, Shopify's VP of Engineering, Farhan Thawar, says that they're still figuring it out, but they're using a three-part framework to evaluate technical talent. It's like a puzzle, they want to see if you can solve it without using AI, then if you can use AI to help you solve it, and finally, if you can use AI to solve it on your own. It's not just about being able to code, it's about knowing when to use the tools, when to set them down, and what to do when they're gone.
+
+And here is why that is a big deal, because it's not just about hiring the right people, it's about creating a culture that is open to new ideas, to creativity, and to innovation. Shopify's internship program is not just about hiring interns, it's about creating a community of people who are passionate about building new things, and who are not afraid to ask questions and challenge the status quo.
+
+So what does this mean for you, as a software developer, well, it means that you should be focusing on building your skills, not just in coding, but in creativity, problem-solving, and critical thinking. You should be building tools for yourself, and for others, and you should be putting your work out there, on GitHub, or on other platforms, so that people can see what you can do.
+
+And here is the thing, it's not just about having a resume, it's about having a portfolio, a portfolio that shows what you can do, and what you've built. Because at the end of the day, that's what matters, not what you say you can do, but what you've actually done. So, if you're a junior engineer, or if you're just starting out, don't be discouraged by the noise about AI replacing jobs, because the truth is, companies like Shopify are looking for people like you, people who are passionate, creative, and eager to build new things.
+
+Alright, let us move on to the next story.
+
+Imagine waking up one morning, feeling completely empty, and realizing you just can't do your job anymore. Not because it's a bad job, but because something's changed inside you. That's what happened to a design engineer who recently quit their job, and their story is a wake-up call for all of us in the tech industry. 
+
+So what happened? The engineer was doing great work, building components, polishing the final product, and bridging gaps between design and engineering. They even doubled the surface coverage of their components and fixed accessibility issues. But despite all this, they felt miserable. They started questioning themselves, wondering if their work actually mattered, and if anyone would notice if they stopped caring. 
+
+Think of it this way, when you're working on a project, you want to feel like you're making a difference, right? You want to know that your code, your design, your work is actually changing something. But what if you start feeling like you're just going through the motions? That's what was happening to this engineer. 
+
+And here's the thing, it wasn't just the work itself that was the problem. It was the whole environment around it. The engineer was working in a team where AI tools were being used more and more, and it was changing the way people worked together. For example, someone would use an AI tool to take notes in a meeting without asking anyone's permission, and then the tool would mischaracterize what was discussed. Or an engineer would use an AI chatbot to review code, without actually reading it themselves. 
+
+It's like, imagine you're working on a project, and someone just slaps a band-aid on it, without really understanding what's going on. That's what these AI tools were doing. They were providing quick fixes, but they weren't really solving the underlying problems. And the engineer was feeling like they were losing control, like they were just along for the ride. 
+
+The explosion of AI has played a big role in the engineer's burnout. They felt like they were steeped in an environment where AI was everywhere, and they couldn't escape it. Even if they didn't use AI themselves, they were still affected by it. And that's a big problem, because it's not just about the tech itself, it's about the way it's changing the way we work, and the way we interact with each other. 
+
+So what does this mean for you, as a developer or designer? It means you need to think carefully about how you're using AI tools, and how they're affecting your work. Are you using them to really solve problems, or are you just using them as a quick fix? Are you taking the time to understand what's going on, or are you just slapping on a band-aid? 
+
+The engineer's story is also a reminder that burnout is not just about being tired, it's about feeling like you've lost your sense of purpose. It's about feeling like you're no longer making a difference. And that's a hard thing to come back from. But the engineer is trying to find their way again, by focusing on what really matters to them. They're taking time to recover, to learn new things, and to spend time with friends. 
+
+And here's the thing, we can all learn from this. We can all take a step back, and think about what's really important to us. Is it just about getting the job done, or is it about making a difference? Is it about using AI tools to solve problems, or is it about really understanding what's going on? 
+
+So, as a developer or designer, what can you take away from this story? You can take away the importance of being mindful of how you're using AI tools, and how they're affecting your work. You can take away the need to focus on what really matters to you, and to take care of yourself, both physically and emotionally. And you can take away the reminder that, at the end of the day, it's not just about the tech, it's about the people, and the way we work together.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Viktor is a new concept, not a tool, but a hire, changing how we think about tech help. This shift might matter to developers. It's a fresh take on getting support. Researchers created a harness that controls tech with your mind, using it to generate prompts, think of it this way, like a super smart assistant that reads your thoughts. This could change how we interact with devices. Quick mention — We Are (Still) Living in the Long Boring. Worth keeping an eye on. Quick mention — The Era of Tokenmaxxing. Worth keeping an eye on.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.
