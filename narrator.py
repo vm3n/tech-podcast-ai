@@ -160,7 +160,7 @@ def generate_episode_script(articles: list) -> str:
     print("GENERATING EPISODE SCRIPTS")
     print("="*50)
 
-    deep_dive_articles = articles[:6]
+    deep_dive_articles = articles[:5]
     headline_articles = articles[6:]
 
     print(f"  Deep dives : {len(deep_dive_articles)}")
