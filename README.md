@@ -1,4 +1,3 @@
-cat > README.md << 'ENDOFFILE'
 # Tech Podcast AI 🎙️
 
 A fully automated personal podcast pipeline that reads your tech newsletters every morning and delivers deep dive audio episodes directly to your podcast app — completely free, completely private, zero manual effort after setup.
@@ -36,6 +35,7 @@ You just open Apple Podcasts and hit play.
 ## Episode format
 
 Each daily episode per category contains:
+
 - **5 deep dive stories** — fully explained in natural spoken language, 5-7 minutes each
 - **Headline mentions** — remaining stories covered in 2-3 sentences each
 - **Total runtime** — approximately 30-40 minutes per category
@@ -63,71 +63,80 @@ Each daily episode per category contains:
 ---
 
 ## How the pipeline works
+
+```
 Gmail (label:Podcasts)
-↓
-Decode TLDR tracking URLs → real article URLs
-↓
+        ↓
+Decode TLDR tracking URLs to real article URLs
+        ↓
 Filter ads, sponsors, junk links
-↓
-Fetch full article text (trafilatura)
-↓
+        ↓
+Fetch full article text
+        ↓
 3-layer dedup check
-Layer 1: exact URL match (7 day window)
-Layer 2: title word similarity
-Layer 3: Groq semantic understanding
-↓
+  Layer 1 — exact URL match (7 day window)
+  Layer 2 — title word similarity
+  Layer 3 — Groq semantic understanding
+        ↓
 Groq generates spoken podcast script
-First 5 articles → full deep dive (5-7 min each)
-Remaining articles → headline mention (2-3 sentences)
-↓
+  First 5 articles — full deep dive (5-7 min each)
+  Remaining articles — headline mention (2-3 sentences)
+        ↓
 Kokoro TTS converts script to MP3
-↓
+        ↓
 Git push to GitHub Pages
-↓
+        ↓
 RSS feed updated
-↓
+        ↓
 Podcast app downloads episode automatically
+```
 
 ---
 
 ## Project structure
+
+```
 tech-podcast-ai/
-├── main.py              # Main pipeline orchestrator
-├── gmail_fetcher.py     # Gmail ingestion + TLDR URL decoding
-├── fetcher.py           # Article content fetcher with title extraction
-├── narrator.py          # Groq AI script generation
-├── tts.py               # Kokoro TTS audio generation
-├── dedup.py             # 3-layer duplicate story detection
-├── database.py          # SQLite URL and episode tracking
-├── run_if_needed.py     # Login trigger — runs pipeline if no episodes yet
-├── requirements.txt     # Python dependencies
-├── episodes/            # Generated MP3 files (auto cleaned after 3 days)
+├── main.py               Main pipeline orchestrator
+├── gmail_fetcher.py      Gmail ingestion and TLDR URL decoding
+├── fetcher.py            Article content fetcher with title extraction
+├── narrator.py           Groq AI script generation
+├── tts.py                Kokoro TTS audio generation
+├── dedup.py              3-layer duplicate story detection
+├── database.py           SQLite URL and episode tracking
+├── run_if_needed.py      Login trigger - runs pipeline if no episodes yet
+├── requirements.txt      Python dependencies
+├── episodes/             Generated MP3 files (auto cleaned after 3 days)
 │   └── YYYY-MM-DD/
 │       ├── ai.mp3
 │       ├── dev.mp3
 │       ├── tech.mp3
 │       ├── data.mp3
 │       └── it.mp3
-├── scripts/             # Generated podcast scripts for reference
+├── scripts/              Generated podcast scripts for reference
 │   └── YYYY-MM-DD/
 │       ├── ai.txt
 │       └── ...
-└── feed_*.xml           # RSS feeds per category (hosted on GitHub Pages)
+└── feed_*.xml            RSS feeds per category hosted on GitHub Pages
+```
 
 ---
 
 ## RSS feed URLs
 
 Subscribe to these in any podcast app (Apple Podcasts, Pocket Casts, Overcast):
+
+```
 https://vm3n.github.io/tech-podcast-ai/feed_ai.xml
 https://vm3n.github.io/tech-podcast-ai/feed_dev.xml
 https://vm3n.github.io/tech-podcast-ai/feed_tech.xml
 https://vm3n.github.io/tech-podcast-ai/feed_data.xml
 https://vm3n.github.io/tech-podcast-ai/feed_it.xml
+```
 
 To add in Apple Podcasts:
-- Mac: File → Follow a Show → paste URL
-- iPhone: Search → paste URL in search bar
+- **Mac**: File → Follow a Show → paste URL
+- **iPhone**: Search → paste URL in search bar
 
 ---
 
@@ -149,7 +158,7 @@ brew install ffmpeg
 1. Go to console.cloud.google.com
 2. Create a new project called tech-podcast
 3. Enable the Gmail API
-4. Create OAuth credentials (Desktop app)
+4. Create OAuth credentials as Desktop app
 5. Download as credentials.json and place in project folder
 6. Create a Gmail label called Podcasts
 7. Set up filters to tag your TLDR newsletters with this label
@@ -160,7 +169,10 @@ brew install ffmpeg
 2. Sign up for free
 3. Create an API key
 4. Create a .env file:
+
+```
 GROQ_API_KEY=your_groq_api_key_here
+```
 
 ### 4. Run manually
 
@@ -171,16 +183,17 @@ python3 main.py
 
 First run will open a browser for Gmail OAuth login.
 
-### 5. Set up automation (macOS)
+### 5. Set up automation on macOS
 
 Wake Mac at 6:55am daily:
+
 ```bash
 sudo pmset repeat wakeorpoweron MTWRFSU 06:55:00
 ```
 
-Create launchd agent to run pipeline at login:
+Load the login agent so pipeline runs automatically when you open your Mac:
+
 ```bash
-# Copy com.techpodcast.login.plist to ~/Library/LaunchAgents/
 launchctl load ~/Library/LaunchAgents/com.techpodcast.login.plist
 ```
 
@@ -188,7 +201,7 @@ launchctl load ~/Library/LaunchAgents/com.techpodcast.login.plist
 
 ## How dedup works
 
-The pipeline uses three layers to make sure you never hear the same story twice:
+Three layers prevent you from hearing the same story twice:
 
 **Layer 1 — URL dedup**
 Every processed URL is stored in SQLite with a timestamp. Any URL seen in the last 7 days is skipped automatically.
@@ -216,9 +229,7 @@ Groq is prompted to write in a specific spoken style:
 
 ## Known limitations
 
-- Groq free tier has a 100k token daily limit — this supports 5 categories with 5 deep dives each comfortably
-- Some articles behind hard paywalls return limited content — these get partial treatment with Groq filling context from its own knowledge
-- GitHub Pages has storage limits — episodes older than 3 days are automatically deleted from storage (but remain in your podcast app after download)
-- Kokoro TTS requires PyTorch — first run downloads the model (~300MB)
-
----
+- Groq free tier has a 100k token daily limit — supports 5 categories with 5 deep dives each comfortably
+- Some articles behind hard paywalls return limited content — Groq fills context from its own knowledge
+- GitHub Pages storage limits — episodes older than 3 days are automatically deleted
+- Kokoro TTS requires PyTorch — first run downloads the model around 300MB
