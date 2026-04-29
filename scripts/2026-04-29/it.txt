@@ -1,0 +1,93 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+so I've got a story to share with you, but here's the thing, I've only got limited info on this one due to a paywall. apparently, Google's been getting some pointers from EU regulators, and it's all about helping AI rivals access their services. think of it this way, Google's like a big library with tons of books, and these AI rivals are like other libraries that want to borrow some of those books to improve their own collections. 
+
+now, the EU regulators are like the librarians, making sure everyone plays by the rules and gets access to the books they need. so what does this mean for Google? well, they've got to make it easier for these AI rivals to access their services, which could be a big deal. here is why that is a big deal - it's like opening up a whole new section of the library, and it could lead to more innovation and competition in the AI space.
+
+so what's happening here is that the EU regulators are pushing Google to be more open and share their knowledge with others. and here's why that matters - it's like a rising tide that lifts all boats, if Google shares their knowledge, it could help all the other AI companies out there, and that's a good thing for the whole tech industry. 
+
+now, I don't have all the details, but from what I can gather, this is all part of a bigger effort to promote competition and innovation in the tech space. so what does this mean for you, as a software developer? well, it means you might have more tools and services at your disposal, and that could be a big deal. think of it this way, if Google's services are more open, you might be able to build more powerful and innovative apps, and that's a win for everyone.
+
+Alright, let us move on to the next story.
+
+Imagine having a personal assistant that knows exactly what you need to do, and does it for you, without you even asking. Sounds like science fiction, right? But what if I told you that's exactly what Amazon just unveiled, a new AI service that's like having a copilot for all your apps. They call it Amazon Quick, and it's designed to simplify your work life by automating tasks, like setting up meetings or creating reports.
+
+So what is Amazon Quick? Think of it like a super smart personal assistant that lives on your computer and connects directly to your work. It's always on, always learning, and always ready to help. It's like having a teammate that's got your back, and knows exactly what you need to do to get the job done. And the best part? You don't need to be an Amazon expert to use it, just an email address and a new desktop app.
+
+But here's the thing, Amazon Quick is not just a simple automation tool. It's actually a pretty sophisticated AI service that can learn your habits and adapt to your workflow. It's like having a personal assistant that's always watching and learning from you, so it can anticipate what you need to do next. For example, if you're working on a project, it can automatically set up meetings with the right people, and even send out invites. It's pretty powerful stuff.
+
+Now, you might be wondering, how does it do all this? Well, it's because Amazon Quick is always storing context, like project deadlines, and other important information. It's like having a super smart notebook that's always taking notes, so it can help you out when you need it. But, of course, this raises some security concerns. I mean, who wants some AI service watching and storing all their work habits? That's a pretty valid concern.
+
+Amazon says don't worry, they've got this. They point to their 20-year history of providing secure cloud services. But, let's be real, that's not exactly a detailed answer. I'm sure we'll be hearing more about this in the future. So, what does this mean for you? If you're a developer, you should be paying attention to this. Amazon Quick is not just a tool for end-users, it's also a platform that you can build on. You can create custom apps and integrations that take advantage of its AI capabilities.
+
+And Amazon Quick is not the only thing Amazon announced. They also unveiled a major overhaul of their Amazon Connect service, which is now a set of four AI components that can be used for everything from supply chain management to customer service. It's like having a team of AI agents that can help you out with all sorts of tasks. They call them "teammates", and they're designed to take care of business, while you're in control.
+
+So, what's the big deal here? Well, the market for AI agents is already pretty crowded. You've got Salesforce, Google, and Microsoft all playing in this space. But Amazon is betting that their AI capabilities, combined with their massive scale and expertise, will be enough to win over customers. And here is why that is a big deal - if Amazon can make this work, it could change the way we work forever. So what does this mean for you, as a developer? You should be thinking about how you can use AI services like Amazon Quick to automate tasks, and make your workflow more efficient. It's time to start exploring the possibilities of AI, and how it can help you get more done, with less effort.
+
+Alright, let us move on to the next story.
+
+Imagine you're sleeping, and an AI agent is booking a flight, querying a ledger, and triggering a payment on your behalf. Sounds convenient, right? But here's the thing, the way the internet handles authentication and authorization, it's not designed for this kind of scenario. The current system, OAuth 2.0, has been working well enough for humans logging into apps, but when it comes to AI agents making decisions and taking actions on our behalf, it starts to show its seams.
+
+Think of it this way, when you log into Salesforce via Google, the flow is synchronous - you get redirected, you consent, and a token is issued. But when an AI agent is doing something, there's no consent screen, no moment where you explicitly say yes. The agent is making decisions, calling services it discovered at runtime, and maybe even handing off to sub-agents. OAuth wasn't designed to track any of that.
+
+The spec was written back in 2012 by Dick Hardt, and it was designed for clients that are known at build time. But agents pick their tool chain at runtime, one call at a time, choosing the next tool as the task unfolds. A scope like mail.read looks identical whether the agent is summarizing your inbox or exfiltrating it. The protocol can't tell them apart.
+
+This is the problem the industry is currently trying to solve. And it's a big deal, because we're talking about AI agents that can take actions on our behalf, and we need to make sure that they're doing what we want them to do, and not something else. So what's being done about it?
+
+Well, there are a few initiatives underway. Anthropic's Model Context Protocol, or MCP, gives agents a standard interface to tools and data sources. And MCP's March 2025 specification standardized authorization using OAuth 2.1, requiring PKCE from all clients and adding metadata discovery and dynamic client registration. But one gap in that flow is discovery - an agent hitting a remote MCP server for the first time needs to know where the authorization server lives before it can start any OAuth exchange.
+
+And then there's A2A, or Agent-to-Agent, which was published by Google in April 2025. A2A handles the connection between agents themselves, using Agent Cards to publish capabilities and OAuth 2.0 flows to handle authentication. It's built on existing web infrastructure standards, making it compatible with systems businesses already run.
+
+But here's the thing, both MCP's OAuth 2.1 and A2A's authentication schemes still rely on bearer tokens. And in a multi-agent pipeline, that creates a structural problem. If you hold the token, you can use it. But in a multi-hop chain, you need to make sure that each hop can only reduce permissions, never expand them. And that's where AAuth comes in - a new specification that treats agents as first-class identities, bringing together authentication and authorization built on OAuth RFCs, with message signing and discovery.
+
+So what does this mean for you, as a software developer? Well, if you're building integrations that agents will traverse, you need to think about whether your auth layer can handle delegated credentials and produce a verifiable trail of which agent did what and on whose behalf. Most existing OAuth implementations weren't designed to answer that. But the work to make them do so is happening now, and the teams that engage with it early will be ahead of the ones waiting for a finished spec.
+
+Ready to get started? You should be, because the future of authentication and authorization is being written right now, and you don't want to be left behind.
+
+Alright, let us move on to the next story.
+
+Imagine being able to do more with the same team, without burning out or breaking the bank. Sounds like a dream, right? But what if I told you that some CIOs are actually making this happen, by turning their attention inward and transforming their own IT workflows using AI. Think of it this way, they're taking the same skills they use to drive change across the enterprise, and applying them to their own backyard. And the results are pretty impressive.
+
+So, what's driving this trend? Well, CIOs have long been under pressure to do more with less, and that pressure is intensifying. According to Gartner, 57% of CIOs face pressure to improve productivity, and 52% to reduce costs. But here's the thing, they're not just looking to cut costs, they're looking to unlock value. And they're using AI to do it.
+
+Let's take Mike Anderson, the chief digital and information officer at Netskope, as an example. He's using AI to create digital twins of his IT workers' roles, which can assist them in doing their jobs. It's like having a personal assistant, but instead of getting coffee, it's helping them access the right information in near real-time. And the goal is to give each worker some time back, so they can focus on higher-value tasks.
+
+Anderson's also using AI to generate code, which is slashing months off the typical product development schedule. And he's not alone, other CIOs like Anisha Vaswani at Extreme Networks are doing the same. She's using AI to speed up coding, and to transform help desk operations. The idea is to make IT more responsive, agile, and customer-centric.
+
+Now, you might be thinking, this all sounds great, but how do I get started? Well, here's the thing, it's not just about throwing AI at the problem. You need to rethink your workflows, and that's where the magic happens. Think of it like a recipe, you can have all the right ingredients, but if you don't put them together in the right way, you'll end up with a mess.
+
+Alex Wyatt, a director at West Monroe, says that CIOs should start by automating repetitive tasks, and then move on to more sophisticated opportunities. It's like peeling an onion, you start with the easy stuff, and then work your way up. And the key is to focus on outcomes, not just the technology itself.
+
+So, what does this mean for you, as a software developer? Well, it means that you should be looking for ways to automate repetitive tasks, and to use AI to augment your work. It's not about replacing humans, it's about freeing them up to do more strategic work. And it's about creating a culture of continuous improvement, where you're always looking for ways to do things better, faster, and cheaper.
+
+Ha Hoang, the CIO of Commvault, says that taking on this work is an imperative for CIOs. They need to model the behavior they want to see in the rest of the organization. And that means putting the same rigor on internal IT workflows, as they do on external ones. It's like the old saying goes, "you can't preach what you don't practice".
+
+So, the takeaway is, don't just focus on transforming the business, focus on transforming your own IT workflows. Use AI to unlock value, and to create a culture of continuous improvement. And always keep in mind, it's not just about the technology, it's about the mindset. By doing so, you'll be able to do more with the same team, without breaking the bank, and that's a pretty powerful thing.
+
+Alright, let us move on to the next story.
+
+Imagine you're working on a project and you need to analyze a ton of data to make some key decisions. You're stuck in front of a screen, trying to make sense of all these numbers and charts. But what if you could just ask your computer a question, like "what's causing this spike in sales?" and get a clear answer, without having to be a data expert? That's exactly what Reveal AI is all about. 
+
+Think of it this way, traditional analytics tools are like having a personal assistant who can only answer specific questions you've programmed them to answer. But Reveal AI is like having a super smart, data-savvy colleague who can understand your natural language questions and give you insightful answers. 
+
+Here is the thing, Reveal AI isn't just some bolted-on chat interface, it's actually embedded into your application, so it feels like a native part of your product. And it's not just about answering questions, it's about surfacing insights, detecting anomalies, and even recommending next steps. 
+
+So what does this mean for you? Well, if you're a software developer, this means you can give your users a whole new level of data analysis capabilities, without having to be a data expert themselves. They can ask questions, explore insights, and drill into dashboards for deeper analysis, all from within your application. 
+
+And here is why that is a big deal, traditional analytics tools require a lot of technical expertise to use, but Reveal AI makes analytics accessible to a broader range of users. It's like having a translator that can take natural language questions and turn them into optimized queries against your data. 
+
+Now, you might be wondering, how does it work? Well, Reveal AI operates as an extension of the Reveal SDK, using an API-driven architecture and endpoint-based AI execution. This means that you, the developer, have full control over the AI endpoint and the data, and you can even use your own AI models or integrate with popular AI platforms like OpenAI or Azure OpenAI. 
+
+And the best part is, Reveal AI is designed to be secure and auditable, so you can ensure that your users' data is safe and compliant with your existing security policies. You can even set usage caps and track every AI-generated query, so you have full visibility and control over your AI costs. 
+
+So what can you take away from this? If you're building a software application and you want to give your users a more powerful data experience, you should definitely check out Reveal AI. It's a game-changer for conversational analytics and embedded AI capabilities. With Reveal AI, you can ship conversational analytics safely and securely, without surrendering governance or cost visibility.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+IBM just launched a new AI chip, think of it as a super smart brain for computers. This could make AI way faster and more efficient. It's a big deal for the tech world.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.

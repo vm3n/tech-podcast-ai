@@ -1,0 +1,103 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+Imagine being able to add personality to your website with scroll-driven animations, without needing to write a single line of JavaScript. Sounds too good to be true, right? But what if I told you there's a new API that makes it possible to do just that, using only CSS? It's called the Animation Timeline API, and it's a game-changer.
+
+So, let's dive in and explore how this API works. Think of it this way: we've always used keyframe animations to create smooth transitions between different styles, but we've always had to tie those animations to a specific duration, like a few seconds or milliseconds. But with the Animation Timeline API, we can tie those animations to the user's scroll position instead.
+
+Here's the thing: when you define a keyframe animation, you're not actually specifying what the percentages refer to. You're just defining a set of styles that should be applied at different points in the animation. And with the Animation Timeline API, we can use the user's scroll position as the input for those percentages. So, instead of transitioning from 0% to 100% over a set amount of time, we're transitioning from 0% to 100% as the user scrolls through the viewport.
+
+Let me give you an example. Suppose we want to fade an element in as the user scrolls down the page. We can define a keyframe animation that goes from 0% opacity to 100% opacity, and then we can use the Animation Timeline API to tie that animation to the user's scroll position. As the user scrolls down, the element will fade in, and as they scroll back up, it will fade out.
+
+Now, you might be wondering how this actually works. Well, the Animation Timeline API introduces a new property called animation-timeline, which allows us to specify the timeline that should be used for an animation. And one of the timelines we can use is the view timeline, which is tied to the user's scroll position.
+
+So, what does this mean for you? It means you can create all sorts of cool effects, like fading elements in and out, or sliding them in from the side, all without needing to write any JavaScript. And the best part is, it's built on top of existing CSS primitives, so if you're already familiar with keyframe animations, you'll pick this up in no time.
+
+But here's the thing: the Animation Timeline API is not just limited to simple effects like fading and sliding. We can also use it to create more complex effects, like animations that are tied to the user's scroll position, but also have custom easing curves. For example, we can use the animation shorthand to apply a custom easing curve to our scroll-driven animation.
+
+And if that's not enough, we can also use the Animation Timeline API to create animations that are tied to specific ranges of the user's scroll position. For example, we can use the animation-range property to specify that an animation should only run when the user is scrolling through a certain section of the page.
+
+So, what's the practical takeaway from all this? It's that the Animation Timeline API is a powerful tool that can help you create all sorts of cool effects on your website, without needing to write a lot of complex JavaScript code. And if you're interested in learning more, I'd recommend checking out some of the resources available online, like the Whimsical Animations course, which covers all sorts of advanced animation techniques, including scroll-driven animations.
+
+Alright, let us move on to the next story.
+
+Imagine you're working on a project and suddenly your costs just drop, no strings attached. Sounds too good to be true, right? But that's exactly what happened to a team that upgraded to a frontier model, and I'm here to tell you the story of how they did it.
+
+So, here's the thing, they were using a model called Sonnet 4.0 to analyze their CI logs, and it was working, but it was expensive and not giving them the best results. They were paying a lot of money to get mediocre performance, which is like buying a fancy car that doesn't really get you where you want to go that fast.
+
+Think of it this way, they had a huge amount of data, terabytes of CI logs, and they needed to make sense of it all. They were using Sonnet to analyze all this data, but it was like trying to find a needle in a haystack. Most of the time, the issues they were seeing were duplicates, things they had already seen before, and it didn't make sense to wake up the expensive model just to tell them something they already knew.
+
+So, they switched to a new architecture, which they call the "triager" pattern. They introduced a new agent, called Haiku, which has a very specific job, to determine if an issue is already tracked or not. If it is, then it stops right there, and if not, it escalates to the more expensive model, Opus. This is like having a bouncer at a club, who checks if you're on the list before letting you in.
+
+Here's why this is a big deal, Haiku can detect duplicates, and it does it in a really clever way. It uses something called semantic search, which is like a super smart way of searching for things that are similar but not identical. For example, if you have two error messages that are different, but they're caused by the same root issue, Haiku can figure that out.
+
+Now, when Haiku is investigating an issue, it doesn't just read all the logs, it uses a SQL interface to ClickHouse, which is like a database, to ask for what it needs. This is like having a researcher who can ask specific questions to get to the bottom of a problem, rather than just reading through a huge pile of papers.
+
+The expensive model, Opus, it plans the investigation, it forms a hypothesis, and then it spawns Haiku sub-agents to do the actual digging. Each sub-agent gets a prompt from Opus, which is like a very specific question, and it goes and finds the answer. This is like having a team of detectives, where one detective is the lead, and the others are doing the legwork.
+
+So, what does this mean for you, as a software developer? Well, the big takeaway is that you don't need to use the most expensive model for every single task. You can use a cheaper model for the tasks that don't require as much complexity, and save your expensive model for the tasks that really need it. This is like having a toolbox, where you use the right tool for the right job, rather than just using the biggest, most expensive tool you have.
+
+And here's the thing, this approach isn't just limited to CI logs, it can be applied to anything with high event volume, like security logs, IoT telemetry, financial data. Most events are noise or repeats, and the expensive model should only see the ones that aren't. This is like having a filter, that lets you focus on the things that really matter.
+
+The team is still tuning their system, they're figuring out where the sub-agent boundary sits, and how to make it more efficient. But the biggest lesson they learned is that the hardest part wasn't making the agent smarter, it was building the layers that stop it from running when it shouldn't. This is like having a guardrail, that prevents you from going off the road, and it's a crucial part of building a system that works well.
+
+So, to sum it up, upgrading to a frontier model can actually make your costs go down, if you do it right. You need to use the right tool for the right job, and build a system that's efficient and smart. And that's the story of how this team did it, and what you can learn from their experience.
+
+Alright, let us move on to the next story.
+
+Imagine you're trying to have a conversation with a friend, but every time you want to say something, you have to remind them about all the other conversations you've had, all the people you've met, and all the places you've been. That's kind of what's happening with AI agents when they're connected to too many tools. They get overwhelmed, and their ability to understand and respond to you starts to break down.
+
+Here's the thing, when you're working with AI agents, you want to be able to use all sorts of tools to get things done. You might connect a Figma tool, a Context7 tool, or a Jira tool to your agent, so you can use natural language to leverage all those tools. Sounds perfect, right? But the problem is, when you've got too many tools connected, your AI agent starts to lose context. It's like trying to have a conversation with someone who's constantly being interrupted by other people.
+
+Think of it this way, every tool name, description, and parameter schema consumes tokens on every request. And when you've got 50 or more tools connected, that can eat up 5 to 7 percent of the model's context before a single user message even arrives. That means your conversation history, document content, and reasoning space all get crowded out. And that's not all, when you've got too many semantically similar tools, the AI agent starts to hallucinate. It invents tool names that don't exist, conflates parameters between tools, or calls the right tool with arguments from a different tool's schema.
+
+So what does this mean for you? Well, if you're working with AI agents, you need to find a way to manage all those tools without overwhelming the agent. One way to do this is by reducing the number of tools. You can do this by defining a curated set of tools that solve the specific problem your AI agent is facing. You can also decrease the number of tools on the MCP side by thinking about the use cases you're trying to solve, and combining APIs together, or wrapping a single API call with business logic.
+
+But here's the thing, even with tool reduction, you can still run into problems. Large APIs can create tool bloat, and multi-step workflows can require many round-trips. That's where code mode comes in. Instead of exposing tools directly to the AI agent, you make them searchable and executable through code. This approach was pioneered by Cloudflare, and it's got some big benefits. It can handle more complex tools, and it dramatically reduces context window usage when multiple calls are needed.
+
+So how does code mode work? Well, when you connect to an MCP server in code mode, the agent's SDK fetches the MCP server's schema and converts it into a TypeScript API with doc comments. It then exposes two tools to the AI agent: search and execute. The search tool allows the model to search over the pre-resolved OpenAPI spec using a JavaScript async arrow function, and the execute tool allows the model to run a JavaScript async arrow function in a sandboxed environment.
+
+Now, this approach isn't without its drawbacks. It can be harder to debug, and it requires infrastructure. But the benefits are big. You get massive token reduction, better control flow, and fewer AI agent round-trips. And here is why that is a big deal, when you're working with AI agents, you want to be able to use all sorts of tools to get things done, without overwhelming the agent. Code mode makes that possible.
+
+So what's the takeaway? Regardless of which approach you choose, you still need to maintain a reasonable number of tools in your MCP server. What's reasonable depends on your use cases, but the key is to start with those use cases, iterate on your tool design, and choose the pattern that best fits your constraints. Your AI agent, and your context window, will thank you. As a developer, you should take away that when working with AI agents and multiple tools, it's essential to consider the limitations of the agent's context window and to explore approaches like code mode to optimize tool usage and prevent hallucination.
+
+Alright, let us move on to the next story.
+
+Imagine spending almost two decades of your life dedicated to one thing, and then one day, you just have to walk away. That's what's happening with Mitchell Hashimoto, the creator of Vagrant, and his project Ghostty. They're leaving GitHub after 18 years. Think of it this way, GitHub is like a home for many developers, a place where they can share and work on code together, and for Mitchell, it's been his happy place for most of his life. But now, he's had enough.
+
+Here is the thing, Mitchell has been very public about his frustration with GitHub lately. He's been criticizing the platform for its frequent outages and how it's affecting his work. He's even kept a journal to track the days when GitHub outages have impacted his ability to work, and let's just say, it's been almost every day. So what does this mean for you, as a developer? It means that even the most passionate and dedicated users can get fed up with a platform if it's not meeting their needs.
+
+Mitchell's story is not just about him, it's about the community that relies on GitHub. He's not just a user, he's a creator, and his project Ghostty is moving to a new home. Now, you might be thinking, why is this a big deal? Well, think of GitHub like a library, where developers can access and share books, or in this case, code. And just like a library, it needs to be reliable and accessible. But if the library is always closed or the books are always missing, then it's not doing its job.
+
+And here is why that is a big deal, GitHub is not just a platform, it's an ecosystem. It's where many developers go to work, to collaborate, and to share their code. So when someone like Mitchell, who has been a part of this ecosystem for so long, decides to leave, it's a sign that something is wrong. It's like a canary in a coal mine, a warning sign that the platform is not meeting the needs of its users.
+
+So what's next for Mitchell and Ghostty? They're moving to a new platform, but they're not sure where yet. They're still in discussions with multiple providers, both commercial and open-source. And they're going to keep a read-only mirror of their project on GitHub, so that users can still access it. But for now, they're saying goodbye to GitHub, and it's a big deal.
+
+So what does this mean for you, as a developer? It means that you need to be aware of the platforms you're using, and make sure they're meeting your needs. It means that you need to have a plan B, in case your platform of choice is not working out. And it means that you need to be vocal about your needs and frustrations, just like Mitchell has been. Because at the end of the day, it's up to us, as developers, to make sure that the platforms we use are working for us, not against us.
+
+Alright, let us move on to the next story.
+
+Imagine you're working on a project, and someone you've never met, with no connection to your team, can take control of your entire workflow, steal your secrets, and even publish malicious code to the world. Sounds like a nightmare, right? But this isn't just a hypothetical scenario - it's been happening to open-source projects on GitHub for months, and the common thread is GitHub Actions. Think of it like a powerful tool that automates tasks, but with some serious flaws that make it the weakest link in the chain.
+
+So, let's dive into what's been going on. Over the past year and a half, there have been a string of incidents where attackers have exploited GitHub Actions to compromise open-source projects. We're talking about big names like Ultralytics, nx, and Trivy. In each case, the attackers used different tactics, but they all relied on the same underlying features of GitHub Actions. Here is the thing - these features aren't bugs, per se, but rather design choices that make it easy for attackers to find vulnerabilities.
+
+One of the main issues is the way GitHub Actions handles workflows triggered by pull requests or issue comments. These triggers can run with full access to a project's secrets, which is like giving someone the keys to the kingdom. And because these triggers can be configured to run automatically, an attacker can use them to inject malicious code into a project without anyone even noticing. It's like a Trojan horse, but instead of a physical object, it's a piece of code that can spread quickly.
+
+Another problem is the way GitHub Actions handles caching. When a workflow runs, it can store cached data that can be accessed by other workflows. But if an attacker can poison that cache, they can inject malicious code into a project. This is what happened to Ultralytics, where an attacker poisoned the cache, and then the legitimate release workflow executed the malicious code, resulting in a crypto miner being published to PyPI.
+
+Now, you might be wondering why GitHub hasn't fixed these issues yet. The thing is, GitHub has been aware of these problems for a while, and they've even documented some of them. But the fixes they've proposed so far are all opt-in, meaning that project maintainers have to explicitly enable them. This is a problem because most maintainers assume that the default settings are safe, and they don't bother to change them. So, what does this mean for you? If you're a developer using GitHub Actions, you need to be aware of these risks and take steps to protect yourself.
+
+Here is why that is a big deal - the package registries like PyPI, npm, and RubyGems have all adopted a new standard called OIDC-based trusted publishing. This standard relies on GitHub Actions to verify the identity of publishers, but if GitHub Actions is compromised, then the entire system is at risk. It's like a house of cards - if one card falls, the whole thing comes crashing down.
+
+So, what can you do to protect yourself? First, you should run a tool like zizmor to scan your workflows for vulnerabilities. You should also pin your SHAs, which means specifying the exact version of a dependency instead of using a mutable tag. And you should set permissions to read-only by default, so that workflows can't access sensitive data unless they really need to. Think of it this way - it's like locking your doors and windows to prevent intruders from getting in.
+
+In the end, it's up to GitHub to fix these issues, but until then, it's up to us to be vigilant and take steps to protect ourselves. So, what does this mean for you? It means being aware of the risks, taking steps to mitigate them, and hoping that GitHub will eventually make the necessary changes to secure their platform. Otherwise, your project could be the next weakest link in the chain.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Microsoft just open-sourced VibeVoice, a voice AI project on GitHub. This could be big for devs working on voice tech. It's a new frontier for AI. Claude wrote some code, but now there's a fight over who owns it. This dispute raises big questions about code ownership. It might change how developers work. Someone installed every Firefox extension, which is crazy. They did this to test the browser's limits, and it's kinda fascinating. This experiment reveals Firefox's performance under extreme conditions. Google just launched Claude, an AI tool for creative work. It's like having a super smart assistant. This could change how we make art and music. ChatGPT now serves ads, and here's how they work. This matters because it changes how we interact with the AI. It's a new revenue stream. So GitHub wasn't always the go-to code sharing site, right? Before GitHub, developers used other platforms like SourceForge. Think of it like a precursor to social media, setting the stage for what came next. Developers are trying out Structured-Prompt-Driven Development, or SPDD. It's like giving your code assistant a recipe to follow. This could change how we build software.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.

@@ -1,0 +1,71 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+Imagine you're building a house, but you don't know how much to charge for it, or even how to sell it. That's basically what's happening with AI right now. Companies are creating these incredible AI-powered tools, but they have no idea how to price them. This is a huge problem, and it's because AI has completely upended the way we think about pricing software. Think of it this way, traditional software as a service, or SaaS, models are like renting an apartment. You pay a fixed monthly fee, and you get access to the apartment. But AI is more like a personalized concierge service. You're not just paying for access, you're paying for a specific outcome, like getting the perfect restaurant recommendation.
+
+Here is the thing, AI pricing is uniquely complex. It's not just about slapping a price tag on a product, it's about understanding the value that AI delivers, and that value can vary wildly depending on the user. So, companies are struggling to figure out how to price AI in a way that reflects its true value. Elena Verna, Head of Growth at Lovable, recently gave a talk about this very issue. She said that traditional SaaS models just don't work for AI, because they're based on monthly recurring revenue, rather than real-time value exchange. Think of it like a taxi ride. With a traditional SaaS model, you'd pay a fixed monthly fee, no matter how many taxi rides you take. But with AI, you want to pay for each individual ride, based on the value you get from it.
+
+So what does this mean for you, as a software developer? Well, it means you need to start thinking about outcomes-based pricing, rather than just usage-based pricing. It's like the difference between paying for a gym membership, and paying for a personal trainer. With a gym membership, you're just paying for access to the equipment. But with a personal trainer, you're paying for a specific outcome, like getting in shape. And that's what AI is all about, delivering specific outcomes, rather than just providing access to a tool. 
+
+Kyle Poyar, a growth and monetization advisor, has been working with companies to help them navigate this shift. He says that companies like Clay, Figma, and PostHog are already evolving their monetization strategies to account for the AI era. They're moving away from traditional SaaS models, and towards more flexible, outcomes-based pricing. And Scott Woody, who leads Stripe's Revenue Suite, is working on the infrastructure to support this new way of thinking about pricing. He says that companies need to be able to adapt quickly, and try out new pricing models, in order to stay competitive.
+
+So what can you do today, to prepare for this shift? Well, start by thinking about the value that your AI-powered tool delivers, and how you can price it in a way that reflects that value. Think about the outcomes that your users want to achieve, and how you can help them get there. And be willing to experiment, and try out new pricing models, until you find one that works. Because the truth is, there's no one-size-fits-all solution, when it comes to AI pricing. You need to be flexible, and adaptable, and willing to learn, in order to succeed.
+
+Alright, let us move on to the next story.
+
+So here is the thing, OpenAI and AWS just announced a new product called Bedrock Managed Agents. Think of it this way, it's like a super-powered version of OpenAI's models, but instead of just being a cloud-based service, it's actually integrated directly into AWS. This is a big deal because it means that companies can use OpenAI's models to build all sorts of new applications and services, but they can do it all within the safety and security of their own AWS environment.
+
+So what does this mean for you, as a software developer? Well, it means that you've got access to some of the most powerful AI models in the world, but you can use them in a way that's easy and secure. You don't have to worry about setting up your own servers or dealing with complex security protocols, because AWS has already taken care of all that for you.
+
+But here is why that is a big deal, it's not just about making it easier to use AI, it's about making it possible to build whole new types of applications and services that we can't even imagine yet. Think about it, with Bedrock Managed Agents, you can build applications that can learn and adapt on their own, that can make decisions and take actions without needing to be explicitly programmed. That's a whole new world of possibilities, and it's opening up right now.
+
+Now, you might be wondering, how does this work? Well, it's actually pretty simple. Bedrock Managed Agents is a cloud-based service that lets you deploy and manage OpenAI models directly within your AWS environment. You can use it to build all sorts of applications, from simple chatbots to complex machine learning models.
+
+And here is why that is important, it's not just about the technology itself, it's about what it enables. With Bedrock Managed Agents, you can build applications that can learn and adapt on their own, that can make decisions and take actions without needing to be explicitly programmed. That's a whole new world of possibilities, and it's opening up right now.
+
+So what does this mean for the future of AI? Well, it means that we're going to see a whole lot more applications and services that use AI, and they're going to be more powerful and more sophisticated than anything we've seen before. It means that we're going to see new types of businesses and new types of industries emerge, all based on the power of AI.
+
+And for you, as a software developer, it means that you've got a whole new world of possibilities to explore. You can build applications that can learn and adapt on their own, that can make decisions and take actions without needing to be explicitly programmed. You can build applications that can change the world, and that's a pretty exciting prospect.
+
+So, in terms of practical takeaways, if you're a software developer, you should definitely be checking out Bedrock Managed Agents and seeing what it can do for you. You should be thinking about how you can use AI to build new and innovative applications, and you should be exploring the possibilities of this new technology. It's a whole new world, and it's opening up right now.
+
+Alright, let us move on to the next story.
+
+Imagine you're searching for something online, and instead of getting a list of irrelevant results, you get exactly what you're looking for. Sounds like a dream, right? But what if I told you that this dream might become a reality, and it's all thanks to something called agents. Think of it this way, agents are like super smart personal assistants that can understand what you're looking for and find it for you. They're like having a librarian, a researcher, and a hacker all rolled into one. 
+
+So, how do they work? Well, traditionally, when you search for something online, your query goes through a complex set of capabilities on top of retrieval. It's like a big machine that's trying to understand what you're looking for and give you relevant results. But with an agent, it's different. The agent can understand your request, call retrieval tools, and evaluate relevance on its own. It's like having a personal shopper who knows exactly what you want and can find it for you.
+
+Now, you might be wondering, can agents replace the traditional search stack? And the answer is, it's possible. In fact, some experiments have shown that agents can achieve surprisingly good results with simple tool usage. For example, one experiment used a basic BM25 backend and gave it to an agent to play with. The results were amazing, with the agent achieving an NDCG of 0.453, which is a big jump in quality. And the best part is, the agent didn't need any special training or fine-tuning. It just worked.
+
+But, here's the thing, agents don't always work this way. Sometimes, they call search tools multiple times, and they use different strategies to get the results they need. For example, if an agent is searching for "PVC coupler" and gets results that are mostly about network cables, it might issue a follow-up query like "PVC pipe coupler" to get more relevant results. It's like the agent is thinking, "Hmm, this isn't what I'm looking for, let me try again."
+
+So, what does this mean for you, as a software developer? Well, it means that you might need to rethink the way you design your search systems. Instead of relying on complex algorithms and machine learning models, you might be able to use agents to simplify the process and get better results. It's like having a new tool in your toolbox that can help you solve problems more efficiently.
+
+Now, I know what you're thinking, "This all sounds too good to be true." And you're right, there are some limitations to using agents for search. For example, if the agent doesn't have enough knowledge or context, it might not be able to find what you're looking for. This is what I call "Deep Research", where the agent needs our help to learn and find the right information. But, for simple search tasks, agents can be a game-changer.
+
+Think of it this way, agents are like a new paradigm for search. They're not just a replacement for traditional search systems, but a new way of thinking about how we find information. And, as a software developer, you have the power to shape this new paradigm and create search systems that are more efficient, more effective, and more intuitive. So, what does this mean for you? It means you should start exploring the possibilities of using agents in your search systems, and see how you can use them to improve the user experience.
+
+Alright, let us move on to the next story.
+
+So you think you know what's going on with OpenAI's plans to go public by the end of this year, right? Well, here is the thing, there's a lot more to the story than just the usual IPO prep. Apparently, OpenAI's CFO, Sarah Friar, has been telling other company leaders that she's worried they might not be able to pay for their future compute contracts if revenue doesn't grow fast enough. And that's not all, the company's board is now scrutinizing their recent data center deals, which is a big deal because these deals are central to OpenAI's financial profile.
+
+Think of it this way, compute contracts are like renting a huge warehouse to store all your stuff. You need to pay for it every month, and if you can't, you're in trouble. OpenAI has committed to some massive infrastructure obligations, we're talking over a trillion dollars, and the CFO is questioning whether they can really afford it. This is not just about hitting revenue targets, it's about being able to pay for the very thing that makes OpenAI tick.
+
+Now, you might be wondering, what's the big deal about the CFO being worried? Isn't that just her job? Well, here is why this is a problem. The CFO doesn't actually report directly to the CEO, Sam Altman. She reports to someone else, Fidji Simo, which is unusual for a company preparing to go public. And to make matters worse, Friar has been excluded from key financial meetings, including ones about server procurement, which is a huge line item for OpenAI.
+
+So what does this mean for the IPO? Well, the registration statement needs to be signed by the company's principal financial officer, which is Friar, and the underwriters are going to take a close look at the company's financials. If the CFO was excluded from material discussions, that's a problem. If the company can't demonstrate that they have a solid plan to pay for their compute contracts, that's a problem. And here is why that is a big deal, the underwriters are going to want to see that the company has a credible record of information access, and that the CFO has the authority to make decisions about the company's finances.
+
+As a software developer, you might be wondering what this has to do with you. Well, here is the thing, when a company like OpenAI is preparing to go public, it's not just about the company itself, it's about the entire ecosystem. If OpenAI can't demonstrate that they have a solid financial plan, that's going to affect the entire AI industry. And what you should take away from this story is that, as a developer, you need to be paying attention to the financials of the companies you work with, because it can affect your own work and your own career. So, keep an eye on OpenAI's IPO plans, it's going to be an interesting ride.
+
+Alright, let us move on to the next story.
+
+Google just launched Jules, a platform that helps develop products from start to finish. It's like having a personal assistant for product creation. This could be a game changer for developers.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Google just released the Recurrent Transformer, a new AI model that's way more efficient and effective. This matters because it can handle complex tasks with less computing power. Meta's new AI model is showing promise, but investors are waiting for Zuckerberg's plan. This could be a big deal for the company's future. Investors want to see a clear strategy. Researchers found that multi-agent networks often succeed in demos but fail in real-world scenarios due to oversimplification. This is a big problem for AI development. It could impact future projects.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.
