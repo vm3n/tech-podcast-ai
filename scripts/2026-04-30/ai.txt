@@ -1,0 +1,105 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+Imagine you're trying to train a massive AI model, like the kind that powers self-driving cars or virtual assistants. You need a ton of computing power, and I mean a ton. Think of it like trying to solve a gigantic math problem, but instead of using a pencil and paper, you're using thousands of computers all working together. Now, there's a new player in town that wants to help you solve that problem, and it's not who you think. It's Google, and they're selling their custom Tensor Processing Units, or TPUs, to select customers. This is a big deal, so what's going on here?
+
+So, Google's been using these TPUs in their own data centers for a while now, and they've been renting out the capacity to customers who need it. But now, they're going to start selling the actual chips to customers, who can then install them in their own data centers. Think of it like buying a super powerful computer that you can use to train your own AI models, instead of having to rent time on someone else's computer.
+
+Here's the thing, this is a big change from Google's prior strategy, and it's a direct shot at Nvidia, the company that's been dominating the AI chip market. Nvidia's been saying that their chips are the best for AI developers because they offer greater flexibility, but Google's trying to challenge that. And Google's not the only one, Amazon's also getting into the game, offering up their own chips to customers.
+
+So, what's the background here? Well, Google's been working on these TPUs for a while, and they've just announced two new versions, the TPU 8t for AI training and the TPU 8i for inferencing. And they've already signed some big deals, like a multibillion-dollar chip deal with Meta. Amazon's also signed some big deals, including a 5-gigawatt agreement with Anthropic, and a 2-gigawatt deal with OpenAI.
+
+Now, you might be wondering, why does this matter? Well, it matters because it's going to give developers more options for training and running their AI models. Think of it like having a choice of which tool to use for a job, instead of being stuck with just one option. And it's going to drive innovation, because companies are going to be competing to make the best AI chips.
+
+So what does this mean for you, as a software developer? It means you're going to have more options for building and deploying your AI models, and that's a big deal. You'll be able to choose the best tool for the job, and that's going to make it easier to build and deploy AI-powered applications. And here's the takeaway, if you're working on an AI project, you should be paying attention to these developments, because they're going to shape the future of the AI landscape.
+
+Alright, let us move on to the next story.
+
+Imagine you're building a massive house, but instead of bricks and mortar, you're using cash, and lots of it. That's what OpenAI has been doing with its ambitious plans to create a network of data centers, called Stargate. But here's the thing, they've just announced they're abandoning their own data centers and instead, they're going to lease computing power from other companies. So what's going on?
+
+Let's take a step back. OpenAI, the company behind some of the most advanced AI models, announced Stargate back in 2025. It was a joint venture with Oracle and SoftBank, with plans to invest a whopping $500 billion in AI data centers across the US. The goal was to build 20 data centers, with the first one already up and running in Texas. But it seems that building and owning their own infrastructure was just too expensive.
+
+Think of it this way, owning a data center is like owning a car. It's a big upfront cost, and then you have to worry about maintenance, fuel, and insurance. But leasing computing power is like renting a car, you pay a monthly fee and someone else worries about the rest. It's a more flexible deal, and that's what OpenAI is opting for now.
+
+But this change of plans has caused some chaos among their partners. SoftBank, for example, has decided to own and develop the Texas data center, while OpenAI will just design and operate it on a long-term lease. And in the UK, OpenAI has put its data center project on hold, citing restrictive regulations and high energy costs. Microsoft has even stepped in to take over the lease for another Stargate project in Norway.
+
+So what does this mean for OpenAI and its partners? Well, it seems like OpenAI is trying to conserve cash. The company has been burning through money, and it's reportedly missed internal revenue targets in recent months. By leasing computing power, they can avoid the huge upfront costs of building and maintaining their own data centers.
+
+But here's the thing, this change in strategy has also raised some eyebrows. Some partners feel like they've been misled by OpenAI, and they're not happy about it. And then there's the question of whether OpenAI can really make this work. I mean, can they really rely on third-party providers to give them the computing power they need?
+
+Anthropic CEO Dario Amodei has criticized OpenAI's approach, saying that some companies are pushing infrastructure investments too far. But OpenAI says it's ahead of the curve, and that leasing computing power will give them an advantage over their competitors.
+
+So what does this mean for you, as a software developer? Well, it's a reminder that the AI landscape is constantly changing. Companies are trying new approaches, and some are working better than others. But one thing is for sure, the demand for computing power is only going to increase, and companies like OpenAI are going to have to find ways to meet that demand without breaking the bank.
+
+And here is why that is a big deal. The way OpenAI is approaching this, by leasing computing power, it's like a shift in the way we think about infrastructure. It's not just about owning the hardware, it's about having access to the computing power you need, when you need it. So, as a developer, you should be thinking about how you can take advantage of this shift. How can you use cloud computing, or leased computing power, to build your own applications and services? It's a new way of thinking, and it's going to require some creativity and flexibility. But the potential rewards are huge.
+
+Alright, let us move on to the next story.
+
+Imagine you're trying to build a new AI model, but every time you want to test it, you have to pay thousands of dollars just to see how it performs. Sounds crazy, right? But that's exactly what's happening in the AI world right now. The cost of evaluating AI models has become so high that it's becoming a major bottleneck in the development of new AI systems. Think of it this way, evaluation is like the final test for your AI model, it's where you see if all the hard work you put into building it actually pays off. But now, that test is so expensive that many researchers and developers can't even afford to run it.
+
+So what's going on here? Well, it all started with the development of large language models. These models are incredibly powerful, but they're also really expensive to train and evaluate. The cost of training a large language model can be tens of millions of dollars, but the cost of evaluating it can be tens of thousands of dollars per test. And here's the thing, you don't just run one test, you run many tests to make sure your model is working as expected. So the costs add up quickly.
+
+Let's take a look at some numbers. The Holistic Agent Leaderboard, which is a benchmark for evaluating AI models, spent around $40,000 to run 21,730 agent rollouts across 9 models and 9 benchmarks. That's a lot of money, and it's not like they're just throwing it around. They're using it to evaluate the performance of these models, which is crucial for developing new AI systems.
+
+But it's not just the cost of evaluation that's the problem, it's also the fact that many of these evaluations are being repeated over and over again. Different researchers and developers are running the same tests, which means they're all paying for the same evaluations. It's like they're all paying for the same ticket to the same movie, but they're not getting any discount for it.
+
+So what can be done about this? Well, one thing that can be done is to make evaluations more efficient. This can be done by using techniques like mid-difficulty filtering, which can reduce the number of tests that need to be run. Another thing that can be done is to use Pareto-front leaderboards, which can help to identify the most efficient models.
+
+But here's the thing, even with these techniques, the cost of evaluation is still going to be high. And that's why it's so important for researchers and developers to be able to share their results and their data. If they can do that, then they can avoid repeating the same tests over and over again, which will save them a lot of money.
+
+So what does this mean for you, as a software developer? Well, it means that you need to be aware of the costs of evaluation when you're building your own AI models. You need to think about how you can make your evaluations more efficient, and how you can share your results and data with others. And here is why that is a big deal, if you can't afford to evaluate your model, then you can't develop it, and that means you're not going to be able to create the AI systems that you want to create.
+
+Think of it this way, the cost of evaluation is like a tax on innovation. It's a cost that you have to pay in order to develop new AI systems, and it's a cost that's going to slow down innovation if it's not addressed. So what can you do about it? Well, you can start by being more mindful of the costs of evaluation, and by looking for ways to make your evaluations more efficient. You can also start sharing your results and data with others, which will help to reduce the overall cost of evaluation.
+
+And here is why that is a big deal, if we can reduce the cost of evaluation, then we can accelerate innovation in the AI world. We can develop new AI systems that are more powerful and more efficient, and we can do it faster and cheaper than before. So the cost of evaluation is not just a problem, it's also an opportunity. It's an opportunity for us to rethink the way we develop AI systems, and to find new ways to make evaluation more efficient and more cost-effective. 
+
+So what does this mean for the future of AI development? Well, it means that we're going to have to be more careful about how we evaluate our models, and we're going to have to be more mindful of the costs. We're going to have to think about how we can share our results and data with others, and how we can make our evaluations more efficient. And if we can do that, then we can accelerate innovation in the AI world, and we can develop new AI systems that are more powerful and more efficient than ever before. 
+
+So the practical takeaway for you, as a software developer, is to be aware of the costs of evaluation, and to think about how you can make your evaluations more efficient. Look for ways to share your results and data with others, and think about how you can use techniques like mid-difficulty filtering and Pareto-front leaderboards to reduce the cost of evaluation. By doing that, you can help to accelerate innovation in the AI world, and you can develop new AI systems that are more powerful and more efficient than ever before.
+
+Alright, let us move on to the next story.
+
+Imagine being able to train massive AI models on huge amounts of data without running out of memory. Sounds like a dream, right? Well, that dream just got a lot closer to reality thanks to a new technology called AutoSP. Think of it this way, when you're training a large language model, you're essentially feeding it a massive amount of text, like a huge book. But, just like how you can't fit an entire library in your living room, these models can't fit all that text in memory. That's where AutoSP comes in, it's a way to automatically split up that text across multiple GPUs, so you can train these huge models without running out of memory.
+
+Here is the thing, training these massive models is a big deal, they're being used in everything from chatbots to self-driving cars. But, up until now, training them has been a real challenge. You had to be an expert in both the model and the underlying hardware, just to get it to work. It was like trying to solve a puzzle, except the puzzle was on fire and you had to solve it before it burned down. But, with AutoSP, all that complexity goes away. You can just write your code, like you normally would, and then AutoSP takes care of the rest.
+
+So, how does it work? Well, AutoSP is built on top of a technology called DeepSpeed, which is a way to optimize deep learning models for performance. Think of it like a sports car, it's already fast, but DeepSpeed is like the turbocharger that makes it go even faster. And, AutoSP is like the GPS system that helps you navigate the road, it figures out the best way to split up the data across the GPUs, so you can train your model as fast as possible.
+
+Now, you might be wondering, what's the big deal about training these huge models? Well, the bigger the model, the more accurate it can be. It's like having a huge library at your fingertips, you can ask it anything and it'll have the answer. But, training these models has been limited by the amount of memory available. With AutoSP, that limit is gone. You can train models that are 10 times bigger than before, and that's a game changer.
+
+But, here's the thing, AutoSP isn't just about making things faster, it's also about making things easier. You don't have to be an expert in the underlying hardware, you can just write your code and let AutoSP handle the rest. It's like having a personal assistant, that takes care of all the details, so you can focus on the big picture.
+
+So, what does this mean for you? Well, if you're a developer, you can start using AutoSP today. It's already integrated with DeepSpeed, so you can just start using it. And, if you're not a developer, but you're interested in AI, this is a big deal. It means that the models that are being trained are going to be more accurate, and more powerful. It's like the difference between a toy car and a real car, they both look similar, but one is way more powerful.
+
+And here is why that is a big deal, with AutoSP, you can train models that can understand huge amounts of data, and make predictions that are way more accurate. It's like having a crystal ball, that can see into the future. And, that's not just limited to chatbots and self-driving cars, it's going to change everything from healthcare to finance.
+
+So, the next time you hear about a new AI model that's being trained, just remember, it's not just about the model, it's about the technology that's making it possible. And, that technology is AutoSP. It's like the unsung hero, that's making all the difference. 
+
+As a developer, the practical takeaway from this is that you can use AutoSP to train larger models, and get more accurate results, without having to worry about the underlying hardware. You can just focus on writing your code, and let AutoSP handle the rest. So, go ahead, give it a try, and see how easy it is to train massive AI models with AutoSP.
+
+Alright, let us move on to the next story.
+
+Imagine having a super smart assistant that can understand and follow complex instructions, generate human-like text, and even help with coding tasks. Sounds like science fiction, right? But what if I told you that this technology is not only real, but it's also open-source and available for anyone to use? The team at IBM has just released Granite 4.1, a family of language models that are changing the game when it comes to natural language processing.
+
+So, what makes Granite 4.1 so special? For starters, it's a dense, decoder-only language model that's been trained on a massive dataset of around 15 trillion tokens. Think of it like a huge library of text that the model can draw upon to generate human-like responses. But here's the thing, the team didn't just throw a bunch of data at the model and hope for the best. They carefully curated the data, making sure it was high-quality and relevant to the tasks they wanted the model to perform.
+
+The training process was also pretty interesting. The team used a multi-stage pipeline, where the model was first trained on a general dataset, and then fine-tuned on more specific tasks like math, coding, and instruction following. They also used a technique called reinforcement learning, which is like a game where the model is rewarded for generating good responses and penalized for bad ones. And here's why that's a big deal - it allows the model to learn from its mistakes and improve over time.
+
+Now, you might be wondering, how does Granite 4.1 compare to other language models out there? Well, the team did some benchmarking tests, and the results are pretty impressive. The 8B model, which is the medium-sized model, was able to match or even outperform some of the larger models out there, including the previous generation of Granite models. And the best part is, it's more efficient and requires less computational power, which makes it more accessible to developers and researchers.
+
+So, what does this mean for you, the listener? If you're a developer or a researcher, you can now use Granite 4.1 to build your own language models and applications. The model is open-source, which means you can modify it and customize it to fit your needs. And if you're just interested in playing around with language models, you can use the pre-trained models to generate text, answer questions, and even help with coding tasks.
+
+The team also released a tool called LLM-as-Judge, which is a framework for evaluating the quality of language models. It's like a report card for language models, and it helps developers identify areas where their models need improvement. And, they used a technique called quantization, which reduces the precision of the model's weights and activations from 16-bit to 8-bit, resulting in a 50% reduction in disk footprint and GPU memory usage.
+
+In terms of practical applications, Granite 4.1 has a lot of potential. For example, it could be used to build more advanced chatbots, or to help with content generation tasks like writing articles or creating social media posts. It could even be used to help with coding tasks, like generating boilerplate code or debugging existing code.
+
+So, if you're interested in learning more about Granite 4.1, I'd encourage you to check out the GitHub repository, where you can find the code, the pre-trained models, and even some examples of how to use the model. And, if you're feeling adventurous, you can even try training your own language model using the Granite 4.1 pipeline. Just remember, with great power comes great responsibility, so be sure to use these models wisely and for the greater good.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Researchers created a new AI model that rewards the scientific process, not just results. This could lead to more accurate data analysis. It's a big shift in how we approach AI development. Researchers found AI models are specializing like species in nature, adapting to specific tasks. This could lead to more efficient AI systems. Think of it as AI evolution. Google's DeepMind just dropped a new tool called ProEval, which helps find failures in AI models before they cause problems. This could make AI more reliable. It's a big deal for AI development.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.

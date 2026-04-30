@@ -1,0 +1,77 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+Imagine you're building a house, and suddenly the foundation starts to crack. That's kind of what's happening with GitHub right now. You've probably noticed it - outages, services not working as they should, security vulnerabilities popping up left and right. It's not the end of the world, but it's definitely got people talking. And here's the thing, it's not just about GitHub, it's about the entire way we build and share software.
+
+Think of it this way, GitHub isn't just a place to host your code, it's become a massive part of the internet's infrastructure. They've got continuous integration, compute resources, hosting, package distribution, and security scanning all in one place. And for millions of developers, it's all free. But with that comes a lot of strain, and it's starting to show.
+
+Now, you might be wondering, how did we get here? Well, it's pretty simple. We traded the idea of a distributed system, where code is spread out across many different places, for the convenience of having everything in one spot. It was a good trade, don't get me wrong, it made it way easier for us to collaborate and share code. But now, with all these automated systems and interconnected projects, the load on GitHub is getting crazy.
+
+It's like going from a small town to a massive city, the infrastructure just can't keep up. And it's not just the scale, it's the nature of the workload. We're talking automated PR generation, cross-repository workflows, CI pipelines triggering other pipelines... it's a whole different ball game. So, yeah, things are creaking, and it's hard not to feel for the people inside GitHub right now.
+
+Here's why that's a big deal, we chose this. We chose to put all our eggs in one basket, to make GitHub the center of everything. And it made sense at the time, but now we're seeing the trade-offs. Outages affect everyone, indexing issues stop entire workflows, vulnerabilities have a huge impact... it's a lot of risk to have in one place.
+
+So what does this mean for you? Well, it's time to start thinking about a less centralized developer stack. What would that even look like? It's not just about replacing GitHub, it's about creating alternatives that complement it. Maybe GitHub becomes the source of truth, or the archival tool, but not the transactional tool for everything.
+
+And here's another thing, discovery is breaking too. With all these new tools and libraries coming out, it's getting harder to find what you need. GitHub used to be the place to go, but now it's not as effective. So, we need to find new ways to curate, index, and preserve all this software. It's a big challenge, but it's also an opportunity to create something new and better.
+
+So, what's the takeaway from all this? It's time to take a step back and re-evaluate our reliance on centralization. We need to invest in resilience and distribution, to make our systems more robust and flexible. And GitHub doesn't have to disappear for that to happen, but it can't remain the same either. As a developer, you should be thinking about how you can build more distributed systems, how you can reduce your reliance on single points of failure. It's not going to be easy, but it's the future of software development.
+
+Alright, let us move on to the next story.
+
+Hackers compromised SAP systems using a new bug, Mini Shai Hulud. This matters because SAP runs critical business software. It's a big deal for security teams.
+
+Alright, let us move on to the next story.
+
+Imagine if the most important software in your company, the one that handles all your employee data, payroll, and benefits, was so outdated that it's basically holding your entire organization back. Sounds crazy, but that's exactly what's happening with Workday, a $30 billion company that's been the backbone of HR systems for over 10,000 organizations. Here's the thing, Workday's success isn't because it's loved by its users, it's actually quite the opposite. HR admins spend their days doing manual data entry, workarounds, and hand-holding, just to keep the system running. 
+
+So, what's going on here? Well, Workday is a product of a platform shift that happened back in 2005, when the company's founders, Dave Duffield and Aneel Bhusri, bet on the move from client-server to multi-tenant cloud. They were right, and Workday won the platform shift, becoming the default answer for large enterprises. But, that was over 15 years ago, and since then, the company has been able to maintain its position due to a combination of deep technical and human wiring, a proprietary configuration layer, a services cartel, and multi-year contracts.
+
+Think of it this way, Workday sits at the center of hundreds of integrations, and changing any of these integrations is like trying to untangle a big knot. It's hard, and it requires a lot of expertise. The company's configuration layer is also proprietary, meaning that only certified consultants can make changes to the system. This creates a kind of lock-in effect, where customers are stuck with Workday, even if they don't love it. And, to make matters worse, the company's services cartel, which includes big firms like Accenture and Deloitte, has a vested interest in keeping Workday installed.
+
+But, here's the thing, all of this is about to change. A new platform shift is underway, driven by AI, and it's going to be more transformational than the one that created Workday. This shift is going to enable a new generation of HR systems that are AI-native, meaning they're designed from the ground up to take advantage of AI and machine learning. And, this is where things get really interesting, because Workday is structurally unable to close the gap from inside. The company is trying to bolt AI on top of its existing engine, but it's like trying to put a new engine in an old car. It just doesn't work.
+
+So, what does this mean for you, as a software developer? Well, if you're working on HR systems, you need to be thinking about how AI is going to change the game. You need to be thinking about how to build systems that are AI-native, that can take advantage of machine learning and natural language processing. And, you need to be thinking about how to make these systems more open, more secure, and more permissioned. 
+
+The opportunity is huge, the global HCM software market is over $40 billion and growing, and the stakes are even bigger. As companies move to a workforce that's a mix of humans and agents operating across the same systems, the HRIS becomes the substrate for how those companies are actually run. So, if you're building the next Workday, you need to be thinking about how to build a system that's designed for agents, not forms and approvals. A system that's open, secure, and permissioned, and that can take advantage of AI and machine learning. That's the future of HR systems, and that's where you should be focusing your attention.
+
+Alright, let us move on to the next story.
+
+Imagine you're in charge of managing a huge portfolio of buildings, like a giant real estate company or a university with multiple campuses. You're trying to modernize all these buildings, make them more efficient, and save some money on energy costs. Sounds like a great plan, right? But here's the thing, most companies that try to do this fail, and it's not because they're not trying hard enough. It's because they're doing it the wrong way. They're treating each building like a separate project, instead of looking at the entire portfolio as a whole. Think of it this way, if you're trying to lose weight, you don't just focus on one meal, you look at your entire diet and exercise routine. 
+
+So, what's going on here? Well, when you're trying to modernize a building, you're dealing with a lot of different systems, like heating and cooling, lighting, and security. And each of these systems has its own vendor, its own protocol, and its own way of operating. It's like trying to get a bunch of different musicians to play together in harmony. It's tough, and it's even tougher when you're trying to replicate that across multiple buildings. 
+
+Legacy environments make things even more complicated. You've got old systems that don't talk to each other, and you need middleware and custom integrations to get them to work together. It's like trying to get an old computer to run a new operating system. It's just not going to work well, and it's going to create a lot of technical debt. Technical debt is like credit card debt, it's when you're using a quick fix to solve a problem, but it's going to cost you more in the long run. 
+
+So, what's the solution? Well, it's not just about throwing more technology at the problem. It's about creating a unified platform that can handle all these different systems and make them work together seamlessly. Think of it like a conductor in an orchestra, the conductor doesn't play all the instruments, but they make sure everyone is playing together in harmony. 
+
+That's where Schneider Electric's EcoStruxure Foresight comes in. It's an AI-powered platform that can take all the data from these different systems and make sense of it. It's like having a super smart assistant that can look at all the data and say, "Hey, this is what's going on, and this is what you need to do to fix it." 
+
+And here is why that is a big deal. When you've got a unified platform like EcoStruxure Foresight, you can start to scale your modernization efforts across your entire portfolio. You're not just looking at one building, you're looking at all of them, and you can start to see some real benefits. You can predict your costs, you can optimize your energy usage, and you can even start to use things like AI and digital twins to make your buildings more efficient. 
+
+So what does this mean for you? Well, if you're a software developer, you should be thinking about how you can create platforms that can handle complex systems and make them work together seamlessly. It's not just about writing code, it's about creating a foundation that can support a whole ecosystem of different technologies. And if you're working with a company that's trying to modernize its buildings, you should be thinking about how you can help them create a unified platform that can handle all their different systems. It's a big challenge, but it's also a huge opportunity. 
+
+The key takeaway here is that modernization is not just about technology, it's about creating a platform that can support that technology. It's about creating a foundation that can handle the complexity of multiple systems and make them work together seamlessly. And that's something that any software developer can learn from, regardless of whether they're working in the building management space or not.
+
+Alright, let us move on to the next story.
+
+So I've got a story to share with you, but I've got to be upfront, I don't have all the details because of a paywall. But here's what I can tell you. There's this thing called the M365 Licensing Optimization Consultation Offer, and it's all about helping businesses save money on their Microsoft 365 licenses. Think of it this way, you're probably paying for a bunch of licenses, but are you actually using them all? That's what this offer is trying to help you figure out.
+
+So, Microsoft 365 prices are going up on July 1, and that's a big deal. You don't want to be overpaying for something you're not even using. This consultation offer is trying to help you identify where you can cut back and save some cash. They're talking about finding unused or unnecessary licenses, identifying hidden cost drivers, and locking in lower rates. 
+
+Here's the thing, it's like when you're subscribed to a bunch of streaming services, but you only use a few of them. You're basically throwing money out the window. That's what's happening with these licenses. You're paying for them, but if you're not using them, that's just wasted cash. 
+
+The company behind this offer, TrustedTech, they're providing a report that breaks down your license allocation and usage. It's like getting a detailed bill for your streaming services, but instead, it's for your Microsoft 365 licenses. You can see where you're overspending and where you can cut back. 
+
+They're also comparing the prices you're paying now to what you could be paying if you optimized your licenses. It's like shopping around for a better deal on your streaming services. You want to make sure you're getting the best price, right? 
+
+So what does this mean for you, as a software developer? Well, it means you should take a closer look at your company's Microsoft 365 licenses and see where you can optimize them. You can use tools like this consultation offer to identify areas where you can cut back and save some money. It's all about being smart about how you're spending your company's cash. Take a few minutes to review your licenses, and you might be surprised at how much you can save.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Auvik is betting on AI to fill the networking skills gap. They think AI can help with tasks like network monitoring and troubleshooting. This could be a game changer for overworked IT teams. Anthropic just introduced a shared responsibility model for AI security. This means they're working with users to secure AI agents. It could change how we think about AI safety. Companies are getting stuck with pricey AI contracts. They're losing budget to vendor lock-in. This could limit their tech options. Amazon just dropped the AWS Security Digest, a new monthly newsletter. It's like a cheat sheet for staying on top of security best practices. This could be a game changer for devs using AWS. Google just updated Workspace audit logs with new features and more event details in the Admin console. This gives admins more insight into what's happening on their systems. It's a big deal for security and compliance. Google just cut 12,000 jobs, think of it this way, they're restructuring to focus on AI. This might matter because it shows how big tech is shifting priorities. So what does this mean for the future of work?
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.

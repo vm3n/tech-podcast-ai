@@ -1,0 +1,95 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+Imagine you're building a complex Lego castle, and every time you add a new brick, the entire castle rebuilds from scratch. Sounds inefficient, right? That's basically what was happening with React applications before the React Compiler came along. For years, developers had to manually optimize their code to prevent unnecessary re-renders, which could lead to slow and buggy apps. But now, the React Compiler is changing the game by automatically optimizing React components. So, what's the story behind this compiler, and how is it impacting the React ecosystem?
+
+Let's take a step back and understand what the React Compiler does. Think of it as a build-time transform that reads your components, assumes they follow the Rules of React, and inserts memoization where it helps. Memoization is like caching, it helps the app remember the results of expensive function calls so it doesn't have to repeat them. The compiler does this by analyzing your code and automatically adding memoization where needed, which reduces the number of unnecessary re-renders. The output is plain React code, so there's no runtime cost from the compiler itself.
+
+The journey of the React Compiler started eighteen months ago, when React 19 shipped with the compiler stable. Since then, the ecosystem has gone through the predictable phases: framework integration, tooling maturity, and community debate. Frameworks like Next.js, Expo, and TanStack Start have integrated the compiler into their build pipelines. The compiler's impact is most visible in the reduction of re-render bugs and the simplification of code. For example, code that used to have manual memoization using useMemo and useCallback can now be simplified, making it easier to maintain and optimize.
+
+However, the compiler is not a silver bullet. It solves the re-render problem, but it doesn't solve other performance issues like network waterfalls, over-fetching, or slow initial JavaScript loading. If your app feels slow, you still need to measure and optimize other parts of your code. The compiler also has its limitations. It can't optimize code that mutates props or closures during render, reads a ref during render, or uses legacy class components. In these cases, you need to fix the code or use the "use no memo" directive to opt out of compilation.
+
+The "use no memo" directive is a temporary escape hatch that allows you to ship your code without a full refactor. However, it's not a permanent solution and should be treated as a TODO, not a permanent marker. The community is still debating the implications of this directive and how to use it effectively. Some argue that it's a necessary release valve, while others worry that it can lead to technical debt if not revisited.
+
+So, what's next for the React Compiler? The React team has signaled that they're working on finer-grained compilation control, compiler-aware server components, and better support for React Native. They're also exploring new features like useEvent, which converges stable event callbacks with the latest state. Additionally, the community is calling for better developer tooling, such as a DevTools panel that shows what the compiler did and why.
+
+As a developer, what does this mean for you? If you're starting a new project, it's easy: turn on the compiler and enjoy the benefits. For existing projects, you need to decide whether to fix your oldest code or ship with the "use no memo" directive. Both are legitimate tradeoffs, but it's essential to be deliberate about your choice. When you see a useMemo or useCallback in your code, treat it like a manual for loop in modern JavaScript – usually fine, but occasionally necessary, and mostly a sign that better tools are available.
+
+In practical terms, if you're a software developer, you should take away that the React Compiler is a powerful tool that can simplify your code and improve performance. However, it's not a replacement for good coding practices, and you still need to measure and optimize other parts of your code. As you adopt the compiler, be mindful of its limitations and use the "use no memo" directive judiciously. With the React Compiler, you can focus on building complex and efficient applications without worrying about the intricacies of memoization and optimization.
+
+Alright, let us move on to the next story.
+
+Imagine waking up one day to find that your job as a software engineer is no longer needed, that AI has taken over and can do everything you can do, but better and faster. Sounds like science fiction, right? But what if I told you that's exactly what's happening, and it's not as far off as you think. For over a decade, I've been teaching software engineers how to implement testing, React, Remix, and more, but now I'm starting to wonder, what's the point of all this if AI can just do it for us?
+
+Think of it this way, when you're building a feature, you're not just writing code, you're making decisions about what's worth building, what constraints you need to consider, and what trade-offs you're willing to make. That's what separates a good software engineer from a great one. But AI is changing the game, it's getting better at implementation, and that's making the skills we've been teaching for years less scarce.
+
+Here is the thing, AI coding agents are slowly eating away at the tasks software engineers have done for decades, and that's alarming for many of us. I mean, just a year ago, most of us wouldn't have predicted that AI could be as good at implementation as it is today. So, what does this mean for you? Well, it means that the skills you've been learning, the skills you've been mastering, are becoming less valuable.
+
+But, and here is why that is a big deal, the last valuable thing that software engineers have to offer is judgment. It's not about typing code or choosing libraries, it's about deciding what's worth making real, what constraints must not be violated, and what trade-offs are acceptable. That's what the last software engineer has to offer, and that's what AI is struggling to replicate.
+
+Let's fast forward time a little bit, let's go all the way up to the point where AI takes over all the value we currently create as software developers, then take one step back. What is the last valuable thing the last software engineer has to offer? It's not implementation, it's judgment. It's knowing what should be built, not just what can be built.
+
+Think of it like archery, for a long time, software engineers were judged by their aim, their ability to hit the target. But now, AI is changing the game, it's like having a homing arrow, you still need to point it in the right direction, but the arrow is getting better at finding its way to the target. That changes the scarce skill, when arrows are hard to aim, the best archer is the one with the steadiest hand, but when arrows can steer themselves, the best archer is the one who knows which target is worth hitting.
+
+So, what does this mean for you? Well, it means that you need to start thinking about product engineering, not just implementation. You need to start thinking about the consequences of your decisions, the trade-offs you're making, and the impact it's going to have on the user. That's what product engineering is all about, it's about connecting implementation decisions to product consequences.
+
+In practice, product engineering means asking what user problem the task is really solving, defining success before implementation, naming the constraints that must not be violated, identifying who could be harmed or confused by the change, distinguishing measurable improvement from real improvement, and planning rollout and rollback before shipping. That's what separates great software engineers from merely productive ones.
+
+So, what can you take away from this? Well, first, you need to start thinking about product engineering, not just implementation. You need to start thinking about the consequences of your decisions, and the impact it's going to have on the user. Second, you need to develop your judgment, your ability to decide what's worth making real, what constraints must not be violated, and what trade-offs are acceptable. And finally, you need to start thinking about how you can work with AI, how you can use it to augment your skills, rather than replace them.
+
+Alright, let us move on to the next story.
+
+You know what's wild, most big tech interviews are actually testing the wrong skills, and that's a huge problem. Think of it this way, imagine you're a great chef, but instead of cooking a meal, you're being judged on how fast you can recall recipes from memory. That's basically what's happening in a lot of tech interviews, they're not actually testing your ability to write good code or solve real problems. 
+
+So what's going on here, and how can you, as a developer, navigate this system and actually show off your skills. Well, let's dive in. The traditional tech interview process usually involves a series of challenges, like coding rounds, system design, and behavioral questions. But the thing is, these challenges often don't reflect the actual work you'll be doing on the job. It's like trying to predict how someone will perform in a real game by having them run a series of unrelated drills. 
+
+Sagiv Ofek, an engineer who's worked at Facebook, Amazon, and now Postman, has been on both sides of the interview process, and he's seen how it can go wrong. He's realized that the traditional approach is flawed, and it's not just about finding the right person for the job, it's also about creating a bad experience for the candidate. So, he's developed a new approach, one that's more focused on real-world relevance, and collaboration. 
+
+Here's the thing, when you're working on a real project, you're not just typing away in a vacuum, you're using all sorts of tools and resources to get the job done. You're Googling things, you're using AI-powered tools, you're collaborating with your team. So, why shouldn't the interview process reflect that. At Postman, they're doing it differently. They're giving candidates take-home tasks that are similar to the actual work they'll be doing, and they're allowing them to use any tools they want. 
+
+It's like this, imagine you're building a house, and you're not just being judged on how well you can hammer a nail, but on how well you can design the whole thing, and work with the team to get it built. That's what Postman is trying to do, they're trying to create an interview process that's more like a real-world workflow. And it's not just about finding the right person for the job, it's about creating a good experience for the candidate. 
+
+So what does this mean for you, as a developer. Well, first of all, it means that you should be prepared to talk about your code, and your design decisions. Don't just focus on writing the perfect code, think about how you would explain it to someone else. Think about the tradeoffs you made, and why you made them. And don't be afraid to say what you don't know, that's a sign of a good engineer. 
+
+Also, be ready to collaborate, and to think out loud. The interviewer is not just looking for the right answer, they're looking for how you think, and how you work. It's like this, when you're working on a real project, you're not just trying to get the right answer, you're trying to solve a real problem, and that's what the interviewer wants to see. 
+
+So, to sum it up, the traditional tech interview process is broken, but there are people like Sagiv Ofek who are trying to change it. They're creating a more real-world relevant, and collaborative process, that's more focused on finding the right person for the job, and creating a good experience for the candidate. And as a developer, you should be prepared to talk about your code, collaborate, and think out loud. That's the key to acing a tech interview, and to finding a job that you'll really love.
+
+Alright, let us move on to the next story.
+
+Imagine you're a master builder, and you've just been handed a new set of tools that could change the way you construct entire cities. That's basically what's happening in the world of coding right now, with the launch of Zed 1.0. This isn't just an update, it's a whole new approach to building desktop software. The team behind Zed started from scratch, throwing out the old rulebook and inventing a new way to create a fundamentally better editor.
+
+Here's the thing, their previous editor, Atom, was built on top of Chromium, which spawned the Electron framework. That's the same foundation that powers VS Code. But the Zed team realized that using web technology had its limits. No matter how hard they worked, they couldn't make Atom better than the platform it was built on. So they decided to start over, and build Zed like a video game. Think of it this way, instead of building a website, they're building a high-performance application that can handle complex tasks.
+
+They wrote their own UI framework, GPUI, from scratch in Rust. That's like building a custom engine for a car, instead of using an off-the-shelf one. This gives them total control over the performance and capabilities of Zed. And here is why that is a big deal - it means they can push the boundaries of what's possible in a coding editor. They're not limited by the constraints of someone else's platform.
+
+So what does this mean for you? Well, Zed 1.0 is a major milestone. It's not just a new version, it's a sign that the team has reached a tipping point. They've built a massive surface area of capabilities, with support for dozens of languages and ecosystems. It's like a Swiss Army knife for coders. And it's also an AI-native editor, which means you can run multiple agents in parallel, and get predictions on your next change at keystroke granularity.
+
+The team is also launching Zed for Business, which means companies can roll out Zed to their engineering teams with ease. This is a big deal, because it means that Zed is now a viable option for large-scale development teams. And the best part is, the team is just getting started. They're working on a new synchronization engine called DeltaDB, which will allow multiple humans and agents to share a single view of the codebase.
+
+So what's the takeaway for developers? It's simple - if you haven't tried Zed in a while, now is the time to take another look. The 1.0 launch is an invitation to come back and see what's new. And if you're interested in building the future of software development, the Zed team is hiring. They're looking for passionate developers who want to help shape the next generation of coding tools. So what are you waiting for? Go check out Zed and see what all the fuss is about.
+
+Alright, let us move on to the next story.
+
+Imagine you're trying to build a robot that can write code for you, but instead of just writing code, it can actually understand what you want and make decisions on its own. Sounds like science fiction, right? But what if I told you that's exactly what's happening in the world of AI right now. A company called Poolside has just released two foundation models, Laguna M.1 and XS.2, that are capable of agentic coding, which means they can write code and make decisions like a human. 
+
+Here is the thing, these models were built from scratch, using Poolside's own data, infrastructure, and reinforcement learning. They're competitive with leading models, but they use a fraction of the compute power. Think of it this way, if you're trying to build a car, you can either use a bunch of existing parts and try to make them work together, or you can design and build the entire car from the ground up. That's what Poolside did with these models.
+
+So what does this mean for you? Well, if you're a software developer, this is a big deal. These models can potentially automate a lot of the coding process, freeing you up to focus on higher-level tasks. And here is why that is a big deal, it's not just about automating coding, it's about creating a new way of working with AI. 
+
+The Model Factory is the system behind these models, it's like a factory that can produce and train new models quickly and efficiently. Traditional foundation model training is manual, linear, and slow, but Poolside's Model Factory is automated, it can handle multiple tasks at once, and it can even generate new data to train the models. It's like having a superpower.
+
+Poolside's journey to AGI, or artificial general intelligence, started in April 2023, when they founded the company in San Francisco. At the time, everyone thought that all we needed to reach AGI was to scale up language modeling. But Poolside took a different approach, they focused on building a platform that could train and scale models quickly and efficiently. 
+
+Now, you can get started with Laguna M.1 and XS.2 for free, for a limited time. They're available on OpenRouter and through Poolside's dedicated API, so you can use them with your existing tools and harnesses. The Model Factory is also sharing its latest thinking on model training, infrastructure, and the path toward AGI, so you can learn from their experience.
+
+So, what's the practical takeaway from all this? If you're a software developer, you should be paying attention to these new models and the technology behind them. They have the potential to revolutionize the way we work with AI, and they could automate a lot of the coding process. You should also be thinking about how you can use these models in your own work, and how you can take advantage of the Model Factory's technology to build your own AI-powered tools.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Someone benchmarked Caveman against Two Words, and the results are interesting. This matters because it tests the speed of these two tools. It's a big deal for developers who use them. Multiverse Computing just launched a new AI tool, think of it like a super smart assistant for complex math problems. This could be a game changer for scientists and researchers. FastCGI just turned 30, and it's still the go-to protocol for reverse proxies. This matters because it helps websites handle tons of traffic. It's surprisingly still the best option out there.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.
