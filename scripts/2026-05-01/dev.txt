@@ -1,0 +1,93 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+Imagine you're working on a project with a team of twenty engineers, all pushing code changes daily. Your continuous integration pipeline is the backbone of your workflow, but one day it suddenly breaks, causing a queue of pull requests to back up and product timelines to slip. You start digging into the issue, only to find that the problem isn't with the code, but with the way your CI pipeline is set up. Specifically, it's using a bunch of bash scripts that are no longer able to handle the complexity of your workflow. This is a nightmare scenario that many teams face, and it's what I want to talk about today.
+
+So, what's going on here? Why are bash scripts no longer sufficient for large-scale CI needs? To answer this, let's take a step back and look at what bash is good at. Bash is a powerful tool that's great for linear workflows, like checking out code, installing dependencies, running tests, and reporting results. It's also universal, meaning it's available on every Linux box, Mac, and CI runner, with no installation or runtime required. And, it's testable locally, so you can run your CI script on your laptop and get roughly the same result as you would in CI.
+
+However, when your needs outgrow simple linear workflows, bash starts to break down. Think of it this way: bash is like a Toyota Corolla - it's great for getting around town, but it's not designed for racing. When you need to handle complex workflows, like building Docker images, running tests across multiple services, and deploying to staging, bash just isn't up to the task. It's like trying to use a Corolla to compete in the Indy 500 - it's just not going to work.
+
+One of the main problems with using bash for large-scale CI is that it doesn't provide any isolation between jobs. This means that if you're running multiple jobs on the same machine, they can interfere with each other, causing all sorts of problems. It's like having multiple people trying to cook different meals in the same kitchen - it's a recipe for disaster. And, when things go wrong, it can be really hard to debug, because the failure modes are often non-reproducible and dependent on timing.
+
+So, what's the solution? You need an orchestrator - a system that can manage your CI workflow, provide isolation between jobs, and give you visibility into what's happening. An orchestrator is like a conductor in an orchestra - it makes sure all the different parts are working together in harmony. And, just like a conductor, it's not just about executing the notes on the page, but about understanding the music and making sure it sounds good.
+
+Now, I know some of you might be thinking, "But I've been using bash for years, and it's worked fine." And, that's great - bash can be a good tool for small projects or simple workflows. However, when you're dealing with large-scale CI, you need something more robust. It's like the difference between a small sailboat and an ocean liner - both can float on water, but one is much better suited for long-distance travel.
+
+So, what should you take away from this? If you're working on a large-scale project with a complex CI workflow, you need to consider using an orchestrator. It's not just about replacing bash with a different tool - it's about recognizing that CI is a distributed computing problem, not just a shell scripting problem. And, by using an orchestrator, you can make your workflow more efficient, more reliable, and more scalable. So, don't be afraid to make the switch - your team, and your sanity, will thank you.
+
+Alright, let us move on to the next story.
+
+So you're building a workflow execution system and you're wondering, can Postgres really handle the load? I mean, think of it this way, you've got a huge pipeline of tasks that need to be executed, and they all rely on your database to store and manage the workflow state. If your database can't keep up, your whole system comes crashing down. That's why we're gonna dive into some benchmarking results that'll show you just how well Postgres can scale.
+
+Here's the thing, when we talk about scaling a workflow execution system, we're really talking about how many writes per second our database can handle. That's because a durable workflow has to write to the database multiple times to store its inputs, outcomes, and steps. So, the team at DBOS decided to run some benchmarks to see just how many writes per second a single Postgres server could handle.
+
+They started by measuring raw Postgres write throughput, and what they found was pretty impressive. A single Postgres server can handle up to 144,000 writes per second. That's equivalent to 12 billion writes per day. To put that into perspective, think of it like a super-efficient cashier who can ring up 144,000 transactions per second. That's a lot of transactions.
+
+But here's the thing, that's just raw write throughput. What about when we're talking about durable workflows? Those require multiple writes per workflow, so the numbers are gonna be different. The team found that a single Postgres server can process up to 43,000 durable workflows per second. That's still a huge number, and it translates to 4 billion workflows per day.
+
+Now, you might be wondering, what's the bottleneck here? Is it the CPU, the memory, or something else entirely? Well, it turns out that the bottleneck is actually in the Postgres write-ahead log, or WAL. Think of the WAL like a journal where Postgres stores all the changes it's made to the database. When you make a write, Postgres first writes it to the WAL, and then it flushes the WAL to disk. That's what takes time.
+
+The team also found that when they were using a Postgres-backed queue, the bottleneck shifted from the WAL to lock contention in the workflow status table. That's because all the client processes were trying to enqueue or dequeue workflows from the same few rows in the table, and that was causing contention. But when they distributed the work across multiple queues, they were able to increase the throughput and get closer to the 43,000 workflows per second mark.
+
+So what does this mean for you? Well, if you're building a workflow execution system, you can use Postgres as your database and be confident that it'll scale with your workload. You might need to distribute your work across multiple queues or partitions, but that's a relatively simple thing to do. And if you need even more performance, you can always shard your workload across multiple Postgres servers.
+
+The takeaway here is that Postgres is a powerful database that can handle a huge volume of writes per second. So, if you're building a scalable and reliable system, Postgres is definitely worth considering. And if you want to learn more about building durable workflows, you can check out the resources at DBOS. They've got a quickstart guide, a GitHub repo, and a Discord community where you can connect with other developers who are building similar systems.
+
+Alright, let us move on to the next story.
+
+Imagine you're working on a critical system, and you think you've got everything locked down, but then you discover that a simple typo in your code can become a system-wide kill switch. Sounds like a nightmare, right? Well, that's exactly what happened with the uutils project, a Rust reimplementation of the GNU coreutils. Recently, Canonical disclosed 44 CVEs in uutils, and what's interesting is that none of these bugs were caught by Rust's borrow checker or other safety features. 
+
+So, what happened here? The largest cluster of bugs in the audit was related to a problem called Time Of Check To Time Of Use, or TOCTOU. This is when you do one syscall to check something about a path, and then another syscall to act on the same path. The problem is that between those two calls, an attacker can swap the path component for a symbolic link, and the kernel will re-resolve the path from scratch on the second call. Think of it this way: you're checking if a door is locked, and then you're trying to open it, but between those two actions, someone can switch the door with a fake one.
+
+Rust's standard library makes this easy to get wrong, because the ergonomic APIs you reach for first all take a path and re-resolve it every time, rather than taking a file descriptor and operating relative to that. For example, if you're using the `fs::metadata` or `File::create` functions, they'll re-resolve the path every time, which can lead to TOCTOU bugs. To avoid this, you need to anchor your operations on a file descriptor instead of a path. 
+
+Let's look at a specific example. There was a bug in the `install` function where it would clear the destination, and then create the destination. But between those two calls, an attacker could plant a symlink, and the `File::create` function would follow the symlink and overwrite the target file. The fix was to use `OpenOptions::create_new(true)` instead, which guarantees that the file is new and doesn't exist before. 
+
+Here's the thing: Rust's safety features are great, but they're not a silver bullet. You still need to be careful when writing systems code, especially when dealing with paths and syscalls. So, what can you do to avoid these kinds of bugs? The first rule is to anchor on a file descriptor instead of a path. This means using functions like `openat` or `fstatat` instead of `open` or `stat`. 
+
+Another important rule is to set permissions at creation time, not after. This means using `OpenOptions::mode()` or `DirBuilderExt::mode()` to set the permissions when you create a file or directory, rather than trying to change them later with `fs::set_permissions`. And here's why that's a big deal: if you create a file with default permissions and then try to change them, there's a brief window where the file exists with the default permissions, and an attacker could exploit that. 
+
+There are also issues with string equality on paths. For example, if you're checking if a path is the root directory, you can't just compare it to `/` using string comparison. You need to use `fs::canonicalize` to resolve the path to its canonical form, and then compare it. This is because a path like `/../` or `/./` can be equivalent to `/`, but a simple string comparison won't catch that. 
+
+And then there's the issue of staying in bytes at Unix boundaries. Rust's `String` and `&str` are always UTF-8, but Unix paths and environment variables can contain arbitrary bytes. If you're not careful, you can end up with data corruption or security vulnerabilities. For example, if you're using `from_utf8_lossy` to convert a byte slice to a string, you can silently corrupt the data if it's not valid UTF-8. 
+
+The audit also found bugs related to panics and error handling. For example, if you're using `unwrap` or `expect` to handle errors, you can end up with a denial of service vulnerability if an attacker can trigger a panic. Instead, you should use `?` or `get` to handle errors properly, and surface a real error to the user. 
+
+And finally, there's the issue of bug-for-bug compatibility. If you're reimplementing a battle-tested tool, you need to make sure you're matching the original tool's behavior exactly, including its bugs. This is because shell scripts and other code may rely on the original behavior, and if you change it, you can introduce security vulnerabilities. 
+
+So, what's the takeaway from all this? If you're writing systems code in Rust, you need to be careful and follow these rules to avoid common pitfalls. You need to anchor on file descriptors, set permissions at creation time, resolve paths before comparing them, stay in bytes at Unix boundaries, and handle errors properly. And if you're reimplementing a battle-tested tool, you need to match the original behavior exactly, including its bugs. 
+
+By following these rules, you can write more secure and reliable systems code in Rust. And remember, Rust's safety features are great, but they're not a substitute for careful coding and attention to detail. So, take the time to learn from the uutils project's mistakes, and make sure you're not introducing similar vulnerabilities in your own code.
+
+Alright, let us move on to the next story.
+
+Imagine you're having a conversation with someone, but you think you're being totally anonymous. You're not giving away your name, your location, nothing. But what if I told you that with just 150 words, a new AI model can figure out who you are? That's right, 150 words, and it's not just about what you're saying, but how you're saying it. This is exactly what happened to a writer who tested the new AI model, Claude Opus 4.7. She was shocked to find out that the AI could identify her from unpublished drafts, even ones she wrote in high school.
+
+So, how does this work? Think of it this way, when you write, you have a unique style, like a fingerprint. It's made up of the words you choose, the way you structure your sentences, and even the punctuation you use. This style is like a code that's unique to you, and the AI is getting really good at cracking that code. It's not just about the content of what you're writing, but the way you write it. The AI is looking for patterns, like how often you use certain words, or how you tend to start your sentences.
+
+The writer who tested Claude Opus 4.7 was amazed at how accurate it was. She tried it with different types of writing, like movie reviews, even a fantasy novel, and the AI still managed to identify her. But here's the thing, it's not just about her. This technology has big implications for anyone who writes online. If you've got a lot of writing out there, it's likely that an AI can identify you, even if you're trying to be anonymous. And this is a problem, because anonymity is important for a lot of people. It allows them to express themselves freely, without fear of judgment or repercussions.
+
+So, what does this mean for you? If you're a writer, or even just someone who likes to comment online, you need to be aware of this technology. It's not just about being careful what you say, but also how you say it. The AI is looking for those patterns, those style tics that make your writing unique. And if you're trying to be anonymous, you need to be careful. You might need to change the way you write, or even use tools to help mask your style. It's a big deal, because it's changing the way we interact online. We're losing that sense of anonymity, and it's going to have a big impact on how we express ourselves.
+
+As a software developer, you need to be aware of this technology, and how it's going to change the way people interact with your apps and websites. You need to think about how you can help protect users' anonymity, and give them the tools they need to express themselves freely. It's a big challenge, but it's also an opportunity to create something new and innovative. So, what does this mean for you? It means you need to be thinking about anonymity, and how you can help protect it. It's not just about the technology, it's about the people who use it, and how you can help them express themselves in a safe and free way.
+
+Alright, let us move on to the next story.
+
+So I'm gonna dive into this story, but I gotta warn you, I've only got limited info due to a paywall. That being said, let's talk about the Clerk CLI. Think of it like a tool that helps you add authentication to your app, kinda like how you'd add a lock to your door. You need a way to control who gets in and out, right? 
+
+Here is the thing, the Clerk CLI makes it easy to do that. You can use it to set up authentication in just three commands: init, config, and deploy. It's like a recipe, you just follow the steps and you're good to go. The init command detects your framework, logs you in if needed, and links your repo to a Clerk application. Then it installs the right package, and you're all set.
+
+Now, the cool part is that you can even let an agent handle the setup for you. An agent is like a virtual assistant, it can do tasks for you. So, you can ask your agent to use the Clerk CLI to add auth to your app, and it'll take care of everything. No need to leave your terminal or copy and paste API keys.
+
+The Clerk CLI supports a bunch of different package managers, like npm, bun, pnpm, and yarn. You can even install it using Homebrew or curl. So, what does this mean for you? Well, if you're a developer, the Clerk CLI can save you a lot of time and hassle when it comes to setting up authentication. You can focus on building your app, and let the Clerk CLI handle the security stuff. And here is why that is a big deal: security is crucial, but it can be a real pain to set up. The Clerk CLI makes it easy, so you can ship your app fast and securely. 
+
+So what does this mean for you, practically? If you're building an app, consider using the Clerk CLI to handle authentication. It's a simple way to add a crucial layer of security, and it can save you a lot of time in the long run.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Google created a software factory that builds other apps, it's like a robot that makes robots. This could change how they develop tools. It might speed up their whole process. Researchers just found a way to beat binary search, which is crazy because it's been the gold standard for finding stuff in lists for decades. This could speed up a lot of apps. Sentry just added agent monitoring for bots, which means developers can now track issues in automated workflows. This could be a game changer for building with bots. It simplifies debugging automated tasks. Gemini's free tier is surprisingly robust, offering enough features to cover most users' needs. This could be a game changer for those on a budget. It's definitely worth checking out. Microsoft just open-sourced the oldest known DOS code, which is kinda like finding the original blueprint for a classic car. This could matter for developers who want to learn from the past. It's a piece of computing history.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.
