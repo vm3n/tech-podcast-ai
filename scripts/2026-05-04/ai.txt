@@ -1,0 +1,79 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+Imagine you're building a tool that's supposed to make developers' lives easier, but you have no idea if it actually works. I mean, it runs fine, but does it really solve the problem it's supposed to solve? That's exactly what happened to Nick, a developer at WorkOS, when he was building two AI-powered tools. He had to figure out how to evaluate them, and what he learned is going to change the way you think about testing and evaluation forever.
+
+So, Nick was working on two projects, the WorkOS CLI and WorkOS Skills. The CLI tool is like a super smart installer that can automatically set up authentication for different frameworks, like Next.js or React. It's like having a personal assistant that does all the boring work for you. But, here's the thing, it's powered by an AI agent, which means it doesn't always do the same thing twice. It's like trying to test a magic trick - you can't predict what's going to happen.
+
+To solve this problem, Nick built an evaluation system, or eval, that tests the tool in a more realistic way. Think of it like a simulation, where the tool is run against a bunch of different test cases, like a starter project for a React app or a Next.js app. The eval system then checks if the tool did the right thing, like if it installed the right dependencies or set up the authentication correctly. But, here's the thing, it's not just about passing or failing, it's about measuring the quality of the output.
+
+The eval system uses something called grading, which is like a report card for the tool. It checks things like, does the code look good, is it efficient, does it follow best practices? It's like having a code reviewer that checks your work and gives you feedback. And, the grading is not just a simple pass or fail, it's a score, like a percentage, that shows how well the tool did.
+
+But, what's really interesting is that Nick built two completely different eval systems for the two tools. The CLI eval system is like a robot that tests the tool against a bunch of different test cases, while the Skills eval system is more like a game of chess, where the tool is tested against different scenarios and the output is compared to see if it's better or worse. It's like having two different judges that evaluate the tool in different ways.
+
+So, what did Nick learn from all this? Well, first of all, he learned that evals are not the same as tests. Tests are like a yes or no question, while evals are like a essay question that asks you to show your work. Evals are about measuring the quality of the output, not just whether it passes or fails. And, he learned that trust is not a feeling, it's a number, like a pass rate or a delta score. It's like having a dashboard that shows you how well your tool is doing.
+
+And, here's the thing, Nick's eval systems are not perfect, they can be wrong, just like the tool they're testing. But, that's okay, because the point is to get a baseline, a starting point, that you can use to improve the tool. It's like having a compass that shows you the direction you need to go.
+
+So, what can you take away from this story? Well, first of all, if you're building a tool that uses AI, you need to think about how you're going to evaluate it. You can't just use traditional testing methods, you need to think about how to measure the quality of the output. And, secondly, trust is not a feeling, it's a number, so you need to have a way to measure it. And, finally, evals are not tests, they're a different way of thinking about evaluation that can help you build better tools.
+
+So, what does this mean for you, as a software developer? It means that you need to think about how to evaluate your tools in a more nuanced way. You need to think about how to measure the quality of the output, not just whether it passes or fails. And, you need to have a way to measure trust, like a pass rate or a delta score. It's like having a new tool in your toolbox that helps you build better software.
+
+Alright, let us move on to the next story.
+
+So what if I told you a major AI company is secretly testing a new model, and they're doing it with a codename that's out of this world - literally. Think of it this way, the company, Anthropic, is using a planet name, Jupiter, to refer to their new internal build, and this isn't the first time they've done this. They've used planet names before, like Neptune, to keep their actual product designation under wraps until launch. 
+
+Here is the thing, the timing of this testing is really interesting. Anthropic is set to host a big developer conference in San Francisco on May 6th, and last year they did something similar just before launching their Claude 4 family. So, it's possible that Jupiter V1 is being tested ahead of a big announcement at the conference. 
+
+Now, you might be wondering what this Jupiter V1 is all about. Well, it's likely a new AI model, and the fact that it's being tested with a codename like Jupiter, which is the largest planet in our solar system, has people speculating about what it could mean. Think of it like a car company testing a new engine - they don't just put it in any car, they put it in a car that's going to showcase its power. 
+
+So, what's the background here? Anthropic has been working on a foundation called Mythos, and it's possible that Jupiter V1 is built on top of that. They also have a lineup of models, like Opus 4.7, Sonnet 4.7, and Haiku 4.7, and it's possible that Jupiter V1 is a refresh of these models or a step up to a new generation. 
+
+Here is why this matters - Anthropic is being responsible about how they're scaling their AI models. They're doing something called red teaming, which is like a stress test for AI models. They're throwing all sorts of scenarios at the model to see how it responds, and this is important because it helps ensure that the model is safe and reliable. 
+
+So what does this mean for you, as a software developer? Well, if you're working with AI models, you should be paying attention to how companies like Anthropic are testing and deploying their models. You should be thinking about how you can apply similar principles to your own work, like doing thorough testing and stress testing your models before releasing them. And, you should be keeping an eye on what Anthropic announces at their conference on May 6th, because it could give you a glimpse into the future of AI development.
+
+Alright, let us move on to the next story.
+
+So I've got a story to share with you, but here's the thing, I've only got partial info due to a paywall. Apparently, Google is testing a new Omni model for video generation, and this is all coming from a recently surfaced screenshot. 
+
+Think of it this way, Google's Gemini tool is like a platform that can generate all sorts of media, and right now it uses different models for video and images. For video, it uses Veo, and for images, it uses something called Nano Banana. 
+
+Now, this new Omni model, it's not entirely clear what it does, but it's showing up in the Gemini video generation tab, which is a big deal. It could be a new wrapper for Veo, or it could be a whole new model that can handle both images and videos. 
+
+Here is why that is a big deal - if Google can get this Omni model to work, it would be the first time a top-tier model can handle both images and videos. And that would be a huge step forward, especially since other companies like ByteDance are already making big strides in AI video generation.
+
+So what does this mean for you, as a developer? Well, if you're working with AI models, you should be paying attention to what Google is doing here. If they can make this Omni model work, it could change the way we approach media generation, and that could open up all sorts of new possibilities for your projects. 
+
+And here is the thing, we'll likely find out more about this at Google I/O 2026, which is scheduled for May 19-20. Google says they'll be talking about Gemini and broader AI updates, so that's probably when we'll get the full scoop on this new Omni model. 
+
+So, as a developer, your takeaway from this should be to keep an eye on what Google is doing with Gemini and the Omni model, because if it works out, it could be a game-changer for your own projects.
+
+Alright, let us move on to the next story.
+
+You know how everyone's been talking about those super powerful AI models that can understand and generate human-like text, but they're also ridiculously expensive to use? Well, a Chinese AI lab just dropped a bombshell - they've released a new model that's almost as good as the best ones out there, but it's a fraction of the price. Think of it this way, imagine you're renting a car, and you can either pay top dollar for a luxury brand, or you can get a car that's almost as good for a quarter of the price. That's basically what's happening here.
+
+So, let's dive into the details. The lab, called DeepSeek, just released two new models, called DeepSeek-V4-Pro and DeepSeek-V4-Flash. Both of these models are what's called a Mixture of Experts, which is a fancy way of saying they're made up of lots of smaller models that work together to generate text. The Pro model is the bigger of the two, with 1.6 trillion parameters, which is like the number of knobs you can tweak to get the model to do what you want. The Flash model is smaller, but still pretty powerful.
+
+Here's the thing, these models are huge, but they're also really efficient. The DeepSeek team has done a great job of making them use less computing power, which means they can run on smaller machines and cost less to use. In fact, the cost is so low that it's making all the other AI labs look expensive by comparison. We're talking about a price difference of 10 to 20 times less than what you'd pay for a similar model from another lab.
+
+So, what does this mean for you? Well, if you're a developer who wants to use AI in your project, this is a game-changer. You can now get access to a really powerful AI model without breaking the bank. And here's why that's a big deal - it means you can start building projects that you might not have been able to afford before. You can use these models to generate text, answer questions, and even create images.
+
+The DeepSeek team has also made these models open-source, which means anyone can use them and modify them to suit their needs. They've also released a paper that explains how they made these models so efficient, which is like a blueprint for other labs to follow.
+
+Now, I know what you're thinking - is this model really as good as the others out there? The answer is, it's close. The DeepSeek team has run some benchmarks, and their model is competitive with the other top models out there. It's not quite the best, but it's close enough that it's worth considering, especially given the price difference.
+
+So, what's the takeaway from all this? If you're a developer who wants to use AI in your project, you should definitely check out the DeepSeek models. They're powerful, efficient, and affordable, which makes them a great option for anyone who wants to get started with AI without breaking the bank. And who knows, you might just build something amazing with them.
+
+Alright, let us move on to the next story.
+
+We had trouble processing this story. Moving on.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Perplexity refined their agent skills, making AI more helpful. This matters because better AI assistants can change how we work. Intel just dropped a new quantization algorithm on GitHub, which could make large language models run faster on less powerful hardware. This matters because it could make AI more accessible. Researchers built massive synthetic computers to simulate long-term productivity. This could revolutionize forecasting. It's a big deal for modeling complex systems. Researchers just made a breakthrough in image editing using verifier-based reinforcement learning. This tech could revolutionize photo editing. It's a big deal for developers working on image editing software.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.

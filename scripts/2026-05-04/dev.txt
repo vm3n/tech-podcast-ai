@@ -1,0 +1,89 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+Imagine you're about to release a new feature to your users, but you're not sure if it's really ready. You've got a mix of automated tests and manual tests, but the results are scattered all over the place. You've got CI pipelines, spreadsheets, and issue trackers, but no single view of what's passing and what's failing. That's a pretty stressful place to be, right? 
+
+Here is the thing, this is a common problem that a lot of engineering teams face. They've got a bunch of different tools and systems, but no way to bring it all together. That's where Qase comes in. Qase is a test management platform that brings your CI results, automated tests, and manual runs into one place. It's like a single source of truth for your testing.
+
+Think of it this way, Qase is like a project manager for your tests. It helps you organize your tests, run them, and see the results all in one place. And it's not just about automated tests, Qase also helps with manual testing. It can take your manual test cases and convert them into automated scripts. This is a big deal, because it means you can reduce your manual testing backlog over time.
+
+So what does this mean for you? Well, with Qase, you get a clear view of your test coverage and your confidence levels. You can see what's working and what's not, and you can focus your QA efforts where they matter most. It's like having a map of your testing landscape, so you can navigate it more easily.
+
+And here is why that is a big deal. Without Qase, you'd have to spend a lot of time chasing down test results, trying to figure out what's passing and what's failing. You'd have to dig through spreadsheets and issue trackers, and try to piece together a picture of your test coverage. But with Qase, all of that information is in one place. You can see it at a glance, and make decisions based on real data.
+
+Now, Qase isn't just a pretty dashboard, it's also got some serious horsepower under the hood. It's got integrations with all the major test frameworks, like Pytest, Cypress, and Playwright. And it's got a powerful AI engine that can help you generate test scripts and automate your testing.
+
+So, what's the payoff? Well, with Qase, you can ship with confidence, not anxiety. You'll know exactly what's working and what's not, and you can make decisions based on real data. You'll be able to focus your QA efforts where they matter most, and you'll be able to reduce your manual testing backlog over time.
+
+As a developer, the takeaway is this: if you're struggling to manage your tests, and you're feeling overwhelmed by the complexity of your testing landscape, Qase is definitely worth checking out. It's a powerful tool that can help you simplify your testing, and ship with confidence.
+
+Alright, let us move on to the next story.
+
+Imagine you're working on a project and you've got a team of super smart, super fast coders who can crank out a million lines of code in just a few months. Sounds like a dream, right? But here's the thing - those coders aren't human, they're AI agents. And they're not just writing code, they're designing the entire environment they operate in. This is the future of software development, and it's already being tested by one of the biggest players in the AI space - OpenAI.
+
+So what happened? OpenAI ran an experiment where they built an entire internal product with zero manually written code. That's right, no human wrote a single line of code. The team started with just three engineers and grew to seven, and in just five months, they produced over 1,500 pull requests and a million lines of code. That's roughly one-tenth the normal timeline for a project of this size.
+
+But how did they do it? The key was making the codebase legible to the AI agents. Think of it this way - when you're working on a project, you need to be able to see what's going on, right? You need to be able to read the code, understand the logs, and see the metrics. That's what the team did for the AI agents. They made the application's runtime state directly queryable by the agents, so they could boot up an isolated instance of the product, interact with it, and validate changes visually before opening a pull request.
+
+The team also structured their documentation in a way that's called progressive disclosure. It's like a textbook with a good index - you don't read the whole book, you just look up the relevant chapter. The agents could read only what they needed for a given task, and the documentation was mechanically enforced to stay up to date.
+
+Now, you might be thinking - how did they enforce architecture in this massive codebase? The answer is - they used custom linters that encoded structural invariants, like dependency direction and layer boundaries. These linters were like rules that said - hey, you can't import something from a layer that's not supposed to be connected to this one. It was all mechanical, not cultural.
+
+The team also had to rethink their merge philosophy. When you've got agents opening dozens of pull requests per day, you can't have a traditional code review process. They adopted minimal blocking merge gates, short-lived pull requests, and higher tolerance for quick post-merge corrections. It was all about speed and flexibility.
+
+But with great power comes great responsibility, right? The team had to manage entropy - or pattern drift - in the codebase. They did this by defining golden principles - canonical patterns for common constructs - and enforcing them mechanically with linters. It was like having a continuous background process that ran at low cost, rather than waiting for a big refactor sprint.
+
+So what does this mean for you, as a software developer? It means that your role is going to shift. You'll be designing the environment that AI agents operate in, rather than just writing code. You'll be thinking about how to make the codebase legible, how to structure documentation, and how to enforce architecture mechanically. It's a new world, and it's exciting. The key takeaway is - start thinking about how you can design your codebase and your development process to work with AI agents, not just human coders.
+
+Alright, let us move on to the next story.
+
+So, you're probably wondering how a company like Mercury, a fintech company, ended up with a codebase of around 2 million lines of Haskell. That's a pretty unusual choice, especially considering that most of their engineers didn't know Haskell before joining the company. But here's the thing: it works. And not just in the sense that it doesn't crash all the time, but in the sense that it's actually helped them build a reliable system that can handle huge amounts of money and traffic.
+
+Now, you might be thinking, "But isn't Haskell all about purity and correctness?" And yeah, that's part of it. But the thing is, in a real-world production system, you can't just focus on making everything pure and correct. You have to think about how the system is going to behave when things go wrong, because they will go wrong. And that's where Haskell's strengths really come into play.
+
+One of the key insights here is that purity isn't just a property of the language, it's a boundary that you enforce. You can have impure code, but as long as it's contained within a certain boundary, it's not a problem. Think of it like a quarantine zone: as long as the impure code is inside the zone, it can't affect the rest of the system.
+
+This idea of boundaries is really important in production Haskell. You want to make sure that the safe path is the easy path, so you design your code to make it hard to do the wrong thing. And that's where Haskell's type system comes in. By encoding invariants into types, you can make sure that certain kinds of errors are just impossible. It's like having a compiler-enforced checklist that says, "Hey, you forgot to do this thing that's really important."
+
+But here's the thing: encoding invariants into types isn't free. It takes work, and it can make your code more rigid. So, you have to be careful about when you do it. You want to encode the things that are really important, like data integrity or security, but you don't want to encode every little thing. That's just going to make your code harder to maintain.
+
+Another important idea in production Haskell is introspection. You want to be able to see what's going on inside your system, so you can debug problems and optimize performance. And that's where things like logging and monitoring come in. You want to make sure that your code is observable, so you can see what's going on and make adjustments as needed.
+
+Now, I know some of you might be thinking, "But what about all the ugly bits of Haskell?" Yeah, there are some ugly bits. There are places where the language isn't perfect, where you have to use things like `unsafePerformIO` or orphan instances. But the thing is, those ugly bits are just a fact of life in any real-world programming language. The key is to be honest about them, to document them, and to make sure that you're not introducing unnecessary complexity.
+
+So, why bother with Haskell at all? Well, the thing is, Haskell gives you some really powerful tools for building reliable systems. It's not just about making everything pure and correct; it's about making it easy to reason about your code and to ensure that it's doing what you want it to do. And that's especially important in a domain like financial services, where the cost of a mistake can be really high.
+
+In the end, the investment in Haskell pays off. It's not always easy, and it's not always straightforward. But when you get it right, it's really powerful. And that's what Mercury has found: that Haskell has given them the tools they need to build a reliable, maintainable system that can handle huge amounts of traffic and money.
+
+So, if you're considering Haskell for production, I hope this gives you a realistic picture of what that looks like. It's not all about academic elegance; it's about building a system that works, and that can survive in the real world. And if you're already using Haskell, I hope this gives you some ideas for how to make your code more reliable, more maintainable, and more efficient.
+
+Alright, let us move on to the next story.
+
+Imagine you're working on a top-secret project, and you've got a super smart AI assistant that can help you with almost anything. But, here's the thing, this AI assistant can also pose a huge security risk if it's not set up correctly. Think of it this way, if your AI assistant is like a highly skilled employee, you want to make sure it's working in a safe and controlled environment, right? 
+
+So, the question is, where should you put the thing that controls this AI assistant, called the agent harness? It's like the manager of the AI assistant, telling it what to do and when. There are two ways to do this, and both have different security implications. You can either put the agent harness inside the sandbox, which is like a secure container, or outside of it. 
+
+If you put it inside, it's like having the manager and the employee in the same room, which can be simple and easy to manage. But, it also means that if the sandbox gets compromised, the agent harness is also at risk. On the other hand, if you put it outside, it's like having the manager in a separate room, which can be more secure, but also more complicated to set up.
+
+The company behind Claude, an AI assistant, decided to put the agent harness outside the sandbox, and that's what we're going to dive into today. They chose this approach because it allows them to keep their credentials, like API keys and user tokens, safe and separate from the sandbox. It's like keeping the company's secrets in a separate vault, that only the manager has access to.
+
+But, this approach also comes with its own set of challenges. For example, when the agent harness is outside the sandbox, it can't just use the local filesystem to store and retrieve data. It's like the manager needs to communicate with the employee, but they're in different rooms, and they need to use a different method to exchange information. 
+
+To solve this problem, the company behind Claude created a virtualized filesystem, that allows the agent harness to read and write data, without actually using the local filesystem. It's like a proxy, that intercepts the requests from the agent harness, and routes them to the correct location, whether it's the sandbox or a database.
+
+So, what does this mean for you, as a software developer? Well, if you're building an AI assistant, you need to think carefully about where you put the agent harness, and how you're going to manage the security and complexity of your system. It's not just about putting the agent harness inside or outside the sandbox, it's about designing a system that is secure, scalable, and easy to manage. 
+
+One practical takeaway from this story is that you should consider using a virtualized filesystem, to decouple your agent harness from the local filesystem. This can help you to improve the security and flexibility of your system, and make it easier to manage and scale. It's like having a flexible and secure way to communicate with your AI assistant, that allows you to focus on building the best possible system, without worrying about the underlying infrastructure.
+
+Alright, let us move on to the next story.
+
+We had trouble processing this story. Moving on.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Large language models, or LLMs, aren't the higher level of abstraction we thought. They're still complex systems that require a lot of work. This changes how we think about building with them. A new tool called acai.sh just launched, making it easier to manage shell scripts. This could be a game changer for devs. It simplifies workflow automation. TUIs, or text-based user interfaces, are making a comeback. Developers are revisiting them for simplicity and efficiency. This shift might change how we build software. Developers just benchmarked macOS in a virtual machine, and the results are surprising. This could change how we test and deploy macOS apps. Researchers found that security through obscurity can actually be helpful. This goes against common wisdom that it's a bad practice. It might change how we think about security. Modern text-based interfaces, or TUIs, are causing accessibility issues. They're not as simple as they seem. This affects users with disabilities.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.
