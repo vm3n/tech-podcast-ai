@@ -1,0 +1,91 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+Google just formatted their entire 25 million line codebase overnight using rubyfmt. This massive automation feat is a big deal. It saves developers a ton of time.
+
+Alright, let us move on to the next story.
+
+Imagine you're trying to solve a puzzle, but the puzzle changes every time you think you've figured it out. That's kind of like what's happening with Monero's proof of work, called RandomX. It's designed to be a moving target, making it really hard for specialized hardware to get a grip on it. So, what's going on here? Let's dive in.
+
+Monero's proof of work is different from Bitcoin's. Bitcoin uses a simple hash function, like a super-complicated math problem that needs to be solved. But Monero's RandomX is more like a small program that runs on a virtual machine. It's like a tiny computer inside your computer, and it's designed to use a lot of different parts of your CPU, like the memory and the math units.
+
+Think of it this way: Bitcoin's proof of work is like a specialized tool, like a wrench. It's great at doing one thing, but it's not very good at doing anything else. RandomX is more like a Swiss Army knife - it can do a lot of different things, and it's designed to be good at all of them.
+
+So, how does it work? Well, first, Monero takes the candidate block header and a nonce, which is like a special number that changes every time. It also uses an older block hash as a kind of key. This key builds a large shared memory dataset, which is like a big library of information that the virtual machine can use.
+
+The virtual machine then runs a program that's made up of a bunch of random instructions. It's like a recipe, but instead of using ingredients, it's using math and memory. The program does things like integer math, floating-point math, and memory loads and stores. It even has branches, which are like little detours in the program.
+
+The program runs in a loop for a certain number of iterations, and each iteration reads and writes memory, mixes up the math, and takes the occasional branch. It's like a little dance, and it's designed to be really hard to optimize.
+
+Now, you might be wondering, why does Monero do it this way? The reason is that they want to make it hard for specialized hardware to take over the network. They want to keep mining open to ordinary hardware, like your laptop or desktop computer. They don't want a few big companies to control the whole network.
+
+So, what does this mean for you, as a software developer? Well, the takeaway is that RandomX is a really clever way to design a proof of work system. It's not just about solving a math problem - it's about creating a system that's resilient and decentralized. And that's something that we can all learn from, regardless of what kind of software we're building.
+
+The key idea is to make your system look like a general-purpose computer, rather than a specialized tool. That way, you can make it harder for attackers or centralized powers to take control. It's not always easy, but it's an important goal to strive for. And who knows, you might just create something as clever and resilient as RandomX.
+
+Alright, let us move on to the next story.
+
+You know how sometimes you find a tool that just makes your life easier, and you think, yeah, this is the future. That's how a lot of people felt about Bun, a super fast and practical JavaScript runtime. But now, there's a growing concern that Bun might be in trouble, and it's not because the tech itself is bad, it's because of who owns it. Think of it this way, when a company acquires a great tool, you want to believe they'll make it even better, right? But what if they start to ruin it, like a great restaurant that changes owners and suddenly the food isn't as good. That's kinda what's happening with Bun, and it's got a lot of people worried.
+
+So, let's dive into what's going on. Bun was acquired by Anthropic in December 2025, and at first, it seemed like a great deal. Anthropic said all the right things, like Bun would stay open source, and the team would keep working on it. They even said they had a direct incentive to keep Bun excellent because their own product, Claude Code, relies on it. But here's the thing, Claude Code, which used to be an amazing tool, has started to, well, suck. And that's a big deal because if Anthropic can't take care of Claude Code, how can we trust them with Bun?
+
+Now, let's talk about what Claude Code is. It's like a super smart assistant that helps you with coding tasks. Imagine having a colleague who's always looking over your shoulder, catching mistakes, and making suggestions. That's what Claude Code does, and it used to be really good at it. But recently, people have started complaining about its quality, and Anthropic's response has been, let's say, underwhelming. They published a postmortem, which is like a report on what went wrong, and it sounded like they were trying to blame everything else except themselves.
+
+And then, there was this weird thing with OpenClaw, which is like a third-party tool that works with Claude Code. Apparently, if you even mention OpenClaw in your code, Claude Code might start behaving strangely or even ask you to pay extra. It's like, what's going on here? This doesn't sound like a company that's carefully testing its products before releasing them. It sounds like they're just throwing stuff out there and seeing what sticks.
+
+So, what does this mean for Bun? Well, if Anthropic is treating Claude Code like this, what's to stop them from doing the same to Bun? I mean, Bun is still a great tool, but if the company that owns it is more interested in making money than in making good products, that's a problem. Think of it this way, when you're building a house, you want to make sure the foundation is strong, right? If the foundation is weak, the whole house might come crashing down. That's what's happening with Bun, the foundation is getting shaky.
+
+Now, I know some of you might be thinking, what's the alternative? Well, there's this other tool called pnpm, which is like a package manager. It's not a replacement for Node.js or Bun, but it's a good option for managing your packages. And the thing is, pnpm is just a package manager, it's not trying to be everything to everyone, it's just focusing on doing one thing well. That's what Bun used to be like, but now it's getting bloated with all these extra features.
+
+So, what's the takeaway here? If you're using Bun, you might want to start looking for alternatives, not because Bun is bad, but because you don't know what's going to happen to it in the future. And if you're starting a new project, you might want to consider using pnpm instead. It's not as flashy as Bun, but it's reliable, and it gets the job done. And here's why that's a big deal, when you're building something, you want to make sure you're using tools that are going to be around for a while, tools that are going to make your life easier, not harder. So, what does this mean for you? It means you need to be careful about the tools you choose, and you need to keep an eye on what's happening with the companies that own them.
+
+Alright, let us move on to the next story.
+
+Imagine you're working on a critical project, and you ask an AI coding agent to implement a new feature. It does the work in minutes, but when you go to review the code, you realize it's a mess - no tests, no documentation, and a bunch of potential security vulnerabilities. This is the reality of working with AI coding agents today. They're incredibly powerful, but they often skip the important steps that a senior engineer would take for granted. 
+
+Here is the thing, AI coding agents are like super-smart junior engineers, but they lack the discipline and experience to do the job right. They're so focused on getting the code working that they forget about all the other important stuff, like testing, documentation, and code review. Think of it this way, when you're working on a project, you don't just write the code and call it a day. You write tests, you review the code, you make sure it's secure, and you document it so others can understand it. But AI coding agents don't do that, at least not by default.
+
+So what's the solution? Well, one approach is to create a set of skills that the agent can use to guide its work. These skills are like workflows that the agent can follow to ensure that it's doing the job right. They're not just reference documents, but actual step-by-step guides that the agent can use to produce high-quality code. Process over prose, that's the key. You don't want the agent to just read a bunch of documentation and then ignore it. You want it to follow a specific workflow that ensures the code is correct, secure, and maintainable.
+
+The skills are organized around six lifecycle phases, with seven slash commands that the agent can use to navigate the process. It starts with defining the spec, then planning the work, building the code, verifying it, reviewing it, and finally shipping it. Each skill is designed to produce concrete evidence that the work is done, whether it's a passing test, a clean build, or a reviewer's approval. Verification is non-negotiable, it's the load-bearing exit criterion that ensures the work is actually complete.
+
+Now, you might be wondering how this works in practice. Well, the skills are designed to be portable, so you can use them with any AI coding agent that accepts system-prompt content. You can install them via a marketplace, or you can just drop the markdown files into your tool of choice. The point is to make it easy to get started, so you can focus on building high-quality software.
+
+And here is why that is a big deal, these skills are not just for AI coding agents. They're for any team that wants to improve their software development process. You can use the same workflows, the same principles, to guide your human engineers. It's all about encoding discipline into the process, so that everyone is on the same page. 
+
+So what does this mean for you, as a software developer? It means you need to think about how you can use AI coding agents to augment your work, rather than replace it. You need to think about how you can create workflows and skills that guide the agent's work, so that it produces high-quality code that you can trust. It's not about replacing human engineers with AI, it's about making human engineers more productive, more efficient, and more effective. 
+
+The five principles that are doing the work here are process over prose, anti-rationalization tables, verification is non-negotiable, progressive disclosure, and scope discipline. These are the load-bearing principles that make the skills work. Anti-rationalization tables, for example, are pre-written rebuttals to the lies that the agent might tell itself to skip the workflow. They're like a set of excuses that the agent can use to avoid doing the work, but with a rebuttal that says, no, you actually have to do this.
+
+Progressive disclosure is another key principle. It means that you only load the skills into context when they're actually needed. You don't want to overload the agent with a bunch of unnecessary information, you want to give it just what it needs to do the job. And scope discipline, that's all about making sure the agent only touches what it's supposed to touch. You don't want it to refactor adjacent systems, or remove code it doesn't understand. You want it to stay focused on the task at hand.
+
+The Google DNA is all over this project. The skills are saturated with practices from Software Engineering at Google, and Google's public engineering culture. It's all about applying those principles to the work of AI coding agents, so that they produce high-quality software that's maintainable, secure, and efficient.
+
+So, the takeaway here is that AI coding agents are not a replacement for human engineers, but a tool that can augment their work. You need to think about how you can use these agents to make your life easier, to make your code better, and to make your team more productive. And the way to do that is by creating skills and workflows that guide the agent's work, so that it produces high-quality code that you can trust. 
+
+The practical takeaway for you, as a software developer, is to start thinking about how you can use AI coding agents in your work, and how you can create skills and workflows that guide their work. You can install the skills via a marketplace, or you can just drop the markdown files into your tool of choice. The point is to get started, to start experimenting with AI coding agents, and to see how they can help you improve your software development process.
+
+Alright, let us move on to the next story.
+
+So you've ever sent an email asking for advice, and just gotten crickets in response, or worse, some generic advice that doesn't really apply to your situation? Yeah, that's pretty frustrating. Here's the thing, it's not that the person you're asking doesn't want to help, it's just that you're not giving them enough to work with. Think of it this way, if someone came up to you and said "hey, can you help me with my career?" you'd probably be like "uh, sure, but what specifically do you need help with?" 
+
+I was reading this article the other day, and it was talking about how the people at Next Play, they get dozens of emails a week from people asking for help, but a lot of the time, the questions are just too vague. They're hard to respond to, because the person asking doesn't really know what they want. And that's not their fault, I mean, we're not really taught how to ask for advice in school, it's something we have to learn on our own.
+
+So, what's going on here is that people are being indirect, or they just haven't figured out what they actually want. And if you're being indirect, it's just going to be harder for others to help you. You need to be direct, and state what you want clearly. Don't be afraid to say "hey, I'm looking for advice on this specific thing, can you help me?" 
+
+Now, if you're someone who's still trying to figure out what you want, that's okay. But you need to do some work internally before you start asking others for help. Don't expect others to figure out your life for you, that's just not how it works. You need to have some idea of what you're looking for, and then you can start asking for help. 
+
+So, here's a practical method for getting better advice and feedback from others. First, understand why you're asking for help. What do you want to achieve? What's your goal? Once you know that, you can start looking for the right person to ask. Do your research, read about the best people in the world at what you're looking for. See if you can get what you want without needing to talk to them directly. 
+
+If you do need to reach out to someone, make your ask extremely clear. Don't be vague, be specific. People want to help, but they need to know what you're looking for. Share your motivation, explain why you want what you want. And set the other person up for success, give them all the context they need to be able to help you. 
+
+And here's why this is a big deal, if you can master the art of asking for advice, you can get so much more out of the people you're asking. You can get actionable advice, advice that actually applies to your situation. So what does this mean for you, as a software developer, it means you can get better feedback on your code, you can get more useful advice on how to improve your skills. You just need to be clear about what you're looking for, and be respectful of the other person's time.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+GitHub just released Flue, a framework for building sandbox agents. This could simplify secure coding. It's worth a look for developers. Google just launched AI-native interviews, where AI assesses coding skills. This could change how we hire developers. It's a big deal for the tech industry. Google's new branch-avoidant programming technique skips unnecessary code paths, speeding up apps. This matters because it can make your phone run faster. It's a big deal for developers. Redis just added an array type after years of development. This matters because it simplifies storing and retrieving data. It's a big deal for developers using Redis. Large language models, or LLMs, are making waves. They can generate human-like text, and that's a big deal. This tech could change how we interact with computers. Distributed tracing is getting attention, and here's why: it helps devs track complex interactions between services. Think of it like tracking a package, but for code.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.

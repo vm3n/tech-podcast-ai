@@ -1,0 +1,89 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+So I've got a story to share with you, but here's the thing, I've only got partial info due to a paywall. That means I'll do my best to break it down for you, but we'll have to fill in some gaps. The article is about transforming collaboration tech into a strategic asset, and it's based on a Forrester study commissioned by Atlassian.
+
+Think of it this way, the way companies work is changing fast, and IT leaders are right in the middle of it all. They're having to rethink how teams collaborate and how work gets done across the whole organization. To get a better understanding of this, Atlassian asked Forrester Consulting to survey 280 IT leaders from big companies, over 1,000 employees.
+
+Now, some of the key findings are pretty interesting. For example, 82% of these IT leaders use two or more vendors for work management technology, which is like having multiple tools to manage your projects and tasks. But here's the thing, 67% of them say that technical debt and legacy architecture are holding them back from modernizing. Technical debt is like having a bunch of old credit card bills that you need to pay off, it's all the outdated tech and code that's still lingering around.
+
+And then there's AI, only 14% of these companies have been able to get AI up and running across the whole organization. That's a big deal, because AI can really help with automating tasks and making decisions. And what's the main goal of all this? For 51% of these IT leaders, it's about increasing employee productivity. They want to see their teams getting more work done, more efficiently.
+
+So what does this mean for you, as a software developer? Well, here's the thing, companies are looking to modernize their tech and get more out of their collaboration tools. They want to be able to work more efficiently and make the most of AI. That means there's a big opportunity for you to help them get there, by building tools and systems that are flexible, scalable, and easy to use. It's all about creating a solid foundation for the future, and that's where you come in.
+
+Alright, let us move on to the next story.
+
+So you think you control all the devices and accounts in your organization, right? Think again. There are likely thousands of AI agents and machine-to-machine connections running in the background, making decisions, and taking actions without you even realizing it. And here is the thing, most of these agents are not properly secured, which is a huge problem. I mean, we're talking about potential entry points for hackers, data breaches, and all sorts of malicious activities.
+
+Now, let's take a step back and understand what's going on here. AI agents are like automated workers, they perform tasks, make decisions, and interact with other systems, just like humans do. But, unlike humans, they don't have the same level of oversight and security. Think of it this way, when you hire a new employee, you give them a username, password, and access to certain resources. But, when you deploy an AI agent, it's like giving a robot a set of keys to your entire organization, without any supervision.
+
+This is where Astrix Security comes in. They're a company that specializes in identifying, managing, and securing these AI agents and non-human identities. And, Cisco just announced that they're acquiring Astrix to bolster their AI agent security portfolio. So, what does this mean? Well, Cisco is basically adding a new layer of security to their existing products, like Identity Intelligence, Secure Access, and Duo Identity and Access Management.
+
+Here is why that is a big deal. With Astrix, Cisco can now provide real-time inventory of all AI agents, machine-to-machine connections, and non-human identities, with context to understand risk and business usage. It's like having a map of all the automated workers in your organization, so you can see what they're doing, and make sure they're not doing anything malicious.
+
+Astrix capabilities include discovery and governance for AI agents, agentic access and lifecycle management, and agentic threat detection and response. Think of it like a guardian for your AI agents, making sure they're not compromising your security. And, with Cisco's acquisition, these capabilities will be integrated into their existing products, giving customers a unified view of agent activity, and the context needed to investigate and respond to threats.
+
+So, what does this mean for you? If you're a software developer, you need to start thinking about securing your AI agents and non-human identities. It's not just about writing code, it's about making sure that code is secure, and doesn't compromise your organization's security. You need to consider the entire lifecycle of your AI agents, from provisioning to decommissioning, and make sure you have the right security measures in place. And, if you're using Cisco products, you can expect to see some exciting new features and capabilities in the coming months.
+
+Alright, let us move on to the next story.
+
+You know how sometimes you're trying to have a conversation with a chatbot, and it just doesn't get what you're saying? That's because those big language models, they're like the know-it-all friend who's always trying to give you advice, but sometimes they just don't have the right expertise. Think of it this way, when you're talking to a specialist, like a doctor or a lawyer, they can give you way more detailed and accurate information than a general practitioner. That's kinda what's happening with AI right now, there's a shift towards smaller, more specialized models, that are faster, cheaper, and more private.
+
+So, what's going on here? Well, large language models, or LLMs, they're like the big brains of AI, they can do a lot of things, but they're also really expensive and resource-intensive. They're like a huge library with all the information in the world, but sometimes you just need a small book that has exactly what you're looking for. That's where small language models, or SLMs, come in. They're like the specialized books, they're smaller, they're faster, and they're way more efficient.
+
+Here is the thing, SLMs are not just smaller versions of LLMs, they're actually designed to do specific tasks, like customer service, or content summarization. They're like the experts in their field, they can give you way more accurate information, and they're way faster than those big models. And here is why that is a big deal, because it means that companies can use them for specific tasks, without having to break the bank.
+
+So, how are these small models made? Well, they're made by using techniques like knowledge distillation, which is like teaching a smaller model what the bigger model knows, but in a way that's way more efficient. They're also made by pruning, which is like cutting out the unnecessary parts of the model, and quantization, which is like reducing the amount of data that the model needs to process.
+
+Now, you might be wondering, what are the benefits of these small models? Well, they're way cheaper to run, they're way faster, and they're more private. They can even run on your phone, or on a small device, without needing a huge server. And, they're way more customizable, because they're trained on specific data, so they can give you way more accurate information.
+
+But, here is the thing, these small models are not perfect, they have their own limitations. They're not as good at tasks that require a lot of knowledge, or complex reasoning. They're like the specialist, they're really good at one thing, but they're not as good at other things. So, companies need to be careful when they're using them, they need to make sure that they're using the right model for the right task.
+
+So, what does this mean for you, as a software developer? Well, it means that you need to think about the specific tasks that you're trying to accomplish, and choose the right model for that task. You need to think about the trade-offs, between accuracy, and speed, and cost. And, you need to think about how you can use these small models, to make your applications way more efficient, and way more accurate.
+
+Think of it this way, when you're building an application, you're not just building it for the user, you're building it for the task that the user needs to accomplish. So, you need to choose the right tools, and the right models, to make that task way more efficient. And, that's where these small language models come in, they're like the specialized tools, that can help you build way more efficient applications.
+
+Alright, let us move on to the next story.
+
+Imagine a job where you don't have to write a single line of code, but you still get paid over half a million dollars a year. Sounds crazy, right? But that's exactly what's happening at a company called Anthropic, where they're using AI to generate code so fast that their engineers are now focused on something entirely different. Think of it this way, the company's creator, Boris Cherny, hasn't written a line of code by hand in months, but he's still shipping out pull requests like crazy. 
+
+So, what's going on here? Is this the end of software engineering as we know it? Not quite. Here's the thing, Anthropic is actually predicting that AI could handle most, if not all, of what software engineers do within months. But at the same time, they're still hiring software engineers and paying them top dollar. It seems counterintuitive, but it's actually a signal that something deeper is going on.
+
+The key is to understand that AI isn't replacing software engineers, it's changing their role. They're moving from typing code to orchestrating agents that type code. It's like the difference between a bank teller and a toll booth worker. When ATMs came out, people thought bank tellers would be replaced, but instead, their role evolved. They started handling more complex financial conversations, and their numbers actually increased. 
+
+Software engineers are like those bank tellers. They're not just writing code, they're deciding what to build, evaluating whether the output is correct, and governing what gets deployed. And that's where the real value lies. The AI agents are just tools that are helping them do their job more efficiently. 
+
+But here's the thing, this isn't just about software engineering. It's about the entire enterprise AI landscape. The reason AI agents are succeeding in software development is that the infrastructure is already in place. Developers have spent decades building governance, observability, evaluation, memory, cost controls, and deployment flexibility into their workflows. 
+
+Think of governance like a clear chain of permission, from drafting code to deploying it. Observability is like having a paper trail for every decision made by the AI agent. Evaluation is like having automated tests to ensure the output is correct. Memory is like having context that survives across sessions and teams. Cost controls are like managing the budget for AI tokens. And deployment flexibility is like being able to run the code on any cloud or on-prem without being locked in. 
+
+These six gaps are what's holding back AI agents in other enterprise functions. They don't have the same infrastructure, so they can't scale. But once they do, we'll see a similar shift. AI agents will start handling the routine tasks, and humans will focus on the higher-level decisions. 
+
+So, what does this mean for you? If you're a software engineer, don't worry, your job is not going away. It's just evolving. You'll need to learn how to work with AI agents, how to orchestrate them, and how to evaluate their output. And if you're a CIO, you need to start thinking about how to build the infrastructure that will support AI agents across your entire organization. 
+
+The company that wins the AI coding war will be the one that builds the infrastructure layer that transfers to every other enterprise function. That's the real stakes of the game, and that's what you should be paying attention to. The canary in the coal mine is singing, not dying. It's telling us that AI agents can work, but only if we build the right infrastructure around them.
+
+Alright, let us move on to the next story.
+
+Imagine being able to transform your entire business with the help of two tech giants, working together to bring you the best of AI and cloud technology. Sounds too good to be true, right? But that's exactly what's happening with the expanded partnership between IBM and Oracle. They're celebrating 40 years of working together, and to mark the occasion, they're taking their collaboration to the next level.
+
+Think of it this way, when you're trying to build a house, you need a solid foundation, right? That's what IBM and Oracle are trying to provide for their customers, a foundation that's flexible, efficient, and secure. They want to help organizations break down silos, automate processes, and scale AI across their business operations. And here's the thing, it's not just about throwing some AI and cloud technology at the problem, it's about creating a seamless experience for customers.
+
+So, what's changing? Well, for starters, IBM's Red Hat Enterprise Linux will soon be available directly within Oracle's Cloud Infrastructure, making it easier for customers to build, modernize, and deploy applications at scale. And that's a big deal, because it means customers won't have to worry about navigating complex systems and can focus on what really matters, their business.
+
+But that's not all, IBM and Oracle are also working on a new connector between Oracle's Fusion Cloud Enterprise Resource Planning and IBM's Maximo Application Suite. Think of it like a bridge between two islands, it's going to make it easier for customers to manage processes across finance, procurement, assets, and facilities. And with built-in AI and analytics, customers will be able to make more informed decisions and drive business value.
+
+And here's why that is a big deal, many organizations are trying to reinvent their operations with AI, automation, and hybrid cloud capabilities, but they need high-performance, flexible platforms that bring applications, automation, and data together. That's exactly what IBM and Oracle are trying to provide, a platform that's going to help customers streamline processes, scale AI capabilities, and produce business value.
+
+So what does this mean for you, the developer? Well, it means you'll have access to more tools and resources to help you build and deploy applications at scale. You'll be able to use IBM's Turbonomic to optimize compute, storage, and network resources in real-time, and you'll have access to IBM's Guardium to discover, analyze, and respond to data security risks. And with IBM's consulting services, you'll have the support you need to transform your business and unlock new levels of productivity and competitive advantage.
+
+So, the takeaway here is, if you're looking to modernize your business with AI and cloud technology, you should be paying attention to what IBM and Oracle are doing. They're providing a foundation for customers to build on, and with their expanded partnership, they're making it easier for organizations to transform their business and achieve their goals.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Big vendors are cutting ties with smaller partners, and here is the thing, it's getting tough for them to stay in business. This shakeup might matter to you if you rely on these vendors for your own projects.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.
