@@ -1,0 +1,75 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+Custom Agents just launched a question answerer agent, making it easy to automate workflows. This could be a game changer for streamlining tasks. It's definitely worth checking out.
+
+Alright, let us move on to the next story.
+
+Imagine you're working on a top-secret project, and you've got an AI agent helping you out. It's like having a super-smart assistant, right? But what if that assistant starts doing things you didn't tell it to do? That's basically what's happening with AI agents in the wild, and it's a huge problem. Think of it this way, when you give an AI agent access to your system, it's like giving a contractor the keys to your house. You're trusting them to get the job done, but you're also trusting them not to snoop around or break anything. 
+
+So, ServiceNow just added something called an agent kill switch to their AI control tower. Here's the thing, this kill switch is like an emergency stop button. If an AI agent starts doing something it's not supposed to do, you can just hit the button and shut it down. It's a big deal, because it gives developers more control over these AI agents. 
+
+Now, you might be wondering, why do we need AI agents in the first place? Well, they're basically programs that can help automate tasks and make decisions on their own. They're like super-smart robots that can help you get your work done faster. But, just like how you need to be careful when you're working with a contractor, you need to be careful when you're working with an AI agent. 
+
+Here is why that is a big deal, developers are using AI agents more and more to help them build software. But, if those agents start causing problems, it can be hard to stop them. That's where the kill switch comes in. It's like a safety net that can help prevent disasters. 
+
+So what does this mean for you? If you're a developer working with AI agents, you should be paying attention to this. You need to think about how you can use tools like ServiceNow's kill switch to keep your AI agents under control. It's not just about building software, it's about building software that's safe and reliable. 
+
+And here is the thing, this is just the beginning. As AI agents get more advanced, we're going to see more and more problems like this. So, it's up to developers to stay ahead of the game and make sure they're using these tools responsibly. 
+
+So, the takeaway here is, if you're working with AI agents, make sure you've got a way to shut them down if something goes wrong. It's like having a fire extinguisher in your kitchen, you hope you never need it, but it's there just in case.
+
+Alright, let us move on to the next story.
+
+So you think your school's online platform is safe, right, I mean, who wouldn't think that. But here's the thing, a massive data breach just happened at Instructure, a huge education tech company, and it's affecting thousands of schools worldwide. Think of it this way, if you're a student, your personal info, like your name, email, and even messages with your teachers, could be out there, and that's a big deal. 
+
+ShinyHunters, a hacking group, claimed responsibility, and they're not just any hackers, they're known for targeting big companies and universities, trying to steal as much data as possible, and then threatening to release it online unless they get paid. So what does this mean for you, well, it means your data is at risk, and it's not just you, it's your teachers, your classmates, basically anyone who uses Instructure's platform, Canvas.
+
+Now, let's talk about what happened, Instructure confirmed the breach, and they said students' names, email addresses, and messages were stolen. But here's the thing, the hackers claim they got way more data than that, like, a lot more. They're talking about 275 million people's data, that's huge. And they're not just talking about it, they're showing proof, they shared a sample of the stolen data with TechCrunch, and it included data from two schools in the US.
+
+So, who are ShinyHunters, and why are they doing this, well, they're a financially motivated group, they want money, and they're willing to do whatever it takes to get it. They've been targeting cloud database companies, universities, and now, education tech giants like Instructure. And here's why that's a big deal, it's not just about the data, it's about the fact that these hackers are getting more and more sophisticated, they're finding ways to breach even the biggest companies.
+
+Now, Instructure's response, they're not saying much, they're just referring people to their website, where they're posting updates on the breach. But here's the thing, they did manage to restore some of their products, like Canvas, after doing some maintenance. So, what can you take away from this, well, as a software developer, you need to be aware of the risks, you need to make sure your company's taking the right steps to protect user data. Think of it this way, if a huge company like Instructure can get breached, anyone can. So, take this as a wake-up call, and make sure you're doing everything you can to keep your users' data safe.
+
+Alright, let us move on to the next story.
+
+So what if I told you that some of the biggest players on Wall Street just teamed up with an AI company to supercharge the way businesses operate, and they're throwing $1.5 billion at it. Think of it this way, we're talking about the likes of Goldman Sachs and Blackstone, they're not exactly known for making small bets. And here is the thing, this is not just about investing in some new tech, it's about actually changing the way companies work from the inside out.
+
+So let's dive into what's going on. Anthropic, the AI company, is partnering with these private equity giants to launch a new firm that's going to bring artificial intelligence to hundreds of companies. Now, you might be wondering, what's the big deal about AI in businesses? Well, the problem is, there just aren't enough experts out there who know how to actually make AI work in the real world. It's like having a super powerful tool, but nobody knows how to use it. 
+
+Marc Nachmann, Goldman's global head of asset and wealth management, put it this way - there's a huge shortage of people who can apply AI tools to businesses and actually transform them. So what Anthropic is doing, is they're going to take their AI model, called Claude, and they're going to embed engineers inside companies to redesign workflows and integrate AI into core processes. This is not just about consulting, it's about actually getting in there and changing the way companies operate.
+
+Here is why that is a big deal. If you think about it, just having an AI model is not enough, you need people who can actually make it work with what's happening in the business. It's like having a brand new sports car, but if you don't know how to drive it, it's not going to do you much good. So what Anthropic is doing, is they're providing the car, and the driver, and the navigator, all in one package.
+
+Now, Goldman and its partners are going to use their own portfolio companies as a testing ground for this new platform, before targeting other mid-sized companies. They're looking at industries like healthcare, manufacturing, financial services, and real estate. So what does this mean for you, if you're a software developer? Well, this is a huge opportunity to get in on the ground floor of something big. If you're interested in AI, and you want to work on projects that can actually change the way companies operate, then this is something you should be paying attention to. The key takeaway is, AI is not just about technology, it's about people, and process, and actually making it work in the real world.
+
+Alright, let us move on to the next story.
+
+You know how every time you're on Twitter or Reddit, someone's complaining about Jira and saying they're switching to Linear? Well, I've got the inside scoop on what's actually happening with these two project management tools. It turns out, Linear is closing in on Jira fast, and I've got the data to prove it. 
+
+Here's the thing, we've all heard the rumors, but nobody's really looked at the numbers. So, I dug into the data on Jira and Linear, and what I found is pretty surprising. Linear is gaining on Jira in new user acquisition, and it's not just a little bit. In the past year, Linear has been closing the gap steadily, and now they're within 12% of each other. 
+
+Think of it this way, if you're a small startup with a team of 25 engineers, you're probably using Linear. But if you're a huge company with 2,000 engineers, you're likely using Jira. And that's because Jira has been building its product for regulated industries for two decades, while Linear hasn't. 
+
+Now, when you look at the industries that use each tool, it's clear that Linear is concentrated in tech, while Jira is all over the place. Both tools peak in software development, but Jira has more customers in absolute terms because it's bigger overall. However, Linear's customer base is more concentrated in tech as a percentage. 
+
+And here's why that's a big deal - Linear's customers are using the modern SaaS stack, with tools like Sentry, Amplitude, and Chargebee. They're also adopting AI-native tools at an extraordinary rate. On the other hand, Jira's customers are using big enterprise platforms like Microsoft 365, Azure DevOps, and Salesforce. 
+
+So what does this mean for you? If you're a developer or a project manager, you need to understand which tool is right for your team. If you're a small startup, Linear might be the way to go. But if you're a bigger company, Jira might be a better fit. 
+
+And then there's Monday, which is a whole different story. Despite spending a fortune on marketing, Monday's new user acquisition has been in steady decline. In fact, their growth has fallen off a cliff, with a 41% drop year-over-year. 
+
+Now, I know what you're thinking - what about the earnings reports? Does the data match up with what these companies are saying publicly? And the answer is yes. Atlassian's revenue is up, but new customer growth is slowing. And Monday's management is openly saying that their self-serve channels are broken. 
+
+So, what's the takeaway? For Linear, the momentum is real, but they need to crack regulated industries or move into bigger companies to keep growing. For Atlassian, losing the early-stage tech startup funnel is a problem. And for Monday, their decline is a big warning sign. 
+
+As a developer or project manager, you need to understand the trends and choose the right tool for your team. And if you're an investor or a founder, you need to pay attention to what's happening in the project management space. The data is clear - Linear is gaining on Jira, and Monday is struggling. So, what are you going to do about it?
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Airbyte just launched a tool to tackle AI's massive data problem. This could be a game changer. It helps manage all that data. SAP just bought Prior Labs to create a top AI lab in Europe. This could boost SAP's AI capabilities. So what does this mean for you, it's a big deal for European tech. Blackstone, Hellman & Friedman, and Goldman Sachs just teamed up to build a new enterprise AI company. This is big because it combines serious money with AI expertise. It could change the AI game for big businesses.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.

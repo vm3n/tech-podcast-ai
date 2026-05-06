@@ -1,0 +1,84 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+Imagine handling over 10 trillion samples of data every single day, that's what the team at Databricks has to deal with, and here's the thing, they were using off-the-shelf solutions that just couldn't keep up. So what did they do, they built their own monitoring platform from scratch, and it's been a game changer. 
+
+So let's take a step back, Databricks is a company that's growing exponentially, and with that growth comes a ton of data, we're talking billions of active time series, and over 10 trillion samples per day, it's like trying to drink from a firehose. Their old monitoring stack just couldn't handle it, it was like trying to put a square peg in a round hole, it just didn't fit. 
+
+They had to develop a new platform that could scale with their growth, and that's where Pantheon comes in, it's a custom time series database that's based on the open-source Thanos project. Think of it like a library, where you can store and retrieve books, but instead of books, it's storing and retrieving data, and it's doing it at a massive scale. 
+
+One of the key features of Pantheon is its tiered storage architecture, it's like a pyramid, where the most recent data is stored in-memory, the last 24 hours of data is stored on-disk, and all the older data is stored on object storage, it's like a big warehouse where you can store all your old books. This architecture allows the system to decouple compute from storage, so you can scale up or down without having to rebalance all the data, it's like adding or removing shelves in the warehouse without having to move all the books around. 
+
+But here's the thing, as Databricks grew, their data grew too, and with that growth came a new challenge, cardinality, it's like trying to find a needle in a haystack, but the haystack is getting bigger and bigger. Cardinality is the number of unique combinations of labels, and as the number of labels grows, so does the cardinality, it's like trying to count the number of grains of sand on a beach. 
+
+To solve this problem, the team at Databricks developed an aggregation system, it's like a filter, where you can drop expensive labels and still get an aggregated view of the data, it's like looking at a map, where you can see the big picture without getting bogged down in the details. They used a combination of Telegraf and Dicer, it's like a pipeline, where you can process the data and get the insights you need, and it's been able to scale to over 1GB/s in their largest region. 
+
+But even with Pantheon and the aggregation system, the team at Databricks still needed a way to store and process raw data, that's where Hydra comes in, it's like a lakehouse, where you can store all your data and process it in a flexible way, it's like having a big toolbox, where you can use the right tool for the job. Hydra uses the Databricks lakehouse, it's like a big warehouse, where you can store all your data and process it in a flexible way, and it's been able to ingest 20 billion unaggregated time series from millions of nodes worldwide. 
+
+So what does this mean for you, as a software developer, it means that you need to think about scalability, reliability, and flexibility when building your own systems, it's like building a house, you need to think about the foundation, the walls, and the roof, and how they all fit together. You need to think about how your system will handle growth, and how you can use tools like Pantheon and Hydra to build a scalable and reliable monitoring platform. 
+
+And here's why that's a big deal, it's not just about handling a lot of data, it's about being able to make sense of it, and use it to make better decisions, it's like having a crystal ball, where you can see what's happening in your system, and make adjustments on the fly. So if you're building a system that's going to handle a lot of data, you need to think about how you're going to store it, process it, and make sense of it, and that's where tools like Pantheon and Hydra come in. 
+
+So if you're interested in learning more about how Databricks built their monitoring platform, and how you can apply those same principles to your own systems, then you should definitely check out their blog, and learn more about the tools and technologies they're using, it's like having a roadmap, where you can see how to get from where you are to where you want to be.
+
+Alright, let us move on to the next story.
+
+So you've probably seen those stories about AI gone wrong, where some company's database just gets deleted out of the blue. I mean, it's like, what even happened, right? Well, I came across this crazy story recently where a guy claimed that an AI agent just wiped out his company's entire production database. He's trying to get the AI to confess, like it's a person or something, asking it why it did what it did. But here's the thing, the question we should be asking is, why did they even have an API endpoint that could delete the entire database in the first place?
+
+Think of it this way, if you had a big red button in your car that said "self-destruct", you'd probably think that's a pretty bad idea, right? I mean, who needs a button like that just sitting there, waiting to be pressed. It's like, you can't blame the person who presses it, or in this case, the AI that calls the endpoint. The real problem is that the button exists in the first place.
+
+I've got a story that kind of relates to this. So, back in 2010, I was working with a company that had a really manual deployment process. We used SVN for version control, and to deploy, we'd copy the trunk into a release folder, and then make a second copy of that release and call it "current". It was a bit of a messy process, and one day, I accidentally copied the trunk twice. To fix it, I edited my previous command to delete the duplicate, or so I thought. Turns out, I ended up deleting the trunk instead, which was a big mistake.
+
+The point is, automation helps eliminate those kinds of silly mistakes that come with manual work. We could've easily blamed the tool, SVN, for not preventing us from deleting the trunk. But the real problem was our manual process. We're humans, we're bound to make mistakes, whereas machines can repeat tasks exactly the same way every time.
+
+Now, with AI generating code, we get this illusion of security, like it's going to do everything perfectly. But the thing is, AI is just generating tokens, it's not really thinking or reasoning. Those are just marketing terms. It's like me copying and pasting branches, it's bound to make mistakes, and it can't explain why it did what it did.
+
+So, what does this mean for you? If you're using AI to generate code, you need to have a process in place where competent developers are using it as a tool to augment their work, not just relying on it to do everything. And please, don't let non-technical people write the code. You need to know what you're deploying to production, and you need to have a way to catch those mistakes before they happen. The simple solution is to just be more careful, and the more realistic one is to build a process that uses AI as a tool, not a crutch.
+
+Alright, let us move on to the next story.
+
+Imagine you're at a company where everyone has access to AI tools, but despite all the hype, the organization as a whole isn't really learning anything new. That's the situation many companies are finding themselves in right now. So what's going on here? It turns out that just because individuals are using AI, it doesn't mean the company is actually benefiting from it. Think of it this way: if you're using a really powerful tool to get your work done faster, but you're not sharing what you've learned with anyone else, then the company isn't really getting any smarter.
+
+This is a problem that Ethan Mollick has been writing about, and he makes a really important point: individual productivity gains from AI don't automatically become organizational gains. So, even if people are getting faster and more efficient, the company may still be missing out. Here's the thing: a lot of companies are now at the point where they've got AI tools like GitHub Copilot and ChatGPT, and everyone's using them in different ways. But management is still trying to figure out how to measure the return on investment. They're looking at things like license usage and prompt counts, but that's not really telling them what they need to know.
+
+The real question is: what changed because we spent all those tokens? Did we actually learn anything new, or are we just producing more output? This is what's called the "messy middle" of AI adoption, and it's where things start to get really complicated. You've got different teams using AI in different ways, and it's hard to compare what's working and what's not. It's like trying to compare apples and oranges. And here's why that's a big deal: if the company can't learn from what individuals are doing with AI, then it's not going to be able to improve as a whole.
+
+So, how do we get out of this mess? Well, it turns out that the old way of doing things just isn't working anymore. We can't just rely on things like community meetings and brown-bag sessions to share knowledge. The interesting AI work is happening inside the actual work loops - in code reviews, sales proposals, research tasks, and so on. And that's where we need to focus. We need to think about how to create a feedback loop that lets the organization learn from what individuals are doing with AI.
+
+This is where the concept of "loop intelligence" comes in. It's the idea that we need to understand which AI-assisted loops are actually producing learning, and which ones are just staying open or decaying. We need to know which teams are ready for looser delegation, and which ones need more supervision. And we need to be able to feed that learning back into the organization, so that everyone can benefit. So what does this mean for you, as a software developer? It means that you need to start thinking about how to create a feedback loop that lets your organization learn from what you're doing with AI. It means instrumenting your work, sharing your learnings, and iterating in the open. It's not going to be easy, but it's the only way we're going to be able to make the most of AI and create real learning velocity.
+
+Alright, let us move on to the next story.
+
+Imagine you're building a house, but instead of having one solid foundation, you've got multiple foundations all over the place, and each one is holding up a different part of the house. That's kind of what's happening with data and AI right now. You've got different databases, different pipelines, different infrastructure, all holding up different parts of your AI system. And that's causing a lot of complexity, a lot of risk, and a lot of cost.
+
+So, what if you could simplify all that? What if you could have one foundation, one database, that can handle all your data and all your AI workloads? That's what Oracle's been working on with their Database 26ai. They're calling it the only database that natively architects AI into your data everywhere.
+
+Think of it this way, most databases are like separate rooms in a house, each one holding different types of data. But Oracle's database is like the entire house, where all the rooms are connected, and you can move freely between them. You can have relational data, JSON data, graph data, all in the same database, under the same transactional guarantees.
+
+Here is the thing, this isn't just about simplifying your data infrastructure, it's also about making it more secure. Oracle's database has stock exchange-grade security, which means it's designed to protect some of the most sensitive data out there. And because it's all in one place, you can enforce security and governance across all your data, without having to stitch together different systems.
+
+And here is why that is a big deal, most AI systems are only as good as the data they're trained on. So, if your data is all over the place, it's hard to get a clear picture of what's going on. But with Oracle's database, you can have all your data in one place, and you can use AI to analyze it, to make predictions, to make decisions.
+
+So what does this mean for you? If you're a developer, it means you can build AI applications faster, and with less complexity. You can use Oracle's database to build, deploy, and scale AI safely and securely. And because it's all in one place, you can focus on building the application, rather than worrying about the infrastructure.
+
+Here is a practical takeaway, if you're working on an AI project, take a step back and look at your data infrastructure. Are you using multiple databases, multiple pipelines? Could you simplify it all by using one database that can handle all your data and all your AI workloads? Because if you can simplify your data infrastructure, you can build AI applications faster, and with less risk.
+
+Alright, let us move on to the next story.
+
+So I'm gonna dive into this story, but here's the thing, I've only got partial content due to a paywall. That means I'm gonna do my best to explain what's going on, but I might not have all the details. 
+Airbyte Agents is what we're talking about, and from what I can see, it's a data and context layer for AI agents. Think of it this way, AI agents are like super smart robots that can do all sorts of tasks, but they need access to data to make decisions. That's where Airbyte Agents comes in, it gives those agents real-time access to business data. 
+It uses open-source connectors, which are like bridges that connect different systems, and it's type-safe, meaning it's got built-in checks to prevent errors. It also uses managed credentials, so you don't have to worry about keeping track of usernames and passwords, and it's got low-latency search, which means it can find what it's looking for really fast. 
+You can use it as a cloud platform, or you can import the connectors directly into your own agents, which is pretty flexible. So what does this mean for you, if you're a software developer? Well, if you're building AI agents, this could be a really useful tool to get them the data they need. 
+The company's got a bunch of resources available, including docs and a web app, so you can learn more about how it works and get started with it. They've also got a catalog of open-source connectors that you can use to connect to third-party APIs. 
+Here's why that's a big deal, it means you can use Airbyte Agents to connect to all sorts of different systems, like databases or social media platforms, and get the data you need to make your AI agents smarter. 
+So, if you're working on an AI project, this is definitely worth checking out, even with the limited info I've got, it seems like it could be a really powerful tool. 
+Practically speaking, if you're a developer, you should take a look at the Airbyte Agents docs and see if it's something that could help you with your project, especially if you're working with AI agents and need to get them access to business data.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Async Rust stalled in its minimum viable product phase, which is surprising given its initial hype. This matters because it affects the ecosystem's overall growth. Developers are now left wondering what's next. Researchers found three inverse laws of AI, where more data sometimes hurts performance. This challenges traditional thinking on AI development. It's a big deal for developers. Researchers just dropped a new guide, 10 Lessons for Agentic Coding, that's all about giving developers more control over their code. This matters because it could change how we build software. Google's testing a new feature, letting users build and call work numbers with collaborators. This could change how teams work. It's a big deal for remote teams.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.

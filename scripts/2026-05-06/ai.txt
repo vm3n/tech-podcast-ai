@@ -1,0 +1,85 @@
+Welcome to your daily tech briefing. I am Herlin, and today we have got some really interesting stories. Let us dive straight in.
+
+So I've got some info on this report, but here's the thing, it's behind a paywall, so I'm gonna have to give you the highlights and fill in the gaps with what I know. The report is called the 2026 agentic AI readiness index, and basically, it's talking about how companies are using AI that can act, not just analyze. Think of it this way, regular AI is like a super smart assistant that can look at data and tell you what it means, but agentic AI is like a robot that can take actions based on that data.
+
+Now, the report says that 60 percent of companies are investing millions in this type of AI, but only 15 percent have the data foundation to actually use it securely and effectively. That's a big problem, because it means that a lot of companies are throwing money at AI without getting the results they want. And here is why that is a big deal - AI that can act is only as good as the data it's based on, so if your data is messy or incomplete, your AI is gonna make bad decisions.
+
+The report also talks about how weak data foundations are limiting AI outcomes. So, what does that mean? Well, it means that companies don't have the right systems in place to make sure their data is consistent, governed, and controlled. It's like trying to build a house on shaky ground - it's gonna collapse. And interoperability is a big issue too, because AI needs to be able to access data from different tools and systems seamlessly, but most systems are still fragmented and tightly coupled, like a bunch of different machines that can't talk to each other.
+
+So what does this mean for you, as a software developer? Well, if you're working on AI projects, you need to make sure that your company has a solid data foundation in place before you start building. That means investing in data governance, consistency, and control, and making sure that your systems can talk to each other. It's like building a strong foundation for a house - it takes time and effort, but it's worth it in the end.
+
+Alright, let us move on to the next story.
+
+Imagine being able to process a huge amount of information, like a massive document or a long conversation, and actually make sense of it all. That's what a new startup called Subquadratic is promising, with a model that can handle a whopping 12 million tokens at once. To put that in perspective, most other models top out at around a million tokens. So what's the big deal about tokens? Think of them like individual words or characters in a piece of text. The more tokens a model can handle, the more context it can understand. And that's crucial for things like language translation, text summarization, and even chatbots.
+
+Here is the thing, though - most models aren't actually great at using all that information. They might be able to process a million tokens, but they don't really know what to do with it all. That's because of something called the quadratic cost of attention. Essentially, as the amount of information increases, the amount of work the model has to do grows exponentially. It's like trying to have a conversation with a huge group of people - the more people you add, the harder it is to keep track of what everyone is saying.
+
+Subquadratic claims to have solved this problem with their new model, which they call Subquadratic Selective Attention. The idea is that instead of looking at every possible relationship between all the tokens, the model only focuses on the ones that actually matter. It's like having a super-smart filter that helps the model figure out what's important and what's not. According to Subquadratic's CTO, Alex Whedon, this approach is different from others because it doesn't get bogged down by the quadratic cost of attention. Instead, it scales linearly, which means it can handle huge amounts of information without slowing down.
+
+So what does this mean for you? Well, if you're a developer working on natural language processing projects, this could be a game-changer. Imagine being able to build models that can actually understand huge amounts of text, without having to worry about the quadratic cost of attention. Subquadratic is making their model available through an API, which means you can start playing with it right away. And here is why that is a big deal - it could open up all sorts of new possibilities for things like language translation, text summarization, and even chatbots.
+
+Now, it's worth noting that Subquadratic isn't the first company to try to tackle this problem. There have been plenty of other attempts, like fixed-pattern sparse attention and state-space models. But Subquadratic's approach seems to be different, and their benchmarks are certainly impressive. They're reporting speeds that are 52 times faster than dense attention at a million tokens, and they're even beating out other models on certain benchmarks.
+
+So, what's the takeaway here? If you're working on natural language processing projects, it's definitely worth checking out Subquadratic's model. It could be a powerful tool for building models that can actually understand huge amounts of text. And even if you're not a developer, it's still interesting to think about the possibilities that this technology could enable. Imagine being able to have conversations with chatbots that actually understand what you're saying, or being able to translate languages in real-time. It's a pretty exciting future, and Subquadratic is definitely a company to watch.
+
+Alright, let us move on to the next story.
+
+You know how we're always talking about making AI models smaller and more efficient, right? Well, here's the thing, researchers just found out that a huge chunk of the data used to store these models is essentially wasted space. Think of it like buying a big house, but only using a few rooms - it's like, what's the point of having all that extra space if you're not going to use it? 
+
+So, the question is, how much information do these models really need to store? To answer this, we need to dive into something called Shannon entropy, which is like a measure of how much actual information is packed into a given amount of data. It's like trying to figure out how many books you can fit on a shelf, versus how many books you actually need to store. 
+
+The researchers looked at a bunch of different models, from different labs, with different numbers of parameters, and they all used something called bfloat16 to store their weights. That's like a budget of 16 bits per parameter. But here's the thing, when they calculated the Shannon entropy of these weights, they found that it was only around 10.6 bits per parameter. That means there's like 5.4 bits of wasted space per parameter - that's a third of the total budget.
+
+Now, you might be wondering, why does this matter? Well, it matters because when we're transferring data around, we want to make sure we're not wasting any space. It's like trying to send a big file over the internet - if you can compress it, you can send it faster. And that's exactly what the researchers are trying to do here. They're trying to figure out how to compress these models, so they take up less space, and we can transfer them faster.
+
+The researchers also looked at some other formats, like FP8, which is like a narrower version of bfloat16. They found that FP8 weights carry around 6.5 bits of entropy out of 8, which is like 80% of the budget. That's better than bfloat16, but still not perfect. And when they looked at even narrower formats, like FP4, they found that the model had to adapt to fit the available space. It's like trying to fit a big puzzle piece into a small space - you have to make some compromises.
+
+So, what does this mean for you, as a software developer? Well, it means that when you're working with AI models, you should be thinking about how to compress them, how to make them more efficient. It's like trying to optimize a piece of code - you want to make it run faster, and use less resources. And that's exactly what the researchers are trying to do here. They're trying to figure out how to make these models more efficient, so we can use them in more places, and make them more accessible to everyone. 
+
+And here's the thing, this isn't just about making models smaller, it's about making them faster, and more efficient. It's like, if you can compress a model, you can transfer it faster, and you can run it on smaller devices. That's a big deal, because it means we can use these models in more places, and make them more accessible to everyone. So, the next time you're working with an AI model, think about how you can compress it, how you can make it more efficient. It's like, it's not just about making the model smaller, it's about making it better.
+
+Alright, let us move on to the next story.
+
+Imagine you're building a system where an AI agent has to interact with a web app, like an admin panel. You've got two options - either have the AI use the web app like a human would, by looking at the screen and clicking on buttons, or have it interact with the app directly through an API. Now, you'd think the difference between these two approaches wouldn't be that big of a deal, but it turns out, using the web app like a human is 45 times more expensive than using an API. Yeah, that's right, 45 times more expensive. 
+
+So what's going on here? Well, the team that did this benchmarking test wanted to figure out the cost of using what's called a vision agent, which is an AI that interacts with a web app by looking at the screen and clicking on buttons. They compared this to using an API, which is like a direct communication channel between the AI and the web app. 
+
+Here's the thing, when an AI uses a web app like a human, it's got to take screenshots, analyze them, and then decide what to click on next. This process is slow and inefficient. It's like trying to have a conversation with someone who's only looking at a picture of you, rather than actually talking to you directly. 
+
+In the test, the vision agent had to complete a task that involved finding a customer, locating their most recent pending order, accepting all of their pending reviews, and marking the order as delivered. Sounds like a pretty straightforward task, right? But the vision agent struggled with it. It took 53 steps and 550,000 input tokens to complete the task, and it still didn't get it entirely right. 
+
+On the other hand, the API agent completed the task in just 8 calls, with only 12,000 input tokens. That's a huge difference. And here's why that is a big deal - when you're building a system that's got to interact with a web app, you want it to be efficient and cost-effective. Using an API can save you a ton of money and resources in the long run. 
+
+Think of it this way - when you're using a vision agent, you're essentially paying for the AI to look at the screen and click on buttons, which is a slow and laborious process. But when you're using an API, you're paying for the AI to have a direct conversation with the web app, which is much faster and more efficient. 
+
+So what does this mean for you? If you're a software developer, you should take away that using an API is generally a better approach than using a vision agent, especially when it comes to internal tools that you have control over. It's just more efficient and cost-effective. Now, there are some cases where using a vision agent makes sense, like when you're dealing with third-party apps that you can't modify. But in general, using an API is the way to go. And here is why that is a big deal - it can save you a ton of money and resources in the long run. 
+
+The team that did this benchmarking test also made all of their code open-source, so you can go check it out and see the results for yourself. They used a tool called Reflex to auto-generate the API endpoints, which made it easy to compare the two approaches. So, if you're interested in learning more, go check out the code and see how it works. 
+
+In the end, the choice between using a vision agent and an API comes down to what you're trying to accomplish and what tools you have at your disposal. But if you've got the option to use an API, it's probably the way to go. It's just more efficient, more cost-effective, and it can save you a ton of headaches in the long run.
+
+Alright, let us move on to the next story.
+
+Imagine you're a company launching a new AI-powered product in a foreign market, let's say Nigeria. You've trained your model on English data, and it works perfectly in the US, but when users in Lagos start interacting with it in Yoruba, things start to go wrong. The model can't understand the language, and it's making mistakes that are not only embarrassing but also eroding trust with your customers. This is the reality many companies face when they expand into new markets with AI models that aren't designed to handle multilingual users.
+
+Here's the thing, most AI models are trained on English data, and that's a problem because the majority of the world doesn't speak English. Think of it this way, when you're training a model on English data, you're essentially teaching it to think in English, and that's not how most people communicate. In fact, over 80% of the world's population doesn't speak English as their first language.
+
+So, what happens when you deploy an AI model in a market where English isn't the primary language? Well, it's not just a matter of translating the data, it's about understanding the cultural nuances and context of the language. For example, in some languages, the tone and context of a sentence can completely change the meaning, and if your model isn't trained to understand that, it's going to make mistakes.
+
+The gap between how well a model performs in a controlled environment and how well it performs in real-world scenarios is huge, and it's not because of the model architecture, it's because of the data problem. Companies are realizing that they need to train their models on native-language data, not just translated data, to ensure that they're reliable and accurate.
+
+Now, you might be thinking, why can't we just use machine translation to translate the data? Well, here's the thing, machine translation is not perfect, and it can't capture the nuances and context of a language. It's like trying to translate a joke from one language to another, it just doesn't work. You need native speakers to annotate and evaluate the data to ensure that it's accurate and reliable.
+
+The consequences of not having a multilingual AI model can be severe. It's not just about losing customers, it's about damaging your brand reputation and facing regulatory issues. So, what can you do about it? Well, first, you need to acknowledge that multilingual AI is not just a nice-to-have, it's a must-have. Then, you need to invest in native-language data sourcing, annotation, and evaluation. You need to work with native speakers who understand the cultural nuances and context of the language.
+
+So, what does this mean for you as a software developer? It means that you need to prioritize multilingual AI when building your models. You need to think about the languages your users will be interacting with your model in and ensure that you're training your model on native-language data. It's not an easy task, but it's essential to building a reliable and accurate AI model that can handle multilingual users. The takeaway here is that multilingual AI is not just about translating data, it's about understanding the cultural nuances and context of a language, and that requires native-language data sourcing, annotation, and evaluation.
+
+
+
+Now let us quickly run through some other stories that caught our eye today.
+
+Gemini's API file search just got a boost, now it's multimodal, which means it can search in multiple ways, making it more efficient and accurate. This could be a game changer for developers. MolmoAct 2 is out, an open foundation for robots to interact with the real world. This matters because it could make robots more useful. It's like a blueprint for robots to be more practical. Google just open-sourced a tool to scale machine learning models. This matters because it helps developers make models faster and stronger. It's a big deal for AI development. AI models are having hallucinations, basically making stuff up. This undermines trust in the tech. It's a big deal for developers relying on AI. Google's upgrading its Gemini model, think of it like a turbocharge for their AI. This could make their AI way faster and smarter. Alphabet's stock jumped on news that Anthropic will spend $200 billion on cloud services over five years. This massive commitment could boost Alphabet's cloud business. It's a big deal for their bottom line.
+
+
+
+And that is your tech briefing for today. A lot happening as always. Stay curious, keep building, and I will see you tomorrow.
